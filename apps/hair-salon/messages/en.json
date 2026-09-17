@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "services": "Services",
+    "prices": "Prices",
+    "about": "About us",
+    "contact": "Contact"
+  },
+  "book": "Book now",
+  "eyebrow": "Beauty salon · Kyiv",
+  "title": "Reveal your natural beauty",
+  "intro": "Professional care, experienced stylists, and an atmosphere of calm in the heart of the city.",
+  "servicesTitle": "Our services",
+  "servicesIntro": "A personal approach for every client",
+  "services": [
+    {
+      "icon": "✂",
+      "title": "Hair services",
+      "text": "Cuts, styling, advanced colour techniques, and hair care."
+    },
+    {
+      "icon": "✦",
+      "title": "Nail service",
+      "text": "Manicure, pedicure, gel polish, and signature nail design."
+    },
+    {
+      "icon": "✧",
+      "title": "Cosmetology",
+      "text": "Facial care, cleansing, peels, and age-defying treatments."
+    },
+    {
+      "icon": "◌",
+      "title": "Makeup & brows",
+      "text": "Day and evening makeup, brow lamination, and shaping."
+    }
+  ],
+  "pricesTitle": "Price list",
+  "pricesIntro": "Popular treatments and pricing",
+  "prices": [
+    { "title": "Women’s cut + styling", "price": "від 600 грн" },
+    { "title": "AirTouch / Balayage colour", "price": "від 2 200 грн" },
+    { "title": "Manicure with gel polish", "price": "650 грн" },
+    { "title": "Pedicure: care + polish", "price": "800 грн" },
+    { "title": "Combined facial cleansing", "price": "950 грн" },
+    { "title": "Brow and lash lamination", "price": "750 грн" }
+  ],
+  "aboutTitle": "About L’Élégance",
+  "about": "We created a space where you can step away from the city and trust your beauty to true professionals.",
+  "aboutSecond": "We work with premium cosmetics, certified equipment, and the highest standards of sterilization.",
+  "visitTitle": "Come visit us",
+  "visitIntro": "We are here for you every day",
+  "address": "15 Khreshchatyk Street, Kyiv",
+  "hours": "Mon–Sun: 09:00 — 21:00",
+  "name": "Your name",
+  "phone": "Phone number",
+  "service": "Choose a service",
+  "comment": "Preferred date or comment",
+  "submit": "Send request",
+  "sent": "Thank you! We will call you to confirm.",
+  "close": "Close",
+  "addressLabel": "Address",
+  "phoneLabel": "Phone",
+  "hoursLabel": "Opening hours",
+  "copyright": "All rights reserved."
+}
