@@ -6,7 +6,7 @@ import '../global.css';
 
 export const metadata = {
   title: 'L’Élégance | Beauty Salon',
-  description: 'Professional beauty care in Kyiv.',
+  description: 'Professional beauty care in Valencia.',
 };
 
 export default async function LocaleLayout({
