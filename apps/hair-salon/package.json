@@ -6,6 +6,7 @@
     "sourceRoot": "apps/hair-salon/src"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "next": "~16.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

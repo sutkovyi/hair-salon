@@ -5,6 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "next": "~16.1.6",
     "next-intl": "^4.14.5",
     "react": "^19.0.0",
