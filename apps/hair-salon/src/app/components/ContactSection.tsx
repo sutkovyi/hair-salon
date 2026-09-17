@@ -27,7 +27,8 @@ export function ContactSection() {
               value={t('address')}
               href="https://maps.app.goo.gl/2KfmLhomx1Bf9xo97"
             />
-            <Info label={t('phoneLabel')} value="+38 (099) 123-45-67" />
+            <Info label={t('phoneLabel')} value="+34 665 499 177" href="tel:+34665499177" />
+            <Info label="WhatsApp" value="+380 73 181 92 04" href="https://wa.me/380731819204" />
             <Info label={t('hoursLabel')} value={t('hours')} />
             <Info
               label="Instagram"

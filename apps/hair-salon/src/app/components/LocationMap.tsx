@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 
@@ -16,6 +17,14 @@ const customIcon = L.icon({
 const POSITION: [number, number] = [39.4559218, -0.3578184];
 
 export default function LocationMap() {
+  const markerRef = useRef<L.Marker | null>(null);
+
+  useEffect(() => {
+    if (markerRef.current) {
+      markerRef.current.openPopup();
+    }
+  }, []);
+
   return (
     <div className="h-[350px] w-full overflow-hidden rounded-xl border border-[#e0e0e0] shadow-sm">
       <MapContainer
@@ -31,11 +40,7 @@ export default function LocationMap() {
         <Marker
           position={POSITION}
           icon={customIcon}
-          ref={(ref) => {
-            if (ref) {
-              ref.openPopup();
-            }
-          }}
+          ref={markerRef}
         >
           <Popup>
             <div className="font-sans text-xs font-medium">
@@ -48,7 +53,7 @@ export default function LocationMap() {
               >
                 Av. de l'Institut Obrer de València, 21, Quatre Carreres, 46013 València, Spain
                 <svg
-                  className="inline-block ml-1 h-3.5 w-3.5 align-text-bottom opacity-70"
+                  className="inline-block ml-1 h-3.5 w-3.5 align-middle relative -top-[3px] opacity-70"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
