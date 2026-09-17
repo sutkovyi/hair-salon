@@ -39,8 +39,15 @@ export default function LocationMap() {
         >
           <Popup>
             <div className="font-sans text-xs font-medium">
-              <strong className="block text-sm font-semibold">BEUATY.COWORKING</strong>
-              Av. del Instituto Obrero de Valencia, 21, Bajo 5
+              <strong className="block text-sm font-semibold">BEAUTY.COWORKING</strong>
+              <a
+                href="https://maps.app.goo.gl/2KfmLhomx1Bf9xo97"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-[#bc8a5f]"
+              >
+                Av. de l'Institut Obrer de València, 21, Quatre Carreres, 46013 València, Spain
+              </a>
             </div>
           </Popup>
         </Marker>

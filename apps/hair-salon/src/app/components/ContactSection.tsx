@@ -22,7 +22,11 @@ export function ContactSection() {
         <SectionHeading title={t('visitTitle')} intro={t('visitIntro')} />
         <div className="grid gap-12 md:grid-cols-2">
           <div className="space-y-7">
-            <Info label={t('addressLabel')} value={t('address')} />
+            <Info
+              label={t('addressLabel')}
+              value={t('address')}
+              href="https://maps.app.goo.gl/2KfmLhomx1Bf9xo97"
+            />
             <Info label={t('phoneLabel')} value="+38 (099) 123-45-67" />
             <Info label={t('hoursLabel')} value={t('hours')} />
             <Info
