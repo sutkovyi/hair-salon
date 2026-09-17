@@ -25,7 +25,11 @@ export function ContactSection() {
             <Info label={t('addressLabel')} value={t('address')} />
             <Info label={t('phoneLabel')} value="+38 (099) 123-45-67" />
             <Info label={t('hoursLabel')} value={t('hours')} />
-            <Info label="Instagram" value="@lelegance_beauty" />
+            <Info
+              label="Instagram"
+              value="@care.of.your.hair8"
+              href="https://www.instagram.com/care.of.your.hair8"
+            />
           </div>
           <div>
             <LocationMap />

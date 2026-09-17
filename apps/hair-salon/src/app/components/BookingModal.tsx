@@ -23,7 +23,7 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-[#2b2d42]/60 px-4 py-2 sm:px-6 sm:py-3 transition-opacity duration-200 ${
+      className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#2b2d42]/60 px-4 py-2 sm:px-6 sm:py-3 transition-opacity duration-200 ${
         isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}
       onMouseDown={(event) => {
