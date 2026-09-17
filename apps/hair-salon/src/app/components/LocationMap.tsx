@@ -53,7 +53,7 @@ export default function LocationMap() {
               >
                 Av. de l'Institut Obrer de València, 21, Quatre Carreres, 46013 València, Spain
                 <svg
-                  className="inline-block ml-1 h-3.5 w-3.5 align-middle relative -top-[3px] opacity-70"
+                  className="inline-block ml-1 h-3.5 w-3.5 align-middle relative -top-[2px] opacity-70"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"

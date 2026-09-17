@@ -16,7 +16,7 @@ export function Info({ label, value, href }: { label: string; value: React.React
           >
             {value}
             <svg
-              className="inline-block ml-1.5 h-4 w-4 align-middle relative -top-[3px] opacity-70"
+              className="inline-block ml-1.5 h-4 w-4 align-middle relative -top-[2px] opacity-70"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
