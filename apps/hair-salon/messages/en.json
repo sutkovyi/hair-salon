@@ -35,13 +35,54 @@
   ],
   "pricesTitle": "Price list",
   "pricesIntro": "Popular treatments and pricing",
-  "prices": [
-    { "title": "Women’s cut + styling", "price": "від 600 грн" },
-    { "title": "AirTouch / Balayage colour", "price": "від 2 200 грн" },
-    { "title": "Manicure with gel polish", "price": "650 грн" },
-    { "title": "Pedicure: care + polish", "price": "800 грн" },
-    { "title": "Combined facial cleansing", "price": "950 грн" },
-    { "title": "Brow and lash lamination", "price": "750 грн" }
+  "priceCategories": [
+    {
+      "category": "Kids' Haircuts",
+      "items": [
+        { "title": "Boy's haircut", "price": "25€" },
+        { "title": "Girl's haircut (shoulder length)", "price": "25€" },
+        { "title": "Girl's haircut (below shoulder length)", "price": "30€" },
+        { "title": "Bangs cut (kids)", "price": "15€" }
+      ]
+    },
+    {
+      "category": "Kids' Styling",
+      "items": [
+        { "title": "Curling iron styling (shoulder length)", "price": "20€" },
+        { "title": "Curling iron styling (below shoulder length)", "price": "30€" },
+        { "title": "Braiding", "price": "20-30€" },
+        { "title": "Kids' hairstyle", "price": "40-50€" },
+        { "title": "Braid without kanekalon (with rings or accessories)", "price": "5€" },
+        { "title": "Braid with kanekalon", "price": "5€" },
+        { "title": "Braid with kanekalon (with rings)", "price": "8€" },
+        { "title": "Braid with kanekalon (with accessories)", "price": "10€" }
+      ]
+    },
+    {
+      "category": "Haircuts",
+      "items": [
+        { "title": "Women's haircut (ends trim)", "price": "40€" },
+        { "title": "Women's haircut", "price": "50€" },
+        { "title": "Bangs cut", "price": "20€" },
+        { "title": "Men's haircut", "price": "25€" },
+        { "title": "Men's haircut (creative)", "price": "30€" },
+        { "title": "Men's clipper cut", "price": "20€" }
+      ]
+    },
+    {
+      "category": "Styling",
+      "items": [
+        { "title": "Everyday blow-dry styling (shoulder length)", "price": "20-30€" },
+        { "title": "Everyday blow-dry styling (below shoulder length)", "price": "30-40€" },
+        { "title": "Hair straightening (flat iron)", "price": "10-20€" },
+        { "title": "Hair straightening (flat iron with wash)", "price": "15-25€" },
+        { "title": "Afro curls (shoulder length)", "price": "50-60€" },
+        { "title": "Afro curls (below shoulder length)", "price": "60-70€" },
+        { "title": "Hairstyle (shoulder length)", "price": "65€" },
+        { "title": "Hairstyle (below shoulder length)", "price": "75-80€" },
+        { "title": "Hair washing", "price": "10€" }
+      ]
+    }
   ],
   "aboutTitle": "About L’Élégance",
   "about": "We created a space where you can step away from the city and trust your beauty to true professionals.",

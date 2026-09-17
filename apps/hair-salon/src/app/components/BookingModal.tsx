@@ -5,12 +5,13 @@ import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
 
 type BookingModalProps = {
-  sent?: boolean;
+  isOpen: boolean;
   onClose: () => void;
+  sent?: boolean;
   onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
 };
 
-export function BookingModal({ onClose }: BookingModalProps) {
+export function BookingModal({ isOpen, onClose }: BookingModalProps) {
   const t = useTranslations();
 
   useEffect(() => {
@@ -22,7 +23,9 @@ export function BookingModal({ onClose }: BookingModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-[#2b2d42]/60 px-4 py-2 sm:px-6 sm:py-3"
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-[#2b2d42]/60 px-4 py-2 sm:px-6 sm:py-3 transition-opacity duration-200 ${
+        isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+      }`}
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}

@@ -33,13 +33,12 @@ export default function Home() {
       <AboutSection />
       <ContactSection sent={sent} onSubmit={handleSubmit} />
       <Footer />
-      {bookingOpen && (
-        <BookingModal
-          sent={sent}
-          onClose={closeBooking}
-          onSubmit={handleSubmit}
-        />
-      )}
+      <BookingModal
+        isOpen={bookingOpen}
+        sent={sent}
+        onClose={closeBooking}
+        onSubmit={handleSubmit}
+      />
     </main>
   );
 }
