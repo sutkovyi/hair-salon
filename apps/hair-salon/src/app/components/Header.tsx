@@ -1,0 +1,7 @@
+import { Copy, Language } from './content';
+
+type HeaderProps = { language: Language; text: Copy; onLanguageChange: (language: Language) => void; onBook: () => void };
+
+export function Header({ language, text, onLanguageChange, onBook }: HeaderProps) {
+  return <header className="fixed inset-x-0 top-0 z-20 border-b border-black/5 bg-white/90 backdrop-blur-md"><div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 lg:px-10"><a href="#top" className="font-serif text-2xl tracking-[0.08em]">L’ÉLÉGANCE<span className="text-[#d4a373]">.</span></a><nav className="hidden gap-7 text-sm font-medium md:flex">{text.nav.map((item, index) => <a key={item} className="transition-colors hover:text-[#bc8a5f]" href={`#${['services', 'prices', 'about', 'contact'][index]}`}>{item}</a>)}</nav><div className="flex items-center gap-3"><div className="flex rounded-full border border-[#e0e0e0] p-1 text-xs"><button onClick={() => onLanguageChange('uk')} className={`rounded-full px-2.5 py-1 ${language === 'uk' ? 'bg-[#2b2d42] text-white' : ''}`}>UA</button><button onClick={() => onLanguageChange('en')} className={`rounded-full px-2.5 py-1 ${language === 'en' ? 'bg-[#2b2d42] text-white' : ''}`}>EN</button></div><button onClick={onBook} className="rounded-full bg-[#d4a373] px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#bc8a5f]">{text.book}</button></div></div></header>;
+}
