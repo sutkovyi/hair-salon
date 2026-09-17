@@ -31,7 +31,7 @@ export default function Home() {
       <ServicesSection />
       <PricesSection />
       <AboutSection />
-      <ContactSection sent={sent} onSubmit={handleSubmit} />
+      <ContactSection />
       <Footer />
       <BookingModal
         isOpen={bookingOpen}
