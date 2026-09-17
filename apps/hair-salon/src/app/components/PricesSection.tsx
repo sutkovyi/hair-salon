@@ -20,20 +20,12 @@ export function PricesSection() {
   return (
     <section id="prices" className="relative overflow-hidden bg-white px-5 py-24 lg:px-10">
       {/* Background leaf texture/watermark */}
-      <div 
-        className="pointer-events-none absolute inset-0 opacity-[0.07] bg-repeat bg-center" 
-        style={{ backgroundImage: "url('/leaf-bg.png')", backgroundSize: '400px auto' }} 
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.07] bg-repeat bg-center"
+        style={{ backgroundImage: "url('/leaf-bg.png')", backgroundSize: '400px auto' }}
       />
 
       {/* Decorative leaf motifs */}
-      <div 
-        className="pointer-events-none absolute -left-20 -top-20 w-80 h-80 opacity-15 bg-no-repeat bg-contain" 
-        style={{ backgroundImage: "url('/leaf-bg.png')" }} 
-      />
-      <div 
-        className="pointer-events-none absolute -right-20 -bottom-20 w-80 h-80 opacity-15 bg-no-repeat bg-contain transform rotate-180" 
-        style={{ backgroundImage: "url('/leaf-bg.png')" }} 
-      />
 
       <div className="relative z-10 mx-auto max-w-4xl">
         <SectionHeading title={t('pricesTitle')} intro={t('pricesIntro')} />
