@@ -1,19 +1,29 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import heroImage from '../images/workspace.jpg';
 
 export function Hero({ onBook }: { onBook: () => void }) {
   const t = useTranslations();
+
   return (
     <section
       id="top"
-      className="relative flex min-h-[720px] items-center bg-cover bg-center pt-[72px] text-center text-white"
+      className="relative flex min-h-[720px] items-center overflow-hidden bg-cover bg-center pt-[72px] text-center text-white"
       style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,.38),rgba(0,0,0,.38)), url(${heroImage.src})`,
+        backgroundImage: "url('/workspace-placeholder.jpg')",
       }}
     >
-      <div className="mx-auto max-w-3xl px-6">
+      <picture className="absolute inset-0 block h-full w-full">
+        <source srcSet="/workspace.avif" type="image/avif" />
+        <img
+          src="/workspace.jpg"
+          alt=""
+          aria-hidden="true"
+          className="h-full w-full object-cover object-center"
+        />
+      </picture>
+      <div className="absolute inset-0 bg-black/38" />
+      <div className="relative z-10 mx-auto max-w-3xl px-6">
         <p className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-[#f2d3ae]">
           {t('eyebrow')}
         </p>
