@@ -26,6 +26,15 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(siteUrl),
+    manifest: '/manifest.json',
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: 'any' },
+        { url: '/icon0.svg', type: 'image/svg+xml' },
+        { url: '/icon1.png', type: 'image/png', sizes: '96x96' },
+      ],
+      apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+    },
     title,
     description,
     keywords: [

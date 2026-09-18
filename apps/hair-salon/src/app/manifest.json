@@ -1,0 +1,21 @@
+{
+  "name": "Наталія Красовська - стиліст по волоссю",
+  "short_name": "Наталія Красовська - стиліст по волоссю",
+  "icons": [
+    {
+      "src": "/icon1.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

@@ -8,31 +8,31 @@
     "contact": "Contact"
   },
   "book": "Book now",
-  "eyebrow": "Hair stylist · Valencia",
+  "eyebrow": "Hair stylist · Valencia 🇪🇸",
   "title": "Reveal your natural beauty",
-  "intro": "Professional care, experienced stylists, and an atmosphere of calm in the heart of the city.",
-  "servicesTitle": "Our services",
-  "servicesIntro": "A personal approach for every client",
+  "intro": "Professional care from an experienced stylist and a relaxing atmosphere in the heart of the city.",
+  "servicesTitle": "My services",
+  "servicesIntro": "Haircuts, styling, and hairstyles for the whole family",
   "services": [
     {
       "icon": "✂",
-      "title": "Hair services",
-      "text": "Cuts, styling, advanced colour techniques, and hair care."
+      "title": "Kids' haircuts",
+      "text": "Haircuts for boys and girls, including fringe trims."
     },
     {
       "icon": "✦",
-      "title": "Nail service",
-      "text": "Manicure, pedicure, gel polish, and signature nail design."
+      "title": "Kids' Styling",
+      "text": "Braiding, curls, kids' hairstyles, and kanekalon braids."
     },
     {
       "icon": "✧",
-      "title": "Cosmetology",
-      "text": "Facial care, cleansing, peels, and age-defying treatments."
+      "title": "Haircuts",
+      "text": "Women's and men's haircuts, ends trims, creative cuts, and clipper cuts."
     },
     {
       "icon": "◌",
-      "title": "Makeup & brows",
-      "text": "Day and evening makeup, brow lamination, and shaping."
+      "title": "Styling & hairstyles",
+      "text": "Everyday styling, straightening, afro curls, and special-occasion hairstyles."
     }
   ],
   "pricesTitle": "Price list",
@@ -86,9 +86,16 @@
       ]
     }
   ],
-  "aboutTitle": "About Nataliia Krasovska",
-  "about": "We created a space where you can step away from the city and trust your beauty to true professionals.",
-  "aboutSecond": "We work with premium cosmetics, certified equipment, and the highest standards of sterilization.",
+  "aboutTitle": "About me",
+  "about": "My name is Nataliia. I have worked in the beauty industry for 10 years, with more than 3 years dedicated specifically to children's hairdressing. For me, it is important not only to create a beautiful hairstyle, but also to provide every child with a comfortable and safe atmosphere.",
+  "aboutServicesIntro": "In addition to children's haircuts, you can also trust me with your own look:",
+  "aboutServices": [
+    "Men's haircuts",
+    "Women's haircuts",
+    "Everyday styling",
+    "Special-occasion hairstyles"
+  ],
+  "aboutClosing": "It is convenient when the whole family's hair care can be entrusted to one trusted stylist in Valencia!",
   "visitTitle": "Come visit us",
   "visitIntro": "We are here for you every day",
   "address": "Av. de l'Institut Obrer de València, 21, Quatre Carreres, 46013 València, Spain",
