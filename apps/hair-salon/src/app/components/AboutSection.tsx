@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import workImage from '../images/work.jpg';
 
 export function AboutSection() {
   const t = useTranslations();
@@ -9,7 +10,10 @@ export function AboutSection() {
       id="about"
       className="mx-auto grid max-w-7xl gap-12 px-5 py-24 lg:grid-cols-2 lg:items-center lg:px-10"
     >
-      <div className="min-h-[420px] bg-[url('https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=1000&q=85')] bg-cover bg-center" />
+      <div
+        className="aspect-[1365/1475] bg-cover bg-center"
+        style={{ backgroundImage: `url(${workImage.src})` }}
+      />
       <div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#bc8a5f]">
           L’Élégance

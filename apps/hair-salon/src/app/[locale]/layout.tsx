@@ -22,11 +22,20 @@ export const metadata = {
     description: sharingDescription,
     type: 'website',
     locale: 'uk_UA',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Стиліст по волоссю за роботою в салоні L’Élégance',
+      },
+    ],
   },
   twitter: {
     card: 'summary',
     title: 'L’Élégance | Стрижка у Валенсії',
     description: sharingDescription,
+    images: ['/og-image.jpg'],
   },
 };
 
