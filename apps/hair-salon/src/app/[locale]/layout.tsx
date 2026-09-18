@@ -7,7 +7,8 @@ import '../global.css';
 const sharingDescription =
   'Стиліст по волоссю. Дитячі, чоловічі та жіночі стрижки. Зачіски та повсякденне укладання.';
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://care-of-your-hair.workers.dev';
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  'https://care-of-your-hair.n-sutkovoy.workers.dev';
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
