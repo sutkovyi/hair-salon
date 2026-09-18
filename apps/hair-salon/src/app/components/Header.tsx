@@ -29,10 +29,10 @@ export function Header({ onBook }: HeaderProps) {
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 lg:px-10">
         <a href="#top" className="flex flex-col font-serif tracking-[0.08em]">
           <span className="text-2xl leading-none">
-            L’ÉLÉGANCE<span className="text-[#d4a373]">.</span>
+            {t('stylistName')}<span className="text-[#d4a373]">.</span>
           </span>
           <span className="mt-1 font-sans text-[9px] font-medium uppercase tracking-[0.08em] text-[#6c757d]">
-            Стрижка у Валенсії · чоловіча · жіноча · дитяча
+            {t('headerSpecialties')}
           </span>
         </a>
         <nav className="hidden gap-7 text-sm font-medium md:flex">

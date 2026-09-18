@@ -1,4 +1,6 @@
 {
+  "stylistName": "Nataliia Krasovska",
+  "headerSpecialties": "Hair stylist · Men's, women's, kids' haircuts",
   "nav": {
     "services": "Services",
     "prices": "Prices",
@@ -6,7 +8,7 @@
     "contact": "Contact"
   },
   "book": "Book now",
-  "eyebrow": "Beauty salon · Valencia",
+  "eyebrow": "Hair stylist · Valencia",
   "title": "Reveal your natural beauty",
   "intro": "Professional care, experienced stylists, and an atmosphere of calm in the heart of the city.",
   "servicesTitle": "Our services",
@@ -84,7 +86,7 @@
       ]
     }
   ],
-  "aboutTitle": "About L’Élégance",
+  "aboutTitle": "About Nataliia Krasovska",
   "about": "We created a space where you can step away from the city and trust your beauty to true professionals.",
   "aboutSecond": "We work with premium cosmetics, certified equipment, and the highest standards of sterilization.",
   "visitTitle": "Come visit us",

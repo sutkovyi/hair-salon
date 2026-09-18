@@ -16,7 +16,7 @@ export function AboutSection() {
       />
       <div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#bc8a5f]">
-          L’Élégance
+          {t('stylistName')}
         </p>
         <h2 className="font-serif text-5xl leading-none sm:text-6xl">
           {t('aboutTitle')}

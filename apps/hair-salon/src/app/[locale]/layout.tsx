@@ -1,47 +1,64 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
 import '../global.css';
 
-const sharingDescription =
-  'Стиліст по волоссю. Дитячі, чоловічі та жіночі стрижки. Зачіски та повсякденне укладання.';
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
   'https://care-of-your-hair.n-sutkovoy.workers.dev';
 
-export const metadata = {
-  metadataBase: new URL(siteUrl),
-  title: 'L’Élégance | Стрижка у Валенсії',
-  description: sharingDescription,
-  keywords: [
-    'стрижка Валенсія',
-    'стрижка у Валенсії',
-    'чоловіча стрижка у Валенсії',
-    'жіноча стрижка у Валенсії',
-    'дитяча стрижка у Валенсії',
-  ],
-  openGraph: {
-    title: 'L’Élégance | Стрижка у Валенсії',
-    description: sharingDescription,
-    type: 'website',
-    locale: 'uk_UA',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Стиліст по волоссю за роботою в салоні L’Élégance',
-      },
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isEnglish = locale === 'en';
+  const stylistName = isEnglish ? 'Nataliia Krasovska' : 'Наталія Красовська';
+  const title = isEnglish
+    ? `${stylistName} | Hair Stylist in Valencia`
+    : `${stylistName} | Стрижка у Валенсії`;
+  const description = isEnglish
+    ? `${stylistName} — hair stylist. Kids', men's and women's haircuts, hairstyles, and everyday styling.`
+    : `${stylistName} — стиліст по волоссю. Дитячі, чоловічі та жіночі стрижки. Зачіски та повсякденне укладання.`;
+
+  return {
+    metadataBase: new URL(siteUrl),
+    title,
+    description,
+    keywords: [
+      'стрижка Валенсія',
+      'стрижка у Валенсії',
+      'чоловіча стрижка у Валенсії',
+      'жіноча стрижка у Валенсії',
+      'дитяча стрижка у Валенсії',
     ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'L’Élégance | Стрижка у Валенсії',
-    description: sharingDescription,
-    images: ['/og-image.jpg'],
-  },
-};
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      locale: isEnglish ? 'en_US' : 'uk_UA',
+      images: [
+        {
+          url: '/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: isEnglish
+            ? `${stylistName} — hair stylist in Valencia`
+            : `${stylistName} — стиліст по волоссю у Валенсії`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/og-image.jpg'],
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,
