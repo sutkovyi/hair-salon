@@ -31,7 +31,7 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
       }}
     >
       <div className="relative flex flex-col w-full max-w-4xl h-[90vh] max-h-[780px] bg-white px-5 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-2xl overflow-hidden">
-        <div className="flex items-center justify-between pb-2 border-b border-[#d8d0c7]/60 mb-2">
+        <div className="flex items-center justify-between pb-2 mb-2">
           <div>
             <h2 className="font-serif text-xl sm:text-2xl text-[#2b2d42]">
               {t('book')}
