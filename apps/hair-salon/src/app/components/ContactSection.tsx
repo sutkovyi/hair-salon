@@ -7,7 +7,7 @@ import { Info, SectionHeading } from './SectionHeading';
 const LocationMap = dynamic(() => import('./LocationMap'), {
   ssr: false,
   loading: () => (
-    <div className="flex h-[350px] w-full items-center justify-center rounded-xl border border-[#e0e0e0] bg-[#f8f9fa] text-sm text-[#6c757d]">
+    <div className="flex h-[396px] w-full items-center justify-center rounded-xl border border-[#e0e0e0] bg-[#f8f9fa] text-sm text-[#6c757d]">
       Loading map...
     </div>
   ),
