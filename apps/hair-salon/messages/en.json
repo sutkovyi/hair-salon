@@ -8,7 +8,7 @@
     "contact": "Contact"
   },
   "book": "Book online",
-  "eyebrow": "Hair stylist · Valencia 🇪🇸",
+  "eyebrow": "Hair stylist · Russafa, Valencia 🇪🇸",
   "title": "Reveal your natural beauty",
   "intro": "Professional care from an experienced stylist and a relaxing atmosphere in the heart of the city.",
   "servicesTitle": "My services",
@@ -41,48 +41,129 @@
     {
       "category": "Kids' Haircuts",
       "items": [
-        { "title": "Boy's haircut", "price": "25€" },
-        { "title": "Girl's haircut (shoulder length)", "price": "25€" },
-        { "title": "Girl's haircut (below shoulder length)", "price": "30€" },
-        { "title": "Bangs cut (kids)", "price": "15€" }
+        {
+          "title": "Boy's haircut",
+          "price": "25€"
+        },
+        {
+          "title": "Girl's haircut (shoulder length)",
+          "price": "25€"
+        },
+        {
+          "title": "Girl's haircut (below shoulder length)",
+          "price": "30€"
+        },
+        {
+          "title": "Bangs cut (kids)",
+          "price": "15€"
+        }
       ]
     },
     {
       "category": "Kids' Styling",
       "items": [
-        { "title": "Curling iron styling (shoulder length)", "price": "20€" },
-        { "title": "Curling iron styling (below shoulder length)", "price": "30€" },
-        { "title": "Braiding", "price": "20-30€" },
-        { "title": "Kids' hairstyle", "price": "40-50€" },
-        { "title": "Braid without kanekalon (with rings or accessories)", "price": "5€" },
-        { "title": "Braid with kanekalon", "price": "5€" },
-        { "title": "Braid with kanekalon (with rings)", "price": "8€" },
-        { "title": "Braid with kanekalon (with accessories)", "price": "10€" }
+        {
+          "title": "Curling iron styling (shoulder length)",
+          "price": "20€"
+        },
+        {
+          "title": "Curling iron styling (below shoulder length)",
+          "price": "30€"
+        },
+        {
+          "title": "Braiding",
+          "price": "20-30€"
+        },
+        {
+          "title": "Kids' hairstyle",
+          "price": "40-50€"
+        },
+        {
+          "title": "Braid without kanekalon (with rings or accessories)",
+          "price": "5€"
+        },
+        {
+          "title": "Braid with kanekalon",
+          "price": "5€"
+        },
+        {
+          "title": "Braid with kanekalon (with rings)",
+          "price": "8€"
+        },
+        {
+          "title": "Braid with kanekalon (with accessories)",
+          "price": "10€"
+        }
       ]
     },
     {
       "category": "Haircuts",
       "items": [
-        { "title": "Women's haircut (ends trim)", "price": "40€" },
-        { "title": "Women's haircut", "price": "50€" },
-        { "title": "Bangs cut", "price": "20€" },
-        { "title": "Men's haircut", "price": "25€" },
-        { "title": "Men's haircut (creative)", "price": "30€" },
-        { "title": "Men's clipper cut", "price": "20€" }
+        {
+          "title": "Women's haircut (ends trim)",
+          "price": "40€"
+        },
+        {
+          "title": "Women's haircut",
+          "price": "50€"
+        },
+        {
+          "title": "Bangs cut",
+          "price": "20€"
+        },
+        {
+          "title": "Men's haircut",
+          "price": "25€"
+        },
+        {
+          "title": "Men's haircut (creative)",
+          "price": "30€"
+        },
+        {
+          "title": "Men's clipper cut",
+          "price": "20€"
+        }
       ]
     },
     {
       "category": "Styling",
       "items": [
-        { "title": "Everyday blow-dry styling (shoulder length)", "price": "20-30€" },
-        { "title": "Everyday blow-dry styling (below shoulder length)", "price": "30-40€" },
-        { "title": "Hair straightening (flat iron)", "price": "10-20€" },
-        { "title": "Hair straightening (flat iron with wash)", "price": "15-25€" },
-        { "title": "Afro curls (shoulder length)", "price": "50-60€" },
-        { "title": "Afro curls (below shoulder length)", "price": "60-70€" },
-        { "title": "Hairstyle (shoulder length)", "price": "65€" },
-        { "title": "Hairstyle (below shoulder length)", "price": "75-80€" },
-        { "title": "Hair washing", "price": "10€" }
+        {
+          "title": "Everyday blow-dry styling (shoulder length)",
+          "price": "20-30€"
+        },
+        {
+          "title": "Everyday blow-dry styling (below shoulder length)",
+          "price": "30-40€"
+        },
+        {
+          "title": "Hair straightening (flat iron)",
+          "price": "10-20€"
+        },
+        {
+          "title": "Hair straightening (flat iron with wash)",
+          "price": "15-25€"
+        },
+        {
+          "title": "Afro curls (shoulder length)",
+          "price": "50-60€"
+        },
+        {
+          "title": "Afro curls (below shoulder length)",
+          "price": "60-70€"
+        },
+        {
+          "title": "Hairstyle (shoulder length)",
+          "price": "65€"
+        },
+        {
+          "title": "Hairstyle (below shoulder length)",
+          "price": "75-80€"
+        },
+        {
+          "title": "Hair washing",
+          "price": "10€"
+        }
       ]
     }
   ],
