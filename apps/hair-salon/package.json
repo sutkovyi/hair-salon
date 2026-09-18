@@ -7,8 +7,25 @@
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
+    "@vinext/cloudflare": "^1.0.0-beta.8",
     "next": "~16.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-server-dom-webpack": "^19.3.0",
+    "vinext": "^1.0.0-beta.10"
+  },
+  "type": "module",
+  "scripts": {
+    "dev:vinext": "vinext dev --port 3001",
+    "build:vinext": "vinext build",
+    "start:vinext": "wrangler dev --config dist/server/wrangler.json",
+    "deploy:vinext": "vinext-cloudflare deploy --config dist/server/wrangler.json"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.55.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "@vitejs/plugin-rsc": "^0.5.35",
+    "vite": "^8.3.0",
+    "wrangler": "^4.134.0"
   }
 }
