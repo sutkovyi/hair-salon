@@ -6,8 +6,11 @@ import '../global.css';
 
 const sharingDescription =
   'Стиліст по волоссю. Дитячі, чоловічі та жіночі стрижки. Зачіски та повсякденне укладання.';
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://care-of-your-hair.workers.dev';
 
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: 'L’Élégance | Стрижка у Валенсії',
   description: sharingDescription,
   keywords: [
@@ -32,7 +35,7 @@ export const metadata = {
     ],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'L’Élégance | Стрижка у Валенсії',
     description: sharingDescription,
     images: ['/og-image.jpg'],
