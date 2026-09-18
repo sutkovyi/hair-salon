@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 
-export function Hero({ onBook }: { onBook: () => void }) {
+export function Hero({ onBook }: { onBook: (location?: string) => void }) {
   const t = useTranslations();
 
   return (
@@ -34,7 +34,7 @@ export function Hero({ onBook }: { onBook: () => void }) {
           {t('intro')}
         </p>
         <button
-          onClick={onBook}
+          onClick={() => onBook('hero')}
           className="mt-9 rounded-full bg-[#d4a373] px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] transition hover:-translate-y-1 hover:bg-[#bc8a5f]"
         >
           {t('book')} <span className="ml-2">↗</span>

@@ -1,6 +1,7 @@
 'use client';
 
 import { FormEvent, useState } from 'react';
+import { trackEvent } from '../../lib/gtag';
 import { AboutSection } from '../components/AboutSection';
 import { BookingModal } from '../components/BookingModal';
 import { ContactSection } from '../components/ContactSection';
@@ -14,7 +15,8 @@ export default function Home() {
   const [bookingOpen, setBookingOpen] = useState(false);
   const [sent, setSent] = useState(false);
 
-  const openBooking = () => {
+  const openBooking = (location = 'general') => {
+    trackEvent('book_online_click', 'engagement', location);
     setSent(false);
     setBookingOpen(true);
   };

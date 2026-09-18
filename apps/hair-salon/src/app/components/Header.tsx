@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/routing';
 
 type HeaderProps = {
-  onBook: () => void;
+  onBook: (location?: string) => void;
 };
 
 export function Header({ onBook }: HeaderProps) {
@@ -69,7 +69,7 @@ export function Header({ onBook }: HeaderProps) {
             </button>
           </div>
           <button
-            onClick={onBook}
+            onClick={() => onBook('header')}
             className="rounded-full bg-[#d4a373] px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.05em] text-white transition hover:bg-[#bc8a5f] sm:px-4 sm:py-2.5 sm:text-xs sm:tracking-[0.08em]"
           >
             {t('book')}
