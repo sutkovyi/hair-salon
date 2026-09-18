@@ -1,13 +1,17 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import heroImage from '../images/workspace.jpg';
 
 export function Hero({ onBook }: { onBook: () => void }) {
   const t = useTranslations();
   return (
     <section
       id="top"
-      className="relative flex min-h-[720px] items-center bg-[linear-gradient(rgba(0,0,0,.38),rgba(0,0,0,.38)),url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1800&q=85')] bg-cover bg-center pt-[72px] text-center text-white"
+      className="relative flex min-h-[720px] items-center bg-cover bg-center pt-[72px] text-center text-white"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0,0,0,.38),rgba(0,0,0,.38)), url(${heroImage.src})`,
+      }}
     >
       <div className="mx-auto max-w-3xl px-6">
         <p className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-[#f2d3ae]">
