@@ -26,7 +26,7 @@ export function Header({ onBook }: HeaderProps) {
 
   return (
     <header className="fixed inset-x-0 top-0 z-20 border-b border-black/5 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex min-h-[72px] max-w-7xl items-center justify-between gap-2 px-4 py-2 sm:px-5 lg:px-10">
+      <div className="mx-auto grid min-h-[72px] max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-2 px-4 py-2 sm:px-5 lg:px-10">
         <a
           href="#top"
           className="flex min-w-0 max-w-[185px] flex-1 flex-col font-serif tracking-[0.08em] sm:max-w-none"
@@ -49,7 +49,7 @@ export function Header({ onBook }: HeaderProps) {
             </a>
           ))}
         </nav>
-        <div className="flex shrink-0 items-center gap-1.5 sm:gap-3">
+        <div className="col-start-3 flex shrink-0 items-center justify-self-end gap-1.5 sm:gap-3">
           <div className="flex rounded-full border border-[#e0e0e0] p-0.5 text-[10px] sm:p-1 sm:text-xs">
             <button
               onClick={() => handleLanguageChange('uk')}
