@@ -4,12 +4,16 @@ declare global {
   }
 }
 
-export const trackEvent = (action: string, category?: string, label?: string, value?: number) => {
+export type EventParams = {
+  event_category?: string;
+  event_label?: string;
+  value?: number;
+  language?: string;
+  [key: string]: any;
+};
+
+export const trackEvent = (action: string, params?: EventParams) => {
   if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-    window.gtag('event', action, {
-      event_category: category,
-      event_label: label,
-      value: value,
-    });
+    window.gtag('event', action, params);
   }
 };

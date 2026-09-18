@@ -2,6 +2,7 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/routing';
+import { trackEvent } from '../../lib/gtag';
 
 type HeaderProps = {
   onBook: (location?: string) => void;
@@ -14,6 +15,10 @@ export function Header({ onBook }: HeaderProps) {
   const pathname = usePathname();
 
   const handleLanguageChange = (newLocale: 'uk' | 'en') => {
+    trackEvent('change_language', {
+      event_category: 'engagement',
+      language: newLocale,
+    });
     router.replace(pathname, { locale: newLocale });
   };
 

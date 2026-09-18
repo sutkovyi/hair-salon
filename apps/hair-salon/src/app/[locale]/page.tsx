@@ -1,6 +1,7 @@
 'use client';
 
 import { FormEvent, useState } from 'react';
+import { useLocale } from 'next-intl';
 import { trackEvent } from '../../lib/gtag';
 import { AboutSection } from '../components/AboutSection';
 import { BookingModal } from '../components/BookingModal';
@@ -12,11 +13,16 @@ import { PricesSection } from '../components/PricesSection';
 import { ServicesSection } from '../components/ServicesSection';
 
 export default function Home() {
+  const locale = useLocale();
   const [bookingOpen, setBookingOpen] = useState(false);
   const [sent, setSent] = useState(false);
 
   const openBooking = (location = 'general') => {
-    trackEvent('book_online_click', 'engagement', location);
+    trackEvent('book_online_click', {
+      event_category: 'engagement',
+      event_label: location,
+      language: locale,
+    });
     setSent(false);
     setBookingOpen(true);
   };
