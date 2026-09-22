@@ -140,3 +140,35 @@
 [ 9480318ms] [WARNING] The resource https://app.cal.com/_next/static/media/CalSansUI%5Bwght%2CGEOM%5D-s.p.3pp56rz-p4ksj.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.cal.com/mykola-sutkovyi-ejevdu/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83/embed?layout=month_view&useSlotsViewOnSmallScreen=true&embedType=inline&embed=%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83:0
 [ 9536564ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
 [ 9536708ms] [LOG] [Fast Refresh] done in 246ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9775607ms] [WARNING] The resource https://app.cal.com/_next/static/media/CalSansUI%5Bwght%2CGEOM%5D-s.p.3pp56rz-p4ksj.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.cal.com/mykola-sutkovyi-ejevdu/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83/embed?layout=month_view&useSlotsViewOnSmallScreen=true&embedType=inline&embed=%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83:0
+[ 9780779ms] [WARNING] The resource https://app.cal.com/_next/static/media/CalSansUI%5Bwght%2CGEOM%5D-s.p.3pp56rz-p4ksj.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.cal.com/mykola-sutkovyi-ejevdu/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83/embed?layout=month_view&useSlotsViewOnSmallScreen=true&embedType=inline&embed=%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83:0
+[ 9941810ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9966475ms] [LOG] [Fast Refresh] done in 5725ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9967998ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9970182ms] [LOG] [Fast Refresh] done in 2527ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9971051ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9973259ms] [LOG] [Fast Refresh] done in 2309ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9973443ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9974034ms] [LOG] [Fast Refresh] done in 693ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9987943ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 9988045ms] [LOG] [Fast Refresh] done in 204ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10023384ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10024096ms] [LOG] [Fast Refresh] done in 814ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10024217ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10028994ms] [LOG] [Fast Refresh] done in 4879ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10076084ms] [WARNING] The resource https://app.cal.com/_next/static/media/CalSansUI%5Bwght%2CGEOM%5D-s.p.3pp56rz-p4ksj.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.cal.com/mykola-sutkovyi-ejevdu/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83/embed?layout=month_view&useSlotsViewOnSmallScreen=true&embedType=inline&embed=%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83:0
+[10081258ms] [WARNING] The resource https://app.cal.com/_next/static/media/CalSansUI%5Bwght%2CGEOM%5D-s.p.3pp56rz-p4ksj.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.cal.com/mykola-sutkovyi-ejevdu/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83/embed?layout=month_view&useSlotsViewOnSmallScreen=true&embedType=inline&embed=%D0%B7%D0%B0%D0%BF%D0%B8%D1%81-%D0%BD%D0%B0-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83:0
+[10090333ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10090551ms] [LOG] [Fast Refresh] done in 319ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10094527ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10094561ms] [LOG] [Fast Refresh] done in 134ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10096006ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10096460ms] [LOG] [Fast Refresh] done in 562ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10096577ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10096762ms] [LOG] [Fast Refresh] done in 287ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10098822ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10099514ms] [LOG] [Fast Refresh] done in 793ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10104403ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10105974ms] [LOG] [Fast Refresh] done in 1674ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10110468ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[10110474ms] [LOG] [Fast Refresh] done in 108ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297

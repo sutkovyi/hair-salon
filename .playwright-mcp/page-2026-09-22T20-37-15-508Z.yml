@@ -1,0 +1,15 @@
+- generic [active] [ref=f10e1]:
+  - main [ref=f10e2]:
+    - generic [ref=f10e3]:
+      - paragraph [ref=f10e4]: Nataliia Krasovska.
+      - generic [ref=f10e5]: "404"
+      - heading "This page took a wrong turn." [level=1] [ref=f10e6]
+      - paragraph [ref=f10e7]: The page you are looking for does not exist or has moved. Let's get you back to the salon.
+      - generic [ref=f10e8]:
+        - link "Back to home" [ref=f10e9] [cursor=pointer]:
+          - /url: /uk
+        - link "Browse sitemap" [ref=f10e10] [cursor=pointer]:
+          - /url: /sitemap.xml
+      - paragraph [ref=f10e11]: Hair stylist · Valencia
+  - button "Open Next.js Dev Tools" [ref=f10e17] [cursor=pointer]
+  - alert [ref=f10e21]

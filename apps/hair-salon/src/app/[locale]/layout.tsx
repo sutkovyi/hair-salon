@@ -5,7 +5,6 @@ import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
 import { CookieBanner } from '../components/CookieBanner';
 import { GoogleAnalytics } from '../components/GoogleAnalytics';
-import '../global.css';
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
@@ -89,14 +88,10 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-          <CookieBanner />
-          <GoogleAnalytics />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      {children}
+      <CookieBanner />
+      <GoogleAnalytics />
+    </NextIntlClientProvider>
   );
 }
