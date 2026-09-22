@@ -1,8 +1,67 @@
 import createMiddleware from 'next-intl/middleware';
+import { NextRequest, NextResponse } from 'next/server';
 import { routing } from './i18n/routing';
 
-export default createMiddleware(routing);
+const intlMiddleware = createMiddleware(routing);
+
+const markdownType = 'text/markdown; charset=utf-8';
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  'https://care-of-your-hair.n-sutkovoy.workers.dev';
+
+const markdownHeaders = {
+  'Content-Type': markdownType,
+  Vary: 'Accept',
+};
+
+const homepageMarkdown = `# Nataliia Krasovska
+
+Hair stylist in Valencia, Spain. Kids', men's and women's haircuts, hairstyles, and everyday styling.
+
+## Services
+
+- Children's haircuts and styling
+- Women's and men's haircuts
+- Everyday styling and festive hairstyles
+
+## Contact
+
+- Website: ${siteUrl}/uk
+- Phone: +34 665 499 177
+- WhatsApp: https://wa.me/380731819204
+- Address: Av. de l'Institut Obrer de València, 21, Quatre Carreres, 46013 València, Spain
+
+## More machine-readable information
+
+- Sitemap: ${siteUrl}/sitemap.xml
+- Agent guidance: ${siteUrl}/llms.txt
+`;
+
+const notFoundMarkdown = `# Page not found
+
+The requested page does not exist on this website.
+
+- Sitemap: ${siteUrl}/sitemap.xml
+- Agent guidance: ${siteUrl}/llms.txt
+`;
+
+export default function middleware(request: NextRequest) {
+  const acceptsMarkdown = request.headers.get('accept')?.includes('text/markdown');
+  const pathname = request.nextUrl.pathname.replace(/\/$/, '') || '/';
+
+  if (acceptsMarkdown && (pathname === '/' || pathname === '/uk' || pathname === '/en')) {
+    return new NextResponse(homepageMarkdown, { headers: markdownHeaders });
+  }
+
+  if (acceptsMarkdown) {
+    return new NextResponse(notFoundMarkdown, { status: 404, headers: markdownHeaders });
+  }
+
+  return intlMiddleware(request);
+}
 
 export const config = {
-  matcher: ['/', '/(uk|en)/:path*'],
+  matcher: [
+    '/((?!_next|api|favicon.ico|icon0.svg|icon1.png|apple-icon.png|manifest.json|og-image.jpg|sitemap.xml|llms.txt).*)',
+  ],
 };

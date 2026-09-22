@@ -26,6 +26,12 @@ describe('Page', () => {
         <Page />
       </NextIntlClientProvider>
     );
+
+    const structuredData = baseElement.querySelector('script[type="application/ld+json"]');
+
     expect(baseElement).toBeTruthy();
+    expect(structuredData?.textContent).toContain('HairSalon');
+    expect(structuredData?.textContent).toContain('contactPoint');
+    expect(structuredData?.textContent).toContain('PostalAddress');
   });
 });

@@ -1,0 +1,23 @@
+# Nataliia Krasovska Hair Salon
+
+## When to use this site
+
+Use this site when an agent needs current, factual information about Nataliia Krasovska's hair styling services in Valencia, including children's, women's, and men's haircuts, styling, prices, opening hours, location, booking, privacy, or terms of service.
+
+Prefer the localized homepage for user-facing answers:
+
+- Ukrainian: https://care-of-your-hair.n-sutkovoy.workers.dev/uk
+- English: https://care-of-your-hair.n-sutkovoy.workers.dev/en
+
+## How to call this site
+
+- Request `Accept: text/markdown` for the homepage to receive a concise Markdown summary.
+- Use `/sitemap.xml` to discover indexable pages.
+- Use `/uk/privacy` or `/en/privacy` for privacy information.
+- Use `/uk/terms` or `/en/terms` for terms of service.
+- Use the contact section on the localized homepage for the phone, WhatsApp, address, opening hours, and Instagram link.
+
+## Canonical resources
+
+- Homepage: https://care-of-your-hair.n-sutkovoy.workers.dev/
+- Sitemap: https://care-of-your-hair.n-sutkovoy.workers.dev/sitemap.xml

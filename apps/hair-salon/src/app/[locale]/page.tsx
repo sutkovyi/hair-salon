@@ -32,8 +32,38 @@ export default function Home() {
     setSent(true);
   };
 
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    'https://care-of-your-hair.n-sutkovoy.workers.dev';
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': ['HairSalon', 'Organization'],
+    name: 'Nataliia Krasovska',
+    description:
+      'Hair stylist in Valencia offering children\'s, women\'s, and men\'s haircuts, hairstyles, and everyday styling.',
+    url: `${siteUrl}/${locale}`,
+    telephone: '+34 665 499 177',
+    email: 'care.of.your.hair8@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: "Av. de l'Institut Obrer de València, 21",
+      addressLocality: 'València',
+      postalCode: '46013',
+      addressCountry: 'ES',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+34 665 499 177',
+      email: 'care.of.your.hair8@gmail.com',
+      contactType: 'customer service',
+      availableLanguage: ['uk', 'en', 'es'],
+    },
+    sameAs: ['https://www.instagram.com/care.of.your.hair8'],
+  };
+
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#2b2d42]">
+      <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       <Header onBook={openBooking} />
       <Hero onBook={openBooking} />
       <ServicesSection />
