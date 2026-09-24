@@ -5,6 +5,7 @@ import { usePathname, useRouter } from '@/i18n/routing';
 import { siteConfig } from '@/config/site';
 import { trackEvent } from '../../lib/gtag';
 import { DevelopmentNotice } from './DevelopmentNotice';
+import { button, languageOption } from '../ui-variants';
 
 type HeaderProps = {
   onBook?: (location?: string) => void;
@@ -62,17 +63,13 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
           <div className="flex rounded-full border border-[#e0e0e0] p-0.5 text-[10px] sm:p-1 sm:text-xs">
             <button
               onClick={() => handleLanguageChange('uk')}
-              className={`rounded-full px-2.5 py-1 ${
-                locale === 'uk' ? 'bg-[#2b2d42] text-white' : ''
-              }`}
+              className={languageOption({ size: 'uk', active: locale === 'uk' })}
             >
               UA
             </button>
             <button
               onClick={() => handleLanguageChange('en')}
-              className={`rounded-full px-2 py-1 sm:px-2.5 ${
-                locale === 'en' ? 'bg-[#2b2d42] text-white' : ''
-              }`}
+              className={languageOption({ size: 'en', active: locale === 'en' })}
             >
               EN
             </button>
@@ -80,7 +77,7 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
           {siteConfig.booking.enabled && (
             <button
               onClick={() => onBook('header')}
-              className="rounded-full bg-[#d4a373] px-2.5 py-1.5 text-[9px] font-semibold uppercase tracking-tight text-white transition hover:bg-[#bc8a5f] xs:text-[10px] sm:px-3.5 sm:py-2 sm:text-xs sm:tracking-[0.08em]"
+              className={button({ size: 'header' })}
             >
               {t('book')}
             </button>

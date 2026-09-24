@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { siteConfig } from '@/config/site';
+import { button } from '../ui-variants';
 
 export function Hero({ onBook }: { onBook: (location?: string) => void }) {
   const t = useTranslations();
@@ -37,7 +38,7 @@ export function Hero({ onBook }: { onBook: (location?: string) => void }) {
         {siteConfig.booking.enabled && (
           <button
             onClick={() => onBook('hero')}
-            className="mt-9 rounded-full bg-[#d4a373] px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] transition hover:-translate-y-1 hover:bg-[#bc8a5f]"
+            className={`${button({ size: 'hero' })} mt-9`}
           >
             {t('book')} <span className="ml-2">↗</span>
           </button>

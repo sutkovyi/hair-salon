@@ -3,6 +3,7 @@
 import Cal, { getCalApi } from '@calcom/embed-react';
 import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
+import { bookingModal } from '../ui-variants';
 
 type BookingModalProps = {
   isOpen: boolean;
@@ -23,14 +24,12 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#2b2d42]/60 px-4 py-2 sm:px-6 sm:py-3 transition-opacity duration-200 ${
-        isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-      }`}
+      className={bookingModal({ open: isOpen }).backdrop()}
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}
     >
-      <div className="relative flex flex-col w-full max-w-4xl h-[90vh] max-h-[780px] bg-white px-5 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-2xl overflow-hidden">
+      <div className={bookingModal().panel()}>
         <div className="flex items-center justify-between pb-2 mb-2">
           <div>
             <h2 className="font-serif text-xl sm:text-2xl text-[#2b2d42]">
@@ -40,7 +39,7 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
           <button
             aria-label={t('close')}
             onClick={onClose}
-            className="text-2xl text-[#6c757d] hover:text-[#2b2d42] transition-colors p-1 leading-none"
+            className={bookingModal().close()}
           >
             ×
           </button>

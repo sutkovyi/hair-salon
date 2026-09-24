@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { getCookieConsent, setCookieConsent } from '../../lib/cookie-consent';
+import { button } from '../ui-variants';
 
 export function CookieBanner() {
   const t = useTranslations('cookies');
@@ -34,7 +35,7 @@ export function CookieBanner() {
         <button
           type="button"
           onClick={accept}
-          className="shrink-0 rounded-full bg-[#d4a373] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#bc8a5f]"
+          className={`${button({ size: 'cookie' })} shrink-0`}
         >
           {t('accept')}
         </button>
