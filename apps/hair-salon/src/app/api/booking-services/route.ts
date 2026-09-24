@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
+import {
+  BOOKING_SERVICES_CACHE_KEY,
+  BOOKING_SERVICES_CACHE_TTL_SECONDS,
+} from '../../lib/booking-services';
 
-const CACHE_KEY = 'booking-services:v1';
-const CACHE_TTL_SECONDS = 300;
 
 type CalEventType = {
   id: number;
@@ -54,7 +56,7 @@ export async function GET() {
   const cache = getCache();
 
   try {
-    const cached = await cache?.get(CACHE_KEY);
+    const cached = await cache?.get(BOOKING_SERVICES_CACHE_KEY);
     if (cached) {
       return NextResponse.json(JSON.parse(cached), {
         headers: {
@@ -103,8 +105,8 @@ export async function GET() {
     .map(({ index: _index, ...service }) => service);
 
   try {
-    await cache?.put(CACHE_KEY, JSON.stringify(services), {
-      expirationTtl: CACHE_TTL_SECONDS,
+    await cache?.put(BOOKING_SERVICES_CACHE_KEY, JSON.stringify(services), {
+      expirationTtl: BOOKING_SERVICES_CACHE_TTL_SECONDS,
     });
   } catch {
     // A KV write failure must not prevent the catalog from loading.
