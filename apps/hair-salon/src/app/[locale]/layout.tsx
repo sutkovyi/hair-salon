@@ -30,6 +30,10 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(siteUrl),
     manifest: '/manifest.json',
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: 'default',
+    },
     icons: {
       icon: [
         { url: '/favicon.ico', sizes: 'any' },

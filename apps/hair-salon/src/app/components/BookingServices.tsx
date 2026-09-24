@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { siteConfig } from '@/config/site';
 import type { BookingService } from '@/app/lib/booking-services';
+import { trackEvent } from '../../lib/gtag';
 
 const categoryOrder: BookingService['category'][] = [
   'childHaircuts',
@@ -92,6 +93,15 @@ export function BookingServices({
                     <a
                       key={service.id}
                       href={service.bookingUrl}
+                      onClick={(event) => {
+                        trackEvent('booking_service_click', {
+                          event_category: 'booking',
+                          event_label: service.title,
+                          booking_service_id: service.id,
+                          booking_service_category: category,
+                          transport_type: 'beacon',
+                        });
+                      }}
                       className="group flex items-center justify-between gap-4 rounded-xl border border-[#eadfd2] bg-white px-5 py-4 text-[#2b2d42] transition hover:-translate-y-0.5 hover:border-[#d4a373] hover:shadow-md"
                     >
                       <span className="min-w-0">

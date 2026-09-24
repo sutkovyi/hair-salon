@@ -17,3 +17,4 @@ export const trackEvent = (action: string, params?: EventParams) => {
     window.gtag('event', action, params);
   }
 };
+
