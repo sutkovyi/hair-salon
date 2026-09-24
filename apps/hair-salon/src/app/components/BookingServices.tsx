@@ -9,7 +9,15 @@ type BookingService = {
   title: string;
   lengthInMinutes: number;
   bookingUrl: string;
+  category: 'childHaircuts' | 'childStyling' | 'haircuts' | 'styling';
 };
+
+const categoryOrder: BookingService['category'][] = [
+  'childHaircuts',
+  'childStyling',
+  'haircuts',
+  'styling',
+];
 
 type BookingServicesProps = {
   compact?: boolean;
@@ -70,24 +78,39 @@ export function BookingServices({ compact = false, active = true }: BookingServi
       {loading && <p className="py-10 text-center text-[#6c757d]">{t('loading')}</p>}
       {error && <p className="py-10 text-center text-[#bc8a5f]">{t('error')}</p>}
       {!loading && !error && (
-        <div className={compact ? 'grid gap-3 pb-4' : 'grid gap-4 sm:grid-cols-2'}>
-          {services.map((service) => (
-            <a
-              key={service.id}
-              href={service.bookingUrl}
-              className="group flex items-center justify-between gap-4 rounded-xl border border-[#eadfd2] bg-white px-5 py-4 text-[#2b2d42] transition hover:-translate-y-0.5 hover:border-[#d4a373] hover:shadow-md"
-            >
-              <span className="min-w-0">
-                <span className="block font-medium leading-6">{service.title}</span>
-                <span className="mt-1 block text-xs uppercase tracking-[0.12em] text-[#8b929a]">
-                  {service.lengthInMinutes} {t('minutes')}
-                </span>
-              </span>
-              <span className="shrink-0 text-lg text-[#bc8a5f] transition-transform group-hover:translate-x-1">
-                ↗
-              </span>
-            </a>
-          ))}
+        <div className="space-y-8 pb-4">
+          {categoryOrder.map((category) => {
+            const categoryServices = services.filter((service) => service.category === category);
+
+            if (categoryServices.length === 0) return null;
+
+            return (
+              <section key={category}>
+                <h2 className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#bc8a5f]">
+                  {t(`categories.${category}`)}
+                </h2>
+                <div className={compact ? 'grid gap-3' : 'grid gap-4 sm:grid-cols-2'}>
+                  {categoryServices.map((service) => (
+                    <a
+                      key={service.id}
+                      href={service.bookingUrl}
+                      className="group flex items-center justify-between gap-4 rounded-xl border border-[#eadfd2] bg-white px-5 py-4 text-[#2b2d42] transition hover:-translate-y-0.5 hover:border-[#d4a373] hover:shadow-md"
+                    >
+                      <span className="min-w-0">
+                        <span className="block font-medium leading-6">{service.title}</span>
+                        <span className="mt-1 block text-xs uppercase tracking-[0.12em] text-[#8b929a]">
+                          {service.lengthInMinutes} {t('minutes')}
+                        </span>
+                      </span>
+                      <span className="shrink-0 text-lg text-[#bc8a5f] transition-transform group-hover:translate-x-1">
+                        ↗
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
         </div>
       )}
     </section>

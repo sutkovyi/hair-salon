@@ -8,7 +8,29 @@ type CalEventType = {
   title: string;
   lengthInMinutes: number;
   bookingUrl: string;
+  description: string;
 };
+
+type ServiceCategory = 'childHaircuts' | 'childStyling' | 'haircuts' | 'styling';
+
+const CATEGORY_ORDER: ServiceCategory[] = [
+  'childHaircuts',
+  'childStyling',
+  'haircuts',
+  'styling',
+];
+
+function getCategory(description: string): ServiceCategory | undefined {
+  const category = description.split('»')[0]?.trim();
+  const categories: Record<string, ServiceCategory> = {
+    'Дитячі стрижки': 'childHaircuts',
+    'Дитячі укладки': 'childStyling',
+    'Стрижки': 'haircuts',
+    'Укладання': 'styling',
+  };
+
+  return categories[category];
+}
 
 type CacheBinding = {
   get(key: string): Promise<string | null>;
@@ -61,12 +83,24 @@ export async function GET() {
   }
 
   const payload = (await response.json()) as { data?: CalEventType[] };
-  const services = (payload.data ?? []).map(({ id, title, lengthInMinutes, bookingUrl }) => ({
-    id,
-    title,
-    lengthInMinutes,
-    bookingUrl,
-  }));
+  const services = (payload.data ?? [])
+    .map(({ id, title, lengthInMinutes, bookingUrl, description }, index) => ({
+      id,
+      title,
+      lengthInMinutes,
+      bookingUrl,
+      category: getCategory(description),
+      index,
+    }))
+    .filter((service): service is typeof service & { category: ServiceCategory } =>
+      service.category !== undefined
+    )
+    .sort(
+      (first, second) =>
+        CATEGORY_ORDER.indexOf(first.category) - CATEGORY_ORDER.indexOf(second.category) ||
+        first.index - second.index
+    )
+    .map(({ index: _index, ...service }) => service);
 
   try {
     await cache?.put(CACHE_KEY, JSON.stringify(services), {

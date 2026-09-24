@@ -16,7 +16,13 @@
     "intro": "Choose a service to continue to available dates and times in Cal.com.",
     "loading": "Loading services...",
     "error": "We could not load the services. Please try again.",
-    "minutes": "min"
+    "minutes": "min",
+    "categories": {
+      "childHaircuts": "Children's haircuts",
+      "childStyling": "Children's styling",
+      "haircuts": "Haircuts",
+      "styling": "Styling"
+    }
   },
   "bookingSuccess": {
     "eyebrow": "Booking confirmed",
