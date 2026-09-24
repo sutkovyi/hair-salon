@@ -1,0 +1,374 @@
+- generic:
+  - main:
+    - generic [aria-hidden]:
+      - generic: Сайт у розробці. Онлайн-запис тимчасово недоступний.
+      - generic:
+        - link:
+          - /url: "#top"
+          - generic: Наталія Красовська.
+          - generic: Стиліст по волоссю · Чоловічі, жіночі, дитячі стрижки
+        - navigation:
+          - link:
+            - /url: "#services"
+            - text: Послуги
+          - link:
+            - /url: "#prices"
+            - text: Ціни
+          - link:
+            - /url: "#about"
+            - text: Про мене
+          - link:
+            - /url: "#contact"
+            - text: Контакти
+        - generic:
+          - generic:
+            - button: UA
+            - button: EN
+          - button: Запис онлайн
+    - generic [aria-hidden]:
+      - generic:
+        - paragraph: Стиліст по волоссю · Руссафа, Валенсія 🇪🇸
+        - heading [level=1]: Підкресліть вашу природну красу
+        - paragraph: Професійний догляд від досвідченого майстра та атмосфера релаксу в центрі міста.
+        - button: Запис онлайн ↗
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - heading [level=2]: Мої послуги
+          - paragraph: Стрижки, укладання та зачіски для всієї родини
+        - generic:
+          - article:
+            - generic: ✂
+            - heading [level=3]: Дитячі стрижки
+            - paragraph: Стрижки для хлопчиків і дівчаток, стрижка чубчика.
+          - article:
+            - generic: ✦
+            - heading [level=3]: Дитячі укладки
+            - paragraph: Плетіння, накрутка, дитячі зачіски та косички з канекалоном.
+          - article:
+            - generic: ✧
+            - heading [level=3]: Стрижки
+            - paragraph: Жіночі та чоловічі стрижки, гігієна кінчиків, креативні форми й стрижки під насадку.
+          - article:
+            - generic: ◌
+            - heading [level=3]: Укладання та зачіски
+            - paragraph: Повсякденне укладання, вирівнювання, афронакрутка та святкові зачіски.
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - heading [level=2]: Прайс-лист
+          - paragraph: Популярні процедури та вартість
+        - generic:
+          - generic:
+            - heading [level=3]: Дитячі стрижки
+            - generic:
+              - generic:
+                - generic: Стрижка хлопчика
+                - generic: 25€
+              - generic:
+                - generic: Стрижка дівчинки (до лопаток)
+                - generic: 25€
+              - generic:
+                - generic: Стрижка дівчинки (нижче лопаток)
+                - generic: 30€
+              - generic:
+                - generic: Стрижка чубчика
+                - generic: 15€
+          - generic:
+            - heading [level=3]: Дитячі укладки
+            - generic:
+              - generic:
+                - generic: Накрутка на плойку (до лопаток)
+                - generic: 20€
+              - generic:
+                - generic: Накрутка на плойку (нижче лопаток)
+                - generic: 30€
+              - generic:
+                - generic: Плетіння
+                - generic: 20-30€
+              - generic:
+                - generic: Зачіска дитяча
+                - generic: 40-50€
+              - generic:
+                - generic: Косичка без конеколона (з кільцями або прикрасами)
+                - generic: 5€
+              - generic:
+                - generic: Косичка з конеколоном
+                - generic: 5€
+              - generic:
+                - generic: Косичка з конеколоном (з кільцями)
+                - generic: 8€
+              - generic:
+                - generic: Косичка з конеколоном (з прикрасами)
+                - generic: 10€
+          - generic:
+            - heading [level=3]: Стрижки
+            - generic:
+              - generic:
+                - generic: Стрижка жіноча (гігієна кінчиків)
+                - generic: 40€
+              - generic:
+                - generic: Стрижка жіноча
+                - generic: 50€
+              - generic:
+                - generic: Стрижка чубчика
+                - generic: 20€
+              - generic:
+                - generic: Стрижка чоловіча
+                - generic: 25€
+              - generic:
+                - generic: Стрижка чоловіча (креативна)
+                - generic: 30€
+              - generic:
+                - generic: Стрижка чоловіча (під насадку)
+                - generic: 20€
+          - generic:
+            - heading [level=3]: Укладання
+            - generic:
+              - generic:
+                - generic: Повсякденна укладка на браш (до лопаток)
+                - generic: 20-30€
+              - generic:
+                - generic: Повсякденна укладка на браш (нижче лопаток)
+                - generic: 30-40€
+              - generic:
+                - generic: Вирівнювання волосся (випрямляч)
+                - generic: 10-20€
+              - generic:
+                - generic: Вирівнювання волосся (випрямляч з миттям)
+                - generic: 15-25€
+              - generic:
+                - generic: Афро накрутка (до лопаток)
+                - generic: 50-60€
+              - generic:
+                - generic: Афро накрутка (нижче лопаток)
+                - generic: 60-70€
+              - generic:
+                - generic: Зачіска (до лопаток)
+                - generic: 65€
+              - generic:
+                - generic: Зачіска (нижче лопаток)
+                - generic: 75-80€
+              - generic:
+                - generic: Миття голови
+                - generic: 10€
+    - generic [aria-hidden]:
+      - generic:
+        - heading [level=2]: Про мене
+        - paragraph: Мене звати Наталія. Я працюю у сфері краси вже 10 років, і понад 3 роки з них присвятила саме дитячій перукарській справі. Для мене важливо не просто зробити гарну зачіску, а створити для дитини комфортну та безпечну атмосферу.
+        - generic:
+          - paragraph: "Окрім дитячих стрижок, ви можете довірити мені й свій образ:"
+          - list:
+            - listitem: Чоловічі стрижки
+            - listitem: Жіночі стрижки
+            - listitem: Повсякденні укладання
+            - listitem: Святкові зачіски для особливих подій
+        - paragraph: Зручно, коли весь родинний догляд за волоссям можна довірити одному перевіреному майстру у Валенсії!
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - heading [level=2]: Завітайте до нас
+          - paragraph: Чекаємо на вас щодня
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=3]: Адреса
+              - paragraph:
+                - link:
+                  - /url: https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic
+                  - text: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸
+            - generic:
+              - heading [level=3]: Телефон
+              - paragraph:
+                - link:
+                  - /url: tel:+34665499177
+                  - text: +34 665 499 177
+            - generic:
+              - heading [level=3]: WhatsApp
+              - paragraph:
+                - link:
+                  - /url: https://wa.me/380731819204
+                  - text: +380 73 181 92 04
+            - generic:
+              - heading [level=3]: Графік роботи
+              - paragraph: "Пн–Нд: 09:00 — 21:00"
+            - generic:
+              - heading [level=3]: Instagram
+              - paragraph:
+                - link:
+                  - /url: https://www.instagram.com/care.of.your.hair8
+                  - text: "@care.of.your.hair8"
+          - iframe [ref=e233]
+    - generic [aria-hidden]:
+      - link:
+        - /url: https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic
+        - text: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸
+      - paragraph: © 2026. Усі права захищено.
+  - button "Open Next.js Dev Tools" [ref=e229] [cursor=pointer]
+  - alert
+  - dialog [ref=e235]:
+    - heading "Оберіть послугу" [level=2] [ref=e237]
+    - generic [ref=e239]:
+      - link "Косичка з конеколоном - 5€ 20 хв ↗" [ref=e240] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/kosychka-z-konekolonom
+        - generic [ref=e241]:
+          - generic [ref=e242]: Косичка з конеколоном - 5€
+          - generic [ref=e243]: 20 хв
+        - generic [ref=e244]: ↗
+      - link "Косичка з конеколоном та прикрасами - 10€ 30 хв ↗" [ref=e245] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/kosychka-z-konekolonom-ta-prykrasamy
+        - generic [ref=e246]:
+          - generic [ref=e247]: Косичка з конеколоном та прикрасами - 10€
+          - generic [ref=e248]: 30 хв
+        - generic [ref=e249]: ↗
+      - link "Стрижка дівчинки (нижче лопаток) - 30€ 90 хв ↗" [ref=e250] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-divchynky-nyzhche-lopatok
+        - generic [ref=e251]:
+          - generic [ref=e252]: Стрижка дівчинки (нижче лопаток) - 30€
+          - generic [ref=e253]: 90 хв
+        - generic [ref=e254]: ↗
+      - link "Стрижка чубчика - 20€ 20 хв ↗" [ref=e255] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-chubchyka-zhinocha
+        - generic [ref=e256]:
+          - generic [ref=e257]: Стрижка чубчика - 20€
+          - generic [ref=e258]: 20 хв
+        - generic [ref=e259]: ↗
+      - link "Миття голови (без укладання) - 10€ 40 хв ↗" [ref=e260] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/myttya-holovy-bez-ukladannya
+        - generic [ref=e261]:
+          - generic [ref=e262]: Миття голови (без укладання) - 10€
+          - generic [ref=e263]: 40 хв
+        - generic [ref=e264]: ↗
+      - link "Афро накрутка (нижче лопаток) - 60-70€ 150 хв ↗" [ref=e265] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/afro-nakrutka-nyzhche-lopatok
+        - generic [ref=e266]:
+          - generic [ref=e267]: Афро накрутка (нижче лопаток) - 60-70€
+          - generic [ref=e268]: 150 хв
+        - generic [ref=e269]: ↗
+      - link "Накрутка на плойку (нижче лопаток) - 30€ 90 хв ↗" [ref=e270] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/nakrutka-na-ployku-nyzhche-lopatok
+        - generic [ref=e271]:
+          - generic [ref=e272]: Накрутка на плойку (нижче лопаток) - 30€
+          - generic [ref=e273]: 90 хв
+        - generic [ref=e274]: ↗
+      - link "Зачіска дитяча - 40-50€ 90 хв ↗" [ref=e275] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/zachiska-dytyacha
+        - generic [ref=e276]:
+          - generic [ref=e277]: Зачіска дитяча - 40-50€
+          - generic [ref=e278]: 90 хв
+        - generic [ref=e279]: ↗
+      - link "Зачіска (до лопаток) - 65€ 90 хв ↗" [ref=e280] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/zachiska-do-lopatok
+        - generic [ref=e281]:
+          - generic [ref=e282]: Зачіска (до лопаток) - 65€
+          - generic [ref=e283]: 90 хв
+        - generic [ref=e284]: ↗
+      - link "Повсякденна укладка на браш (нижче лопаток) - 30-40€ 100 хв ↗" [ref=e285] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/povsyakdenna-ukladka-na-brash-nyzhche-lopatok
+        - generic [ref=e286]:
+          - generic [ref=e287]: Повсякденна укладка на браш (нижче лопаток) - 30-40€
+          - generic [ref=e288]: 100 хв
+        - generic [ref=e289]: ↗
+      - link "Зачіска (нижче лопаток) - 75-80€ 120 хв ↗" [ref=e290] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/zachiska-nyzhche-lopatok
+        - generic [ref=e291]:
+          - generic [ref=e292]: Зачіска (нижче лопаток) - 75-80€
+          - generic [ref=e293]: 120 хв
+        - generic [ref=e294]: ↗
+      - link "Вирівнювання волосся (випрямляч + миття) - 15-25€ 60 хв ↗" [ref=e295] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/vyryvnyuvannya-volossya-vypryamlyach-myttya
+        - generic [ref=e296]:
+          - generic [ref=e297]: Вирівнювання волосся (випрямляч + миття) - 15-25€
+          - generic [ref=e298]: 60 хв
+        - generic [ref=e299]: ↗
+      - link "Стрижка чубчика - 15€ 20 хв ↗" [ref=e300] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-chubchyka-dytyacha
+        - generic [ref=e301]:
+          - generic [ref=e302]: Стрижка чубчика - 15€
+          - generic [ref=e303]: 20 хв
+        - generic [ref=e304]: ↗
+      - link "Стрижка жіноча (гігієна кінчиків) - 40€ 90 хв ↗" [ref=e305] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-zhinocha-hihiyena-kinchykiv
+        - generic [ref=e306]:
+          - generic [ref=e307]: Стрижка жіноча (гігієна кінчиків) - 40€
+          - generic [ref=e308]: 90 хв
+        - generic [ref=e309]: ↗
+      - link "Накрутка на плойку (до лопаток) - 20€ 60 хв ↗" [ref=e310] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/nakrutka-na-ployku-do-lopatok
+        - generic [ref=e311]:
+          - generic [ref=e312]: Накрутка на плойку (до лопаток) - 20€
+          - generic [ref=e313]: 60 хв
+        - generic [ref=e314]: ↗
+      - link "Плетіння - 20-30€ 80 хв ↗" [ref=e315] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/pletinnya
+        - generic [ref=e316]:
+          - generic [ref=e317]: Плетіння - 20-30€
+          - generic [ref=e318]: 80 хв
+        - generic [ref=e319]: ↗
+      - link "Косичка без конеколона (з кільцями або прикрасами) - 5€ 15 хв ↗" [ref=e320] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/kosychka-bez-konekolona
+        - generic [ref=e321]:
+          - generic [ref=e322]: Косичка без конеколона (з кільцями або прикрасами) - 5€
+          - generic [ref=e323]: 15 хв
+        - generic [ref=e324]: ↗
+      - link "Косичка з конеколоном (з кільцями) - 8€ 20 хв ↗" [ref=e325] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/kosychka-z-konekolonom-z-kiltsyamy
+        - generic [ref=e326]:
+          - generic [ref=e327]: Косичка з конеколоном (з кільцями) - 8€
+          - generic [ref=e328]: 20 хв
+        - generic [ref=e329]: ↗
+      - link "Стрижка жіноча - 50€ 120 хв ↗" [ref=e330] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-zhinocha
+        - generic [ref=e331]:
+          - generic [ref=e332]: Стрижка жіноча - 50€
+          - generic [ref=e333]: 120 хв
+        - generic [ref=e334]: ↗
+      - link "Стрижка чоловіча - 25€ 40 хв ↗" [ref=e335] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-cholovicha
+        - generic [ref=e336]:
+          - generic [ref=e337]: Стрижка чоловіча - 25€
+          - generic [ref=e338]: 40 хв
+        - generic [ref=e339]: ↗
+      - link "Стрижка чоловіча (креативна) - 30€ 60 хв ↗" [ref=e340] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-cholovicha-kreatyvna
+        - generic [ref=e341]:
+          - generic [ref=e342]: Стрижка чоловіча (креативна) - 30€
+          - generic [ref=e343]: 60 хв
+        - generic [ref=e344]: ↗
+      - link "Стрижка чоловіча (під насадку) - 20€ 30 хв ↗" [ref=e345] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-cholovicha-pid-nasadku
+        - generic [ref=e346]:
+          - generic [ref=e347]: Стрижка чоловіча (під насадку) - 20€
+          - generic [ref=e348]: 30 хв
+        - generic [ref=e349]: ↗
+      - link "Повсякденна укладка на браш (до лопаток) - 20-30€ 80 хв ↗" [ref=e350] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/povsyakdenna-ukladka-na-brash-do-lopatok
+        - generic [ref=e351]:
+          - generic [ref=e352]: Повсякденна укладка на браш (до лопаток) - 20-30€
+          - generic [ref=e353]: 80 хв
+        - generic [ref=e354]: ↗
+      - link "Вирівнювання волосся (випрямляч) - 10-20€ 30 хв ↗" [ref=e355] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/vyryvnyuvannya-volossya-vypryamlyach
+        - generic [ref=e356]:
+          - generic [ref=e357]: Вирівнювання волосся (випрямляч) - 10-20€
+          - generic [ref=e358]: 30 хв
+        - generic [ref=e359]: ↗
+      - link "Афро накрутка (до лопаток) - 50-60€ 120 хв ↗" [ref=e360] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/afro-nakrutka-do-lopatok
+        - generic [ref=e361]:
+          - generic [ref=e362]: Афро накрутка (до лопаток) - 50-60€
+          - generic [ref=e363]: 120 хв
+        - generic [ref=e364]: ↗
+      - link "Стрижка хлопчика - 25€ 60 хв ↗" [ref=e365] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-hlopchika
+        - generic [ref=e366]:
+          - generic [ref=e367]: Стрижка хлопчика - 25€
+          - generic [ref=e368]: 60 хв
+        - generic [ref=e369]: ↗
+      - link "Стрижка дівчинки (до лопаток) - 25€ 80 хв ↗" [ref=e370] [cursor=pointer]:
+        - /url: https://cal.com/krasovska/strizhka-divchynky-do-lopatok
+        - generic [ref=e371]:
+          - generic [ref=e372]: Стрижка дівчинки (до лопаток) - 25€
+          - generic [ref=e373]: 80 хв
+        - generic [ref=e374]: ↗
+    - button "Close" [active] [ref=e375]

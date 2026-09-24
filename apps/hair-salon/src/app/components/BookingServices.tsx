@@ -48,7 +48,13 @@ export function BookingServices({ compact = false, active = true }: BookingServi
   }, [active]);
 
   return (
-    <section className={compact ? 'min-h-0 flex-1 overflow-y-auto' : 'mx-auto max-w-5xl'}>
+    <section
+      className={
+        compact
+          ? 'min-h-0 flex-1 overflow-y-auto px-0.5 pt-1'
+          : 'mx-auto max-w-5xl'
+      }
+    >
       {!compact && (
         <div className="mb-10 max-w-2xl">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.22em] text-[#bc8a5f]">
