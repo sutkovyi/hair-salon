@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const button = tv({
-  base: 'rounded-full font-semibold uppercase text-white transition',
+  base: 'cursor-pointer rounded-full font-semibold uppercase text-white transition',
   variants: {
     intent: {
       primary: 'bg-[#d4a373] hover:bg-[#bc8a5f]',
@@ -19,7 +19,7 @@ export const button = tv({
 });
 
 export const languageOption = tv({
-  base: 'rounded-full',
+  base: 'cursor-pointer rounded-full',
   variants: {
     active: {
       true: 'bg-[#2b2d42] text-white',
@@ -38,7 +38,8 @@ export const bookingModal = tv({
       'fixed inset-0 z-[9999] flex items-center justify-center bg-[#2b2d42]/60 px-4 py-2 transition-opacity duration-200 sm:px-6 sm:py-3',
     panel:
       'relative flex h-[90vh] max-h-[780px] w-full max-w-4xl flex-col overflow-hidden rounded-2xl bg-white px-5 py-3 shadow-2xl sm:px-8 sm:py-4',
-    close: 'p-1 text-2xl leading-none text-[#6c757d] transition-colors hover:text-[#2b2d42]',
+    close:
+      'cursor-pointer p-1 text-2xl leading-none text-[#6c757d] transition-colors hover:text-[#2b2d42]',
   },
   variants: {
     open: {
