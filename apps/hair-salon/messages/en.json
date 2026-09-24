@@ -33,7 +33,7 @@
     "backHome": "Back to home"
   },
   "developmentNotice": "The website is under development. Online booking is temporarily unavailable.",
-  "eyebrow": "Hair stylist · Russafa, Valencia 🇪🇸",
+  "eyebrow": "Hair stylist · Quatre Carreres, Valencia 🇪🇸",
   "title": "Reveal your natural beauty",
   "intro": "Professional care from an experienced stylist and a relaxing atmosphere in the heart of the city.",
   "servicesTitle": "My services",
@@ -205,7 +205,6 @@
   "visitTitle": "Come visit us",
   "visitIntro": "We are here for you every day",
   "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸",
-  "hours": "Mon–Sun: 09:00 — 21:00",
   "name": "Your name",
   "phone": "Phone number",
   "service": "Choose a service",
@@ -215,7 +214,6 @@
   "close": "Close",
   "addressLabel": "Address",
   "phoneLabel": "Phone",
-  "hoursLabel": "Opening hours",
   "copyright": "All rights reserved.",
   "cookies": {
     "title": "Your privacy matters",

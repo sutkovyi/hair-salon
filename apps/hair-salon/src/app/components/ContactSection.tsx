@@ -40,7 +40,6 @@ export function ContactSection() {
               href="https://wa.me/380731819204"
               showExternalIcon={false}
             />
-            <Info label={t('hoursLabel')} value={t('hours')} />
             <Info
               label="Instagram"
               value="@care.of.your.hair8"
