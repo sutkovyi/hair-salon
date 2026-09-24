@@ -1,0 +1,188 @@
+- generic [active] [ref=f3e1]:
+  - main [ref=f3e2]:
+    - generic [ref=f3e4]:
+      - link "Наталія Красовська. Стиліст по волоссю · Чоловічі, жіночі, дитячі стрижки" [ref=f3e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f3e6]: Наталія Красовська.
+        - generic [ref=f3e7]: Стиліст по волоссю · Чоловічі, жіночі, дитячі стрижки
+      - navigation [ref=f3e8]:
+        - link "Послуги" [ref=f3e9] [cursor=pointer]:
+          - /url: "#services"
+        - link "Ціни" [ref=f3e10] [cursor=pointer]:
+          - /url: "#prices"
+        - link "Про мене" [ref=f3e11] [cursor=pointer]:
+          - /url: "#about"
+        - link "Контакти" [ref=f3e12] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=f3e13]:
+        - generic [ref=f3e14]:
+          - button "UA" [ref=f3e15] [cursor=pointer]
+          - button "EN" [ref=f3e16] [cursor=pointer]
+        - button "Запис онлайн" [ref=f3e17] [cursor=pointer]
+    - generic [ref=f3e22]:
+      - paragraph [ref=f3e23]: Стиліст по волоссю · Кватре Карререс, Валенсія 🇪🇸
+      - heading "Підкресліть вашу природну красу" [level=1] [ref=f3e24]
+      - paragraph [ref=f3e25]: Професійний догляд від досвідченого майстра та атмосфера релаксу в центрі міста.
+      - button "Запис онлайн ↗" [ref=f3e26] [cursor=pointer]
+    - generic [ref=f3e28]:
+      - generic [ref=f3e29]:
+        - heading "Мої послуги" [level=2] [ref=f3e30]
+        - paragraph [ref=f3e31]: Стрижки, укладання та зачіски для всієї родини
+      - generic [ref=f3e32]:
+        - article [ref=f3e33]:
+          - generic [ref=f3e34]: ✂
+          - heading "Дитячі стрижки" [level=3] [ref=f3e35]
+          - paragraph [ref=f3e36]: Стрижки для хлопчиків і дівчаток, стрижка чубчика.
+        - article [ref=f3e37]:
+          - generic [ref=f3e38]: ✦
+          - heading "Дитячі укладки" [level=3] [ref=f3e39]
+          - paragraph [ref=f3e40]: Плетіння, накрутка, дитячі зачіски та косички з канекалоном.
+        - article [ref=f3e41]:
+          - generic [ref=f3e42]: ✧
+          - heading "Стрижки" [level=3] [ref=f3e43]
+          - paragraph [ref=f3e44]: Жіночі та чоловічі стрижки, гігієна кінчиків, креативні форми й стрижки під насадку.
+        - article [ref=f3e45]:
+          - generic [ref=f3e46]: ◌
+          - heading "Укладання та зачіски" [level=3] [ref=f3e47]
+          - paragraph [ref=f3e48]: Повсякденне укладання, вирівнювання, афронакрутка та святкові зачіски.
+    - generic [ref=f3e50]:
+      - generic [ref=f3e51]:
+        - heading "Прайс-лист" [level=2] [ref=f3e52]
+        - paragraph [ref=f3e53]: Популярні процедури та вартість
+      - generic [ref=f3e54]:
+        - generic [ref=f3e55]:
+          - heading "Дитячі стрижки" [level=3] [ref=f3e56]
+          - generic [ref=f3e57]:
+            - generic [ref=f3e58]:
+              - generic [ref=f3e59]: Стрижка хлопчика
+              - generic [ref=f3e61]: 25€
+            - generic [ref=f3e62]:
+              - generic [ref=f3e63]: Стрижка дівчинки (до лопаток)
+              - generic [ref=f3e65]: 25€
+            - generic [ref=f3e66]:
+              - generic [ref=f3e67]: Стрижка дівчинки (нижче лопаток)
+              - generic [ref=f3e69]: 30€
+            - generic [ref=f3e70]:
+              - generic [ref=f3e71]: Стрижка чубчика
+              - generic [ref=f3e73]: 15€
+        - generic [ref=f3e74]:
+          - heading "Дитячі укладки" [level=3] [ref=f3e75]
+          - generic [ref=f3e76]:
+            - generic [ref=f3e77]:
+              - generic [ref=f3e78]: Накрутка на плойку (до лопаток)
+              - generic [ref=f3e80]: 20€
+            - generic [ref=f3e81]:
+              - generic [ref=f3e82]: Накрутка на плойку (нижче лопаток)
+              - generic [ref=f3e84]: 30€
+            - generic [ref=f3e85]:
+              - generic [ref=f3e86]: Плетіння
+              - generic [ref=f3e88]: 20-30€
+            - generic [ref=f3e89]:
+              - generic [ref=f3e90]: Зачіска дитяча
+              - generic [ref=f3e92]: 40-50€
+            - generic [ref=f3e93]:
+              - generic [ref=f3e94]: Косичка без конеколона (з кільцями або прикрасами)
+              - generic [ref=f3e96]: 5€
+            - generic [ref=f3e97]:
+              - generic [ref=f3e98]: Косичка з конеколоном
+              - generic [ref=f3e100]: 5€
+            - generic [ref=f3e101]:
+              - generic [ref=f3e102]: Косичка з конеколоном (з кільцями)
+              - generic [ref=f3e104]: 8€
+            - generic [ref=f3e105]:
+              - generic [ref=f3e106]: Косичка з конеколоном (з прикрасами)
+              - generic [ref=f3e108]: 10€
+        - generic [ref=f3e109]:
+          - heading "Стрижки" [level=3] [ref=f3e110]
+          - generic [ref=f3e111]:
+            - generic [ref=f3e112]:
+              - generic [ref=f3e113]: Стрижка жіноча (гігієна кінчиків)
+              - generic [ref=f3e115]: 40€
+            - generic [ref=f3e116]:
+              - generic [ref=f3e117]: Стрижка жіноча
+              - generic [ref=f3e119]: 50€
+            - generic [ref=f3e120]:
+              - generic [ref=f3e121]: Стрижка чубчика
+              - generic [ref=f3e123]: 20€
+            - generic [ref=f3e124]:
+              - generic [ref=f3e125]: Стрижка чоловіча
+              - generic [ref=f3e127]: 25€
+            - generic [ref=f3e128]:
+              - generic [ref=f3e129]: Стрижка чоловіча (креативна)
+              - generic [ref=f3e131]: 30€
+            - generic [ref=f3e132]:
+              - generic [ref=f3e133]: Стрижка чоловіча (під насадку)
+              - generic [ref=f3e135]: 20€
+        - generic [ref=f3e136]:
+          - heading "Укладання" [level=3] [ref=f3e137]
+          - generic [ref=f3e138]:
+            - generic [ref=f3e139]:
+              - generic [ref=f3e140]: Повсякденна укладка на браш (до лопаток)
+              - generic [ref=f3e142]: 20-30€
+            - generic [ref=f3e143]:
+              - generic [ref=f3e144]: Повсякденна укладка на браш (нижче лопаток)
+              - generic [ref=f3e146]: 30-40€
+            - generic [ref=f3e147]:
+              - generic [ref=f3e148]: Вирівнювання волосся (випрямляч)
+              - generic [ref=f3e150]: 10-20€
+            - generic [ref=f3e151]:
+              - generic [ref=f3e152]: Вирівнювання волосся (випрямляч з миттям)
+              - generic [ref=f3e154]: 15-25€
+            - generic [ref=f3e155]:
+              - generic [ref=f3e156]: Афро накрутка (до лопаток)
+              - generic [ref=f3e158]: 50-60€
+            - generic [ref=f3e159]:
+              - generic [ref=f3e160]: Афро накрутка (нижче лопаток)
+              - generic [ref=f3e162]: 60-70€
+            - generic [ref=f3e163]:
+              - generic [ref=f3e164]: Зачіска (до лопаток)
+              - generic [ref=f3e166]: 65€
+            - generic [ref=f3e167]:
+              - generic [ref=f3e168]: Зачіска (нижче лопаток)
+              - generic [ref=f3e170]: 75-80€
+            - generic [ref=f3e171]:
+              - generic [ref=f3e172]: Миття голови
+              - generic [ref=f3e174]: 10€
+    - generic [ref=f3e177]:
+      - heading "Про мене" [level=2] [ref=f3e178]
+      - paragraph [ref=f3e179]: Мене звати Наталія. Я працюю у сфері краси вже 10 років, і понад 3 роки з них присвятила саме дитячій перукарській справі. Для мене важливо не просто зробити гарну зачіску, а створити для дитини комфортну та безпечну атмосферу.
+      - generic [ref=f3e180]:
+        - paragraph [ref=f3e181]: "Окрім дитячих стрижок, ви можете довірити мені й свій образ:"
+        - list [ref=f3e182]:
+          - listitem [ref=f3e183]: Чоловічі стрижки
+          - listitem [ref=f3e184]: Жіночі стрижки
+          - listitem [ref=f3e185]: Повсякденні укладання
+          - listitem [ref=f3e186]: Святкові зачіски для особливих подій
+      - paragraph [ref=f3e187]: Зручно, коли весь родинний догляд за волоссям можна довірити одному перевіреному майстру у Валенсії!
+    - generic [ref=f3e189]:
+      - generic [ref=f3e190]:
+        - heading "Завітайте до нас" [level=2] [ref=f3e191]
+        - paragraph [ref=f3e192]: Чекаємо на вас щодня
+      - generic [ref=f3e193]:
+        - generic [ref=f3e194]:
+          - generic [ref=f3e195]:
+            - heading "Адреса" [level=3] [ref=f3e196]
+            - paragraph [ref=f3e197]:
+              - link "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸" [ref=f3e198] [cursor=pointer]:
+                - /url: https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic
+          - generic [ref=f3e201]:
+            - heading "Телефон" [level=3] [ref=f3e202]
+            - paragraph [ref=f3e203]:
+              - link "+34 665 499 177" [ref=f3e204] [cursor=pointer]:
+                - /url: tel:+34665499177
+          - generic [ref=f3e205]:
+            - heading "WhatsApp" [level=3] [ref=f3e206]
+            - paragraph [ref=f3e207]:
+              - link "+380 73 181 92 04" [ref=f3e208] [cursor=pointer]:
+                - /url: https://wa.me/380731819204
+          - generic [ref=f3e209]:
+            - heading "Instagram" [level=3] [ref=f3e210]
+            - paragraph [ref=f3e211]:
+              - link "@care.of.your.hair8" [ref=f3e212] [cursor=pointer]:
+                - /url: https://www.instagram.com/care.of.your.hair8
+        - generic [ref=f3e215]: Loading map...
+    - generic [ref=f3e217]:
+      - link "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸" [ref=f3e218] [cursor=pointer]:
+        - /url: https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic
+      - paragraph [ref=f3e219]: © 2026. Усі права захищено.
+  - button "Open Next.js Dev Tools" [ref=f3e225] [cursor=pointer]

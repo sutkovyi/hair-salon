@@ -1,0 +1,184 @@
+- generic [active] [ref=f7e1]:
+  - button "Open Next.js Dev Tools" [ref=f7e215] [cursor=pointer]
+  - alert [ref=f7e219]
+  - main [ref=f7e397]:
+    - generic [ref=f7e398]:
+      - generic [ref=f7e399]:
+        - paragraph [ref=f7e400]: Онлайн-запис
+        - heading "Оберіть послугу" [level=1] [ref=f7e401]
+        - paragraph [ref=f7e402]: Оберіть послугу, щоб перейти до вільних дат і часу в Cal.com.
+      - generic [ref=f7e403]:
+        - generic [ref=f7e404]:
+          - heading "Дитячі стрижки" [level=2] [ref=f7e405]
+          - generic [ref=f7e406]:
+            - link "Стрижка дівчинки (нижче лопаток) - 30€ 90 хв ↗" [ref=f7e407] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-divchynky-nyzhche-lopatok
+              - generic [ref=f7e408]:
+                - generic [ref=f7e409]: Стрижка дівчинки (нижче лопаток) - 30€
+                - generic [ref=f7e410]: 90 хв
+              - generic [ref=f7e411]: ↗
+            - link "Стрижка хлопчика - 25€ 60 хв ↗" [ref=f7e412] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-hlopchika
+              - generic [ref=f7e413]:
+                - generic [ref=f7e414]: Стрижка хлопчика - 25€
+                - generic [ref=f7e415]: 60 хв
+              - generic [ref=f7e416]: ↗
+            - link "Стрижка дівчинки (до лопаток) - 25€ 80 хв ↗" [ref=f7e417] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-divchynky-do-lopatok
+              - generic [ref=f7e418]:
+                - generic [ref=f7e419]: Стрижка дівчинки (до лопаток) - 25€
+                - generic [ref=f7e420]: 80 хв
+              - generic [ref=f7e421]: ↗
+            - link "Стрижка чубчика - 15€ 20 хв ↗" [ref=f7e422] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-chubchyka-dytyacha
+              - generic [ref=f7e423]:
+                - generic [ref=f7e424]: Стрижка чубчика - 15€
+                - generic [ref=f7e425]: 20 хв
+              - generic [ref=f7e426]: ↗
+        - generic [ref=f7e427]:
+          - heading "Дитячі укладки" [level=2] [ref=f7e428]
+          - generic [ref=f7e429]:
+            - link "Зачіска дитяча - 40-50€ 90 хв ↗" [ref=f7e430] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/zachiska-dytyacha
+              - generic [ref=f7e431]:
+                - generic [ref=f7e432]: Зачіска дитяча - 40-50€
+                - generic [ref=f7e433]: 90 хв
+              - generic [ref=f7e434]: ↗
+            - link "Косичка без конеколона (з кільцями або прикрасами) - 5€ 15 хв ↗" [ref=f7e435] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/kosychka-bez-konekolona
+              - generic [ref=f7e436]:
+                - generic [ref=f7e437]: Косичка без конеколона (з кільцями або прикрасами) - 5€
+                - generic [ref=f7e438]: 15 хв
+              - generic [ref=f7e439]: ↗
+            - link "Косичка з конеколоном (з кільцями) - 8€ 20 хв ↗" [ref=f7e440] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/kosychka-z-konekolonom-z-kiltsyamy
+              - generic [ref=f7e441]:
+                - generic [ref=f7e442]: Косичка з конеколоном (з кільцями) - 8€
+                - generic [ref=f7e443]: 20 хв
+              - generic [ref=f7e444]: ↗
+            - link "Косичка з конеколоном та прикрасами - 10€ 30 хв ↗" [ref=f7e445] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/kosychka-z-konekolonom-ta-prykrasamy
+              - generic [ref=f7e446]:
+                - generic [ref=f7e447]: Косичка з конеколоном та прикрасами - 10€
+                - generic [ref=f7e448]: 30 хв
+              - generic [ref=f7e449]: ↗
+            - link "Накрутка на плойку (до лопаток) - 20€ 60 хв ↗" [ref=f7e450] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/nakrutka-na-ployku-do-lopatok
+              - generic [ref=f7e451]:
+                - generic [ref=f7e452]: Накрутка на плойку (до лопаток) - 20€
+                - generic [ref=f7e453]: 60 хв
+              - generic [ref=f7e454]: ↗
+            - link "Накрутка на плойку (нижче лопаток) - 30€ 90 хв ↗" [ref=f7e455] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/nakrutka-na-ployku-nyzhche-lopatok
+              - generic [ref=f7e456]:
+                - generic [ref=f7e457]: Накрутка на плойку (нижче лопаток) - 30€
+                - generic [ref=f7e458]: 90 хв
+              - generic [ref=f7e459]: ↗
+            - link "Плетіння - 20-30€ 80 хв ↗" [ref=f7e460] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/pletinnya
+              - generic [ref=f7e461]:
+                - generic [ref=f7e462]: Плетіння - 20-30€
+                - generic [ref=f7e463]: 80 хв
+              - generic [ref=f7e464]: ↗
+            - link "Косичка з конеколоном - 5€ 20 хв ↗" [ref=f7e465] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/kosychka-z-konekolonom
+              - generic [ref=f7e466]:
+                - generic [ref=f7e467]: Косичка з конеколоном - 5€
+                - generic [ref=f7e468]: 20 хв
+              - generic [ref=f7e469]: ↗
+        - generic [ref=f7e470]:
+          - heading "Стрижки" [level=2] [ref=f7e471]
+          - generic [ref=f7e472]:
+            - link "Стрижка жіноча (гігієна кінчиків) - 40€ 90 хв ↗" [ref=f7e473] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-zhinocha-hihiyena-kinchykiv
+              - generic [ref=f7e474]:
+                - generic [ref=f7e475]: Стрижка жіноча (гігієна кінчиків) - 40€
+                - generic [ref=f7e476]: 90 хв
+              - generic [ref=f7e477]: ↗
+            - link "Стрижка чоловіча - 25€ 40 хв ↗" [ref=f7e478] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-cholovicha
+              - generic [ref=f7e479]:
+                - generic [ref=f7e480]: Стрижка чоловіча - 25€
+                - generic [ref=f7e481]: 40 хв
+              - generic [ref=f7e482]: ↗
+            - link "Стрижка жіноча - 50€ 120 хв ↗" [ref=f7e483] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-zhinocha
+              - generic [ref=f7e484]:
+                - generic [ref=f7e485]: Стрижка жіноча - 50€
+                - generic [ref=f7e486]: 120 хв
+              - generic [ref=f7e487]: ↗
+            - link "Стрижка чубчика - 20€ 20 хв ↗" [ref=f7e488] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-chubchyka-zhinocha
+              - generic [ref=f7e489]:
+                - generic [ref=f7e490]: Стрижка чубчика - 20€
+                - generic [ref=f7e491]: 20 хв
+              - generic [ref=f7e492]: ↗
+            - link "Стрижка чоловіча (креативна) - 30€ 60 хв ↗" [ref=f7e493] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-cholovicha-kreatyvna
+              - generic [ref=f7e494]:
+                - generic [ref=f7e495]: Стрижка чоловіча (креативна) - 30€
+                - generic [ref=f7e496]: 60 хв
+              - generic [ref=f7e497]: ↗
+            - link "Стрижка чоловіча (під насадку) - 20€ 30 хв ↗" [ref=f7e498] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/strizhka-cholovicha-pid-nasadku
+              - generic [ref=f7e499]:
+                - generic [ref=f7e500]: Стрижка чоловіча (під насадку) - 20€
+                - generic [ref=f7e501]: 30 хв
+              - generic [ref=f7e502]: ↗
+        - generic [ref=f7e503]:
+          - heading "Укладання" [level=2] [ref=f7e504]
+          - generic [ref=f7e505]:
+            - link "Повсякденна укладка на браш (до лопаток) - 20-30€ 80 хв ↗" [ref=f7e506] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/povsyakdenna-ukladka-na-brash-do-lopatok
+              - generic [ref=f7e507]:
+                - generic [ref=f7e508]: Повсякденна укладка на браш (до лопаток) - 20-30€
+                - generic [ref=f7e509]: 80 хв
+              - generic [ref=f7e510]: ↗
+            - link "Повсякденна укладка на браш (нижче лопаток) - 30-40€ 100 хв ↗" [ref=f7e511] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/povsyakdenna-ukladka-na-brash-nyzhche-lopatok
+              - generic [ref=f7e512]:
+                - generic [ref=f7e513]: Повсякденна укладка на браш (нижче лопаток) - 30-40€
+                - generic [ref=f7e514]: 100 хв
+              - generic [ref=f7e515]: ↗
+            - link "Вирівнювання волосся (випрямляч) - 10-20€ 30 хв ↗" [ref=f7e516] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/vyryvnyuvannya-volossya-vypryamlyach
+              - generic [ref=f7e517]:
+                - generic [ref=f7e518]: Вирівнювання волосся (випрямляч) - 10-20€
+                - generic [ref=f7e519]: 30 хв
+              - generic [ref=f7e520]: ↗
+            - link "Вирівнювання волосся (випрямляч + миття) - 15-25€ 60 хв ↗" [ref=f7e521] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/vyryvnyuvannya-volossya-vypryamlyach-myttya
+              - generic [ref=f7e522]:
+                - generic [ref=f7e523]: Вирівнювання волосся (випрямляч + миття) - 15-25€
+                - generic [ref=f7e524]: 60 хв
+              - generic [ref=f7e525]: ↗
+            - link "Афро накрутка (до лопаток) - 50-60€ 120 хв ↗" [ref=f7e526] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/afro-nakrutka-do-lopatok
+              - generic [ref=f7e527]:
+                - generic [ref=f7e528]: Афро накрутка (до лопаток) - 50-60€
+                - generic [ref=f7e529]: 120 хв
+              - generic [ref=f7e530]: ↗
+            - link "Афро накрутка (нижче лопаток) - 60-70€ 150 хв ↗" [ref=f7e531] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/afro-nakrutka-nyzhche-lopatok
+              - generic [ref=f7e532]:
+                - generic [ref=f7e533]: Афро накрутка (нижче лопаток) - 60-70€
+                - generic [ref=f7e534]: 150 хв
+              - generic [ref=f7e535]: ↗
+            - link "Зачіска (до лопаток) - 65€ 90 хв ↗" [ref=f7e536] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/zachiska-do-lopatok
+              - generic [ref=f7e537]:
+                - generic [ref=f7e538]: Зачіска (до лопаток) - 65€
+                - generic [ref=f7e539]: 90 хв
+              - generic [ref=f7e540]: ↗
+            - link "Зачіска (нижче лопаток) - 75-80€ 120 хв ↗" [ref=f7e541] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/zachiska-nyzhche-lopatok
+              - generic [ref=f7e542]:
+                - generic [ref=f7e543]: Зачіска (нижче лопаток) - 75-80€
+                - generic [ref=f7e544]: 120 хв
+              - generic [ref=f7e545]: ↗
+            - link "Миття голови (без укладання) - 10€ 40 хв ↗" [ref=f7e546] [cursor=pointer]:
+              - /url: https://cal.com/krasovska/myttya-holovy-bez-ukladannya
+              - generic [ref=f7e547]:
+                - generic [ref=f7e548]: Миття голови (без укладання) - 10€
+                - generic [ref=f7e549]: 40 хв
+              - generic [ref=f7e550]: ↗

@@ -1,0 +1,299 @@
+[     221ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     411ms] [LOG] [Fast Refresh] done in 290ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    4144ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    4465ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    6199ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    7032ms] [LOG] [Fast Refresh] done in 956ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    7169ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    7444ms] [LOG] [Fast Refresh] done in 384ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  101670ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  104851ms] [LOG] [Fast Refresh] done in 3282ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  183296ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  183371ms] [LOG] [Fast Refresh] done in 175ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  188175ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  190819ms] [LOG] [Fast Refresh] done in 2744ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  194689ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  194869ms] [LOG] [Fast Refresh] done in 280ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  219534ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  220260ms] [ERROR] ./apps/hair-salon/src/app/components/Header.tsx:88:27
+Parsing ecmascript source code failed
+  86 |               {t('book')}
+  87 |             </button>
+> 88 |                     <Link href="/booking" className={button({ size: 'header' })}>
+     |                           ^^^^
+  89 |           <Sheet>
+  90 |                     </Link>
+  91 |               className="rounded-full p-2 text-[#2b2d42] transition-colors hover:bg-[#f2e7dc] focus:outline-none focus:ring-2 focus:ring-[#bc8a5f] md:hidden"
+
+Expected '</', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  230016ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  235855ms] [ERROR] ./apps/hair-salon/src/app/components/Header.tsx:88:27
+Parsing ecmascript source code failed
+  86 |               {t('book')}
+  87 |             </button>
+> 88 |                     <Link href="/booking" className={button({ size: 'header' })}>
+     |                           ^^^^
+  89 |           <Sheet>
+  90 |                     </Link>
+  91 |               className="rounded-full p-2 text-[#2b2d42] transition-colors hover:bg-[#f2e7dc] focus:outline-none focus:ring-2 focus:ring-[#bc8a5f] md:hidden"
+
+Expected '</', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  235855ms] [ERROR] ./apps/hair-salon/src/app/components/HomeClient.tsx:10:1
+Export Header doesn't exist in target module
+   8 | import { ContactSection } from './ContactSection';
+   9 | import { Footer } from './Footer';
+> 10 | import { Header } from './Header';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { Hero } from './Hero';
+  12 | import { PricesSection } from './PricesSection';
+  13 | import { ServicesSection } from './ServicesSection';
+
+The export Header was not found in module [project]/apps/hair-salon/src/app/components/Header.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/hair-salon/src/app/components/HomeClient.tsx
+    ./apps/hair-salon/src/app/[locale]/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  235855ms] [ERROR] ./apps/hair-salon/src/app/components/HomeClient.tsx:10:1
+Export Header doesn't exist in target module
+   8 | import { ContactSection } from './ContactSection';
+   9 | import { Footer } from './Footer';
+> 10 | import { Header } from './Header';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { Hero } from './Hero';
+  12 | import { PricesSection } from './PricesSection';
+  13 | import { ServicesSection } from './ServicesSection';
+
+The export Header was not found in module [project]/apps/hair-salon/src/app/components/Header.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/hair-salon/src/app/components/HomeClient.tsx
+    ./apps/hair-salon/src/app/[locale]/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  258668ms] [ERROR] ./apps/hair-salon/src/app/components/Header.tsx:88:27
+Parsing ecmascript source code failed
+  86 |               {t('book')}
+  87 |             </button>
+> 88 |                     <Link href="/booking" className={button({ size: 'header' })}>
+     |                           ^^^^
+  89 |           <Sheet>
+  90 |                     </Link>
+  91 |               className="rounded-full p-2 text-[#2b2d42] transition-colors hover:bg-[#f2e7dc] focus:outline-none focus:ring-2 focus:ring-[#bc8a5f] md:hidden"
+
+Expected '</', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  258669ms] [ERROR] ./apps/hair-salon/src/app/components/HomeClient.tsx:10:1
+Export Header doesn't exist in target module
+   8 | import { ContactSection } from './ContactSection';
+   9 | import { Footer } from './Footer';
+> 10 | import { Header } from './Header';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { Hero } from './Hero';
+  12 | import { PricesSection } from './PricesSection';
+  13 | import { ServicesSection } from './ServicesSection';
+
+The export Header was not found in module [project]/apps/hair-salon/src/app/components/Header.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/hair-salon/src/app/components/HomeClient.tsx
+    ./apps/hair-salon/src/app/[locale]/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  258669ms] [ERROR] ./apps/hair-salon/src/app/components/HomeClient.tsx:10:1
+Export Header doesn't exist in target module
+   8 | import { ContactSection } from './ContactSection';
+   9 | import { Footer } from './Footer';
+> 10 | import { Header } from './Header';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { Hero } from './Hero';
+  12 | import { PricesSection } from './PricesSection';
+  13 | import { ServicesSection } from './ServicesSection';
+
+The export Header was not found in module [project]/apps/hair-salon/src/app/components/Header.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/hair-salon/src/app/components/HomeClient.tsx
+    ./apps/hair-salon/src/app/[locale]/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  258683ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  291563ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  291810ms] [ERROR] ./apps/hair-salon/src/app/components/Header.tsx:105:20
+Parsing ecmascript source code failed
+  103 |                 ))}
+  104 |               </div>
+> 105 |               <div className="mt-auto flex items-center gap-3 border-t border-border pt-6">
+      |                    ^^^^^^^^^
+  106 |                 <div className="flex rounded-full border border-[#e0e0e0] p-1 text-xs">
+  107 |                   <button
+  108 |                     onClick={() => handleLanguageChange('uk')}
+
+Expected '</', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  291810ms] [ERROR] ./apps/hair-salon/src/app/components/HomeClient.tsx:10:1
+Export Header doesn't exist in target module
+   8 | import { ContactSection } from './ContactSection';
+   9 | import { Footer } from './Footer';
+> 10 | import { Header } from './Header';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { Hero } from './Hero';
+  12 | import { PricesSection } from './PricesSection';
+  13 | import { ServicesSection } from './ServicesSection';
+
+The export Header was not found in module [project]/apps/hair-salon/src/app/components/Header.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/hair-salon/src/app/components/HomeClient.tsx
+    ./apps/hair-salon/src/app/[locale]/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  291810ms] [ERROR] ./apps/hair-salon/src/app/components/HomeClient.tsx:10:1
+Export Header doesn't exist in target module
+   8 | import { ContactSection } from './ContactSection';
+   9 | import { Footer } from './Footer';
+> 10 | import { Header } from './Header';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { Hero } from './Hero';
+  12 | import { PricesSection } from './PricesSection';
+  13 | import { ServicesSection } from './ServicesSection';
+
+The export Header was not found in module [project]/apps/hair-salon/src/app/components/Header.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/hair-salon/src/app/components/HomeClient.tsx
+    ./apps/hair-salon/src/app/[locale]/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  294931ms] [ERROR] ./apps/hair-salon/src/app/components/Header.tsx:105:20
+Parsing ecmascript source code failed
+  103 |                 ))}
+  104 |               </div>
+> 105 |               <div className="mt-auto flex items-center gap-3 border-t border-border pt-6">
+      |                    ^^^^^^^^^
+  106 |                 <div className="flex rounded-full border border-[#e0e0e0] p-1 text-xs">
+  107 |                   <button
+  108 |                     onClick={() => handleLanguageChange('uk')}
+
+Expected '</', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component Browser]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/hair-salon/src/app/components/Header.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Client Component SSR]
+    ./apps/hair-salon/src/app/components/HomeClient.tsx [Server Component]
+    ./apps/hair-salon/src/app/[locale]/page.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  294931ms] [ERROR] ./apps/hair-salon/src/app/components/HomeClient.tsx:10:1
+Export Header doesn't exist in target module
+   8 | import { ContactSection } from './ContactSection';
+   9 | import { Footer } from './Footer';
+> 10 | import { Header } from './Header';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { Hero } from './Hero';
+  12 | import { PricesSection } from './PricesSection';
+  13 | import { ServicesSection } from './ServicesSection';
+
+The export Header was not found in module [project]/apps/hair-salon/src/app/components/Header.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/hair-salon/src/app/components/HomeClient.tsx
+    ./apps/hair-salon/src/app/[locale]/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  294932ms] [ERROR] ./apps/hair-salon/src/app/components/HomeClient.tsx:10:1
+Export Header doesn't exist in target module
+   8 | import { ContactSection } from './ContactSection';
+   9 | import { Footer } from './Footer';
+> 10 | import { Header } from './Header';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import { Hero } from './Hero';
+  12 | import { PricesSection } from './PricesSection';
+  13 | import { ServicesSection } from './ServicesSection';
+
+The export Header was not found in module [project]/apps/hair-salon/src/app/components/Header.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./apps/hair-salon/src/app/components/HomeClient.tsx
+    ./apps/hair-salon/src/app/[locale]/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  294967ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  330146ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  335066ms] [LOG] [Fast Refresh] done in 3689ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  336022ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  343701ms] [LOG] [Fast Refresh] done in 7780ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  366902ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  368380ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  373398ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  373542ms] [LOG] [Fast Refresh] done in 265ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  373768ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  374545ms] [LOG] [Fast Refresh] done in 941ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  391331ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  391550ms] [LOG] [Fast Refresh] done in 318ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  405139ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  405195ms] [LOG] [Fast Refresh] done in 157ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297

@@ -1,0 +1,207 @@
+- generic:
+  - main:
+    - generic [aria-hidden]:
+      - generic:
+        - link:
+          - /url: "#top"
+          - generic: Наталія Красовська.
+          - generic: Стиліст по волоссю · Чоловічі, жіночі, дитячі стрижки
+        - generic:
+          - generic:
+            - button: UA
+            - button: EN
+          - button [expanded]
+    - generic [aria-hidden]:
+      - generic:
+        - paragraph: Стиліст по волоссю · Кватре Карререс, Валенсія 🇪🇸
+        - heading [level=1]: Підкресліть вашу природну красу
+        - paragraph: Професійний догляд від досвідченого майстра та атмосфера релаксу в центрі міста.
+        - button: Запис онлайн ↗
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - heading [level=2]: Мої послуги
+          - paragraph: Стрижки, укладання та зачіски для всієї родини
+        - generic:
+          - article:
+            - generic: ✂
+            - heading [level=3]: Дитячі стрижки
+            - paragraph: Стрижки для хлопчиків і дівчаток, стрижка чубчика.
+          - article:
+            - generic: ✦
+            - heading [level=3]: Дитячі укладки
+            - paragraph: Плетіння, накрутка, дитячі зачіски та косички з канекалоном.
+          - article:
+            - generic: ✧
+            - heading [level=3]: Стрижки
+            - paragraph: Жіночі та чоловічі стрижки, гігієна кінчиків, креативні форми й стрижки під насадку.
+          - article:
+            - generic: ◌
+            - heading [level=3]: Укладання та зачіски
+            - paragraph: Повсякденне укладання, вирівнювання, афронакрутка та святкові зачіски.
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - heading [level=2]: Прайс-лист
+          - paragraph: Популярні процедури та вартість
+        - generic:
+          - generic:
+            - heading [level=3]: Дитячі стрижки
+            - generic:
+              - generic:
+                - generic: Стрижка хлопчика
+                - generic: 25€
+              - generic:
+                - generic: Стрижка дівчинки (до лопаток)
+                - generic: 25€
+              - generic:
+                - generic: Стрижка дівчинки (нижче лопаток)
+                - generic: 30€
+              - generic:
+                - generic: Стрижка чубчика
+                - generic: 15€
+          - generic:
+            - heading [level=3]: Дитячі укладки
+            - generic:
+              - generic:
+                - generic: Накрутка на плойку (до лопаток)
+                - generic: 20€
+              - generic:
+                - generic: Накрутка на плойку (нижче лопаток)
+                - generic: 30€
+              - generic:
+                - generic: Плетіння
+                - generic: 20-30€
+              - generic:
+                - generic: Зачіска дитяча
+                - generic: 40-50€
+              - generic:
+                - generic: Косичка без конеколона (з кільцями або прикрасами)
+                - generic: 5€
+              - generic:
+                - generic: Косичка з конеколоном
+                - generic: 5€
+              - generic:
+                - generic: Косичка з конеколоном (з кільцями)
+                - generic: 8€
+              - generic:
+                - generic: Косичка з конеколоном (з прикрасами)
+                - generic: 10€
+          - generic:
+            - heading [level=3]: Стрижки
+            - generic:
+              - generic:
+                - generic: Стрижка жіноча (гігієна кінчиків)
+                - generic: 40€
+              - generic:
+                - generic: Стрижка жіноча
+                - generic: 50€
+              - generic:
+                - generic: Стрижка чубчика
+                - generic: 20€
+              - generic:
+                - generic: Стрижка чоловіча
+                - generic: 25€
+              - generic:
+                - generic: Стрижка чоловіча (креативна)
+                - generic: 30€
+              - generic:
+                - generic: Стрижка чоловіча (під насадку)
+                - generic: 20€
+          - generic:
+            - heading [level=3]: Укладання
+            - generic:
+              - generic:
+                - generic: Повсякденна укладка на браш (до лопаток)
+                - generic: 20-30€
+              - generic:
+                - generic: Повсякденна укладка на браш (нижче лопаток)
+                - generic: 30-40€
+              - generic:
+                - generic: Вирівнювання волосся (випрямляч)
+                - generic: 10-20€
+              - generic:
+                - generic: Вирівнювання волосся (випрямляч з миттям)
+                - generic: 15-25€
+              - generic:
+                - generic: Афро накрутка (до лопаток)
+                - generic: 50-60€
+              - generic:
+                - generic: Афро накрутка (нижче лопаток)
+                - generic: 60-70€
+              - generic:
+                - generic: Зачіска (до лопаток)
+                - generic: 65€
+              - generic:
+                - generic: Зачіска (нижче лопаток)
+                - generic: 75-80€
+              - generic:
+                - generic: Миття голови
+                - generic: 10€
+    - generic [aria-hidden]:
+      - generic:
+        - heading [level=2]: Про мене
+        - paragraph: Мене звати Наталія. Я працюю у сфері краси вже 10 років, і понад 3 роки з них присвятила саме дитячій перукарській справі. Для мене важливо не просто зробити гарну зачіску, а створити для дитини комфортну та безпечну атмосферу.
+        - generic:
+          - paragraph: "Окрім дитячих стрижок, ви можете довірити мені й свій образ:"
+          - list:
+            - listitem: Чоловічі стрижки
+            - listitem: Жіночі стрижки
+            - listitem: Повсякденні укладання
+            - listitem: Святкові зачіски для особливих подій
+        - paragraph: Зручно, коли весь родинний догляд за волоссям можна довірити одному перевіреному майстру у Валенсії!
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - heading [level=2]: Завітайте до нас
+          - paragraph: Чекаємо на вас щодня
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=3]: Адреса
+              - paragraph:
+                - link:
+                  - /url: https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic
+                  - text: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸
+            - generic:
+              - heading [level=3]: Телефон
+              - paragraph:
+                - link:
+                  - /url: tel:+34665499177
+                  - text: +34 665 499 177
+            - generic:
+              - heading [level=3]: WhatsApp
+              - paragraph:
+                - link:
+                  - /url: https://wa.me/380731819204
+                  - text: +380 73 181 92 04
+            - generic:
+              - heading [level=3]: Instagram
+              - paragraph:
+                - link:
+                  - /url: https://www.instagram.com/care.of.your.hair8
+                  - text: "@care.of.your.hair8"
+          - iframe [ref=f13e221]
+    - generic [aria-hidden]:
+      - link:
+        - /url: https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic
+        - text: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸
+      - paragraph: © 2026. Усі права захищено.
+  - button "Open Next.js Dev Tools" [ref=f13e215] [cursor=pointer]
+  - alert
+  - dialog [ref=f13e223]:
+    - generic [ref=f13e224]:
+      - link "Послуги" [ref=f13e225] [cursor=pointer]:
+        - /url: "#services"
+      - link "Ціни" [ref=f13e226] [cursor=pointer]:
+        - /url: "#prices"
+      - link "Про мене" [ref=f13e227] [cursor=pointer]:
+        - /url: "#about"
+      - link "Контакти" [ref=f13e228] [cursor=pointer]:
+        - /url: "#contact"
+    - generic [ref=f13e229]:
+      - generic [ref=f13e230]:
+        - button "UA" [active] [ref=f13e231] [cursor=pointer]
+        - button "EN" [ref=f13e232] [cursor=pointer]
+      - button "Запис онлайн" [ref=f13e233] [cursor=pointer]
+    - button "Close" [ref=f13e234]
