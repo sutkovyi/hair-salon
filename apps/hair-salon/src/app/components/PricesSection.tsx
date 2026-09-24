@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { SectionHeading } from './SectionHeading';
+import { trackEvent } from '../../lib/gtag';
 
 type PriceItem = {
   title: string;
@@ -37,7 +38,18 @@ export function PricesSection() {
               </h3>
               <div className="divide-y divide-dashed divide-[#e0e0e0]">
                 {group.items.map((item) => (
-                  <div key={item.title} className="flex items-baseline gap-3 py-3.5">
+                  <div
+                    key={item.title}
+                    className="flex items-baseline gap-3 py-3.5"
+                    onClick={() =>
+                      trackEvent('price_item_click', {
+                        event_category: 'pricing',
+                        event_label: item.title,
+                        price_category: group.category,
+                        price: item.price,
+                      })
+                    }
+                  >
                     <span className="font-medium text-[#2b2d42]">{item.title}</span>
                     <span className="flex-1 border-b border-dotted border-[#d7d7d7]" />
                     <span className="whitespace-nowrap font-serif text-lg font-bold text-[#bc8a5f]">

@@ -218,8 +218,18 @@
   "hoursLabel": "Opening hours",
   "copyright": "All rights reserved.",
   "cookies": {
+    "title": "Your privacy matters",
     "message": "This site uses cookies.",
-    "accept": "OK"
+    "accept": "Accept all",
+    "reject": "Necessary only",
+    "preferences": "Preferences",
+    "preferencesTitle": "Cookie preferences",
+    "save": "Save preferences",
+    "close": "Close",
+    "necessaryTitle": "Necessary cookies",
+    "necessaryDescription": "These cookies are required for the site to work.",
+    "analyticsTitle": "Analytics cookies",
+    "analyticsDescription": "These cookies help us understand how the site is used."
   },
   "privacy": {
     "title": "Privacy Policy",

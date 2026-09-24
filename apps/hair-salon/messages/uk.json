@@ -218,8 +218,18 @@
   "hoursLabel": "Графік роботи",
   "copyright": "Усі права захищено.",
   "cookies": {
+    "title": "Ваша приватність важлива",
     "message": "Цей сайт використовує файли cookie.",
-    "accept": "OK"
+    "accept": "Прийняти все",
+    "reject": "Лише необхідні",
+    "preferences": "Налаштування",
+    "preferencesTitle": "Налаштування cookie",
+    "save": "Зберегти налаштування",
+    "close": "Закрити",
+    "necessaryTitle": "Необхідні cookie",
+    "necessaryDescription": "Ці cookie потрібні для роботи сайту.",
+    "analyticsTitle": "Аналітичні cookie",
+    "analyticsDescription": "Ці cookie допомагають зрозуміти, як використовується сайт."
   },
   "privacy": {
     "title": "Політика конфіденційності",
