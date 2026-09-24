@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { siteConfig } from '@/config/site';
 
 export function Footer() {
   const t = useTranslations();
@@ -14,6 +15,14 @@ export function Footer() {
         <a href="/terms">{t('nav.terms')}</a>
       </div>
       */}
+      <a
+        href={siteConfig.location.googleMapsUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="mx-auto block max-w-xl text-xs leading-5 text-white/70 transition hover:text-white"
+      >
+        {t('address')}
+      </a>
       <p className="mt-3">© 2026. {t('copyright')}</p>
     </footer>
   );

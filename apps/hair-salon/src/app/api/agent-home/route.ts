@@ -18,7 +18,7 @@ Hair stylist in Valencia, Spain. Kids', men's and women's haircuts, hairstyles, 
 - Website: ${siteUrl}/uk
 - Phone: +34 665 499 177
 - WhatsApp: https://wa.me/380731819204
-- Address: Av. de l'Institut Obrer de València, 21, Quatre Carreres, 46013 València, Spain
+- Address: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain
 
 ## More machine-readable information
 

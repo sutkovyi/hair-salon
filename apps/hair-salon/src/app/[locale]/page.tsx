@@ -47,9 +47,9 @@ export default function Home() {
     email: 'care.of.your.hair8@gmail.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: "Av. de l'Institut Obrer de València, 21",
+      streetAddress: 'C/ de la Font de la Figuera, 7',
       addressLocality: 'València',
-      postalCode: '46013',
+      postalCode: '46004',
       addressCountry: 'ES',
     },
     contactPoint: {

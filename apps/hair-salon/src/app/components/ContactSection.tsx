@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
+import { siteConfig } from '@/config/site';
 import { Info, SectionHeading } from './SectionHeading';
 
 const LocationMap = dynamic(() => import('./LocationMap'), {
@@ -25,7 +26,7 @@ export function ContactSection() {
             <Info
               label={t('addressLabel')}
               value={t('address')}
-              href="https://maps.app.goo.gl/2KfmLhomx1Bf9xo97"
+              href={siteConfig.location.googleMapsUrl}
             />
             <Info
               label={t('phoneLabel')}

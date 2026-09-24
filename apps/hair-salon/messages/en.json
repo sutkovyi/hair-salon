@@ -10,6 +10,14 @@
     "terms": "Terms"
   },
   "book": "Book online",
+  "bookingSuccess": {
+    "eyebrow": "Booking confirmed",
+    "title": "See you soon!",
+    "message": "Thank you for booking. We look forward to seeing you.",
+    "location": "Nataliia Krasovska · Talula Head & SPA · C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+    "viewOnMap": "Open in Google Maps",
+    "backHome": "Back to home"
+  },
   "developmentNotice": "The website is under development. Online booking is temporarily unavailable.",
   "eyebrow": "Hair stylist · Russafa, Valencia 🇪🇸",
   "title": "Reveal your natural beauty",
@@ -182,7 +190,7 @@
   "aboutClosing": "It is convenient when the whole family's hair care can be entrusted to one trusted stylist in Valencia!",
   "visitTitle": "Come visit us",
   "visitIntro": "We are here for you every day",
-  "address": "Av. de l'Institut Obrer de València, 21, Quatre Carreres, 46013 València, Spain 🇪🇸",
+  "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸",
   "hours": "Mon–Sun: 09:00 — 21:00",
   "name": "Your name",
   "phone": "Phone number",
