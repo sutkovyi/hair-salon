@@ -8,15 +8,17 @@ import {
   DialogTitle,
 } from './ui/dialog';
 import { useTranslations } from 'next-intl';
+import type { BookingService } from '../lib/booking-services';
 
 type BookingModalProps = {
   isOpen: boolean;
   onClose: () => void;
   sent?: boolean;
   onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
+  initialServices: BookingService[];
 };
 
-export function BookingModal({ isOpen, onClose }: BookingModalProps) {
+export function BookingModal({ isOpen, onClose, initialServices }: BookingModalProps) {
   const t = useTranslations();
 
   return (
@@ -25,7 +27,7 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
         <DialogHeader className="mb-4 min-h-12 justify-center pr-10">
           <DialogTitle>{t('bookingCatalog.title')}</DialogTitle>
         </DialogHeader>
-        <BookingServices compact active={isOpen} />
+        <BookingServices compact active={isOpen} initialServices={initialServices} />
       </DialogContent>
     </Dialog>
   );

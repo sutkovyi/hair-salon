@@ -3,14 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { siteConfig } from '@/config/site';
-
-type BookingService = {
-  id: number;
-  title: string;
-  lengthInMinutes: number;
-  bookingUrl: string;
-  category: 'childHaircuts' | 'childStyling' | 'haircuts' | 'styling';
-};
+import type { BookingService } from '@/app/lib/booking-services';
 
 const categoryOrder: BookingService['category'][] = [
   'childHaircuts',
@@ -22,16 +15,21 @@ const categoryOrder: BookingService['category'][] = [
 type BookingServicesProps = {
   compact?: boolean;
   active?: boolean;
+  initialServices?: BookingService[];
 };
 
-export function BookingServices({ compact = false, active = true }: BookingServicesProps) {
+export function BookingServices({
+  compact = false,
+  active = true,
+  initialServices,
+}: BookingServicesProps) {
   const t = useTranslations('bookingCatalog');
-  const [services, setServices] = useState<BookingService[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [services, setServices] = useState<BookingService[]>(initialServices ?? []);
+  const [loading, setLoading] = useState(initialServices === undefined);
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    if (!active) return;
+    if (!active || initialServices !== undefined) return;
 
     let cancelled = false;
     setLoading(true);
@@ -53,7 +51,7 @@ export function BookingServices({ compact = false, active = true }: BookingServi
     return () => {
       cancelled = true;
     };
-  }, [active]);
+  }, [active, initialServices]);
 
   return (
     <section
