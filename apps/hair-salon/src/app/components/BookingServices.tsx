@@ -1,0 +1,89 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
+import { siteConfig } from '@/config/site';
+
+type BookingService = {
+  id: number;
+  title: string;
+  lengthInMinutes: number;
+  bookingUrl: string;
+};
+
+type BookingServicesProps = {
+  compact?: boolean;
+  active?: boolean;
+};
+
+export function BookingServices({ compact = false, active = true }: BookingServicesProps) {
+  const t = useTranslations('bookingCatalog');
+  const [services, setServices] = useState<BookingService[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    if (!active) return;
+
+    let cancelled = false;
+    setLoading(true);
+    fetch(siteConfig.booking.servicesApiUrl)
+      .then((response) => {
+        if (!response.ok) throw new Error('Unable to load services');
+        return response.json() as Promise<BookingService[]>;
+      })
+      .then((data) => {
+        if (!cancelled) setServices(data);
+      })
+      .catch(() => {
+        if (!cancelled) setError(true);
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [active]);
+
+  return (
+    <section className={compact ? 'min-h-0 flex-1 overflow-y-auto' : 'mx-auto max-w-5xl'}>
+      {!compact && (
+        <div className="mb-10 max-w-2xl">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.22em] text-[#bc8a5f]">
+            {t('eyebrow')}
+          </p>
+          <h1 className="font-serif text-5xl leading-none text-[#2b2d42] sm:text-7xl">
+            {t('title')}
+          </h1>
+          <p className="mt-5 text-lg leading-8 text-[#6c757d]">{t('intro')}</p>
+        </div>
+      )}
+
+      {loading && <p className="py-10 text-center text-[#6c757d]">{t('loading')}</p>}
+      {error && <p className="py-10 text-center text-[#bc8a5f]">{t('error')}</p>}
+      {!loading && !error && (
+        <div className={compact ? 'grid gap-3 pb-4' : 'grid gap-4 sm:grid-cols-2'}>
+          {services.map((service) => (
+            <a
+              key={service.id}
+              href={service.bookingUrl}
+              className="group flex items-center justify-between gap-4 rounded-xl border border-[#eadfd2] bg-white px-5 py-4 text-[#2b2d42] transition hover:-translate-y-0.5 hover:border-[#d4a373] hover:shadow-md"
+            >
+              <span className="min-w-0">
+                <span className="block font-medium leading-6">{service.title}</span>
+                <span className="mt-1 block text-xs uppercase tracking-[0.12em] text-[#8b929a]">
+                  {service.lengthInMinutes} {t('minutes')}
+                </span>
+              </span>
+              <span className="shrink-0 text-lg text-[#bc8a5f] transition-transform group-hover:translate-x-1">
+                ↗
+              </span>
+            </a>
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}

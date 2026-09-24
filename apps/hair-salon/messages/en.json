@@ -10,6 +10,14 @@
     "terms": "Terms"
   },
   "book": "Book online",
+  "bookingCatalog": {
+    "eyebrow": "Online booking",
+    "title": "Choose a service",
+    "intro": "Choose a service to continue to available dates and times in Cal.com.",
+    "loading": "Loading services...",
+    "error": "We could not load the services. Please try again.",
+    "minutes": "min"
+  },
   "bookingSuccess": {
     "eyebrow": "Booking confirmed",
     "title": "See you soon!",

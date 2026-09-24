@@ -11,6 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/uk',
     '/en',
+    '/uk/booking',
+    '/en/booking',
     '/uk/privacy',
     '/en/privacy',
     '/uk/terms',

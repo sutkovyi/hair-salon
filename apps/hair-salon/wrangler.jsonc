@@ -1,17 +1,23 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "care-of-your-hair",
-  "compatibility_date": "2026-09-18",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  "main": "vinext/server/fetch-handler",
-  "assets": {
-    "directory": "dist/client",
-    "not_found_handling": "none",
-    "binding": "ASSETS"
-  },
-  "images": {
-    "binding": "IMAGES"
-  }
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "care-of-your-hair",
+	"compatibility_date": "2026-09-18",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"main": "vinext/server/fetch-handler",
+	"assets": {
+		"directory": "dist/client",
+		"not_found_handling": "none",
+		"binding": "ASSETS"
+	},
+	"images": {
+		"binding": "IMAGES"
+	},
+	"kv_namespaces": [
+		{
+			"binding": "BOOKING_CACHE",
+			"id": "b6b1955f908a44f7bcaeab12594819dd"
+		}
+	]
 }

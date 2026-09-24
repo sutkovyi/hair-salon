@@ -35,6 +35,17 @@ npx wrangler login
 npm --prefix apps/hair-salon run deploy:vinext
 ```
 
+Before deploying, create a Cloudflare KV namespace and put its ID in
+`apps/hair-salon/wrangler.jsonc`.
+
+```sh
+npx wrangler kv namespace create BOOKING_CACHE
+npx wrangler secret put CAL_API_KEY --config apps/hair-salon/wrangler.jsonc
+```
+
+After a successful deploy, the deploy script lists and deletes every key in the
+remote `BOOKING_CACHE` namespace through Wrangler.
+
 The Cloudflare build uses vinext and keeps the existing Next.js development workflow available through Nx.
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
