@@ -11,6 +11,7 @@ import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { PricesSection } from '../components/PricesSection';
 import { ServicesSection } from '../components/ServicesSection';
+import { siteConfig } from '@/config/site';
 
 export default function Home() {
   const locale = useLocale();
@@ -71,12 +72,14 @@ export default function Home() {
       <AboutSection />
       <ContactSection />
       <Footer />
-      <BookingModal
-        isOpen={bookingOpen}
-        sent={sent}
-        onClose={closeBooking}
-        onSubmit={handleSubmit}
-      />
+      {siteConfig.booking.enabled && (
+        <BookingModal
+          isOpen={bookingOpen}
+          sent={sent}
+          onClose={closeBooking}
+          onSubmit={handleSubmit}
+        />
+      )}
     </main>
   );
 }

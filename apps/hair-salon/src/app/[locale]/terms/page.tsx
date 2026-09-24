@@ -35,7 +35,7 @@ export default async function TermsPage({ params }: Props) {
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#2b2d42]">
       <Header />
-      <section className="mx-auto max-w-4xl px-5 py-24 lg:px-10">
+      <section className="mx-auto max-w-4xl px-5 pb-24 pt-32 lg:px-10">
         <div className="prose prose-lg max-w-none text-[#2b2d42]">
           <div dangerouslySetInnerHTML={{ __html: content }} />
         </div>

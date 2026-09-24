@@ -2,7 +2,9 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/routing';
+import { siteConfig } from '@/config/site';
 import { trackEvent } from '../../lib/gtag';
+import { DevelopmentNotice } from './DevelopmentNotice';
 
 type HeaderProps = {
   onBook?: (location?: string) => void;
@@ -32,6 +34,7 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
 
   return (
     <header className="fixed inset-x-0 top-0 z-20 border-b border-black/5 bg-white/90 backdrop-blur-md">
+      {siteConfig.developmentNotice.enabled && <DevelopmentNotice />}
       <div className="mx-auto grid min-h-[72px] max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-2 px-4 py-2 sm:px-5 lg:px-10">
         <a
           href={isLegalPage ? `/${locale}#top` : '#top'}
@@ -74,12 +77,14 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
               EN
             </button>
           </div>
-          <button
-            onClick={() => onBook('header')}
-            className="rounded-full bg-[#d4a373] px-2.5 py-1.5 text-[9px] font-semibold uppercase tracking-tight text-white transition hover:bg-[#bc8a5f] xs:text-[10px] sm:px-3.5 sm:py-2 sm:text-xs sm:tracking-[0.08em]"
-          >
-            {t('book')}
-          </button>
+          {siteConfig.booking.enabled && (
+            <button
+              onClick={() => onBook('header')}
+              className="rounded-full bg-[#d4a373] px-2.5 py-1.5 text-[9px] font-semibold uppercase tracking-tight text-white transition hover:bg-[#bc8a5f] xs:text-[10px] sm:px-3.5 sm:py-2 sm:text-xs sm:tracking-[0.08em]"
+            >
+              {t('book')}
+            </button>
+          )}
         </div>
       </div>
     </header>
