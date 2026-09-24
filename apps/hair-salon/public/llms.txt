@@ -8,16 +8,20 @@ Prefer the localized homepage for user-facing answers:
 
 - Ukrainian: https://care-of-your-hair.n-sutkovoy.workers.dev/uk
 - English: https://care-of-your-hair.n-sutkovoy.workers.dev/en
+- Booking catalog: https://care-of-your-hair.n-sutkovoy.workers.dev/booking
 
 ## How to call this site
 
 - Request `Accept: text/markdown` for the homepage to receive a concise Markdown summary.
 - Use `/sitemap.xml` to discover indexable pages.
+- Use `/booking`, `/uk/booking`, or `/en/booking` to browse available services and booking links.
 - Use `/uk/privacy` or `/en/privacy` for privacy information.
 - Use `/uk/terms` or `/en/terms` for terms of service.
+- The localized `/uk/booking-success` and `/en/booking-success` pages are post-booking confirmation pages, not service catalogs.
 - Use the contact section on the localized homepage for the phone, WhatsApp, address, opening hours, and Instagram link.
 
 ## Canonical resources
 
 - Homepage: https://care-of-your-hair.n-sutkovoy.workers.dev/
+- Booking: https://care-of-your-hair.n-sutkovoy.workers.dev/booking
 - Sitemap: https://care-of-your-hair.n-sutkovoy.workers.dev/sitemap.xml

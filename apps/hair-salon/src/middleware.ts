@@ -24,6 +24,12 @@ Hair stylist in Valencia, Spain. Kids', men's and women's haircuts, hairstyles, 
 - Women's and men's haircuts
 - Everyday styling and festive hairstyles
 
+## Booking
+
+- Booking catalog: ${siteUrl}/booking
+- Ukrainian booking page: ${siteUrl}/uk/booking
+- English booking page: ${siteUrl}/en/booking
+
 ## Contact
 
 - Website: ${siteUrl}/uk
@@ -35,6 +41,8 @@ Hair stylist in Valencia, Spain. Kids', men's and women's haircuts, hairstyles, 
 
 - Sitemap: ${siteUrl}/sitemap.xml
 - Agent guidance: ${siteUrl}/llms.txt
+- Privacy: ${siteUrl}/uk/privacy or ${siteUrl}/en/privacy
+- Terms: ${siteUrl}/uk/terms or ${siteUrl}/en/terms
 `;
 
 const notFoundMarkdown = `# Page not found
