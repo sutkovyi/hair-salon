@@ -280,6 +280,32 @@
   "whatsappLabel": "WhatsApp for appointments",
   "copyright": "All rights reserved.",
   "cookies": {
+    "consentModal": {
+      "title": "Our use of cookies",
+      "description": "We use necessary cookies to make our site work. We would also like to set analytics cookies that help us make improvements by measuring how you use the site. These will be set only if you accept. For more detailed information about the cookies we use, see our Privacy Policy.",
+      "acceptAllBtn": "Accept all",
+      "acceptNecessaryBtn": "Necessary only",
+      "showPreferencesBtn": "Preferences"
+    },
+    "preferencesModal": {
+      "title": "Cookie preferences",
+      "acceptAllBtn": "Accept all",
+      "acceptNecessaryBtn": "Necessary only",
+      "savePreferencesBtn": "Save preferences",
+      "closeIconLabel": "Close",
+      "sections": [
+        {
+          "title": "Necessary cookies",
+          "description": "These cookies are required for the site to work.",
+          "linkedCategory": "necessary"
+        },
+        {
+          "title": "Analytics cookies",
+          "description": "These cookies help us understand how the site is used.",
+          "linkedCategory": "analytics"
+        }
+      ]
+    },
     "title": "Your privacy matters",
     "message": "This site uses cookies.",
     "accept": "Accept all",

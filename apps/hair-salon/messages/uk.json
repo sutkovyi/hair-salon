@@ -280,6 +280,32 @@
   "whatsappLabel": "WhatsApp для запису",
   "copyright": "Усі права захищено.",
   "cookies": {
+    "consentModal": {
+      "title": "Як ми використовуємо cookie",
+      "description": "Ми використовуємо необхідні cookie, щоб сайт працював. Ми також хотіли б використовувати аналітичні cookie, які допомагають нам покращувати сайт, вимірюючи, як ви ним користуєтеся. Вони встановлюються лише після вашої згоди. Докладнішу інформацію про cookie дивіться в нашій Політиці конфіденційності.",
+      "acceptAllBtn": "Прийняти все",
+      "acceptNecessaryBtn": "Лише необхідні",
+      "showPreferencesBtn": "Налаштування"
+    },
+    "preferencesModal": {
+      "title": "Налаштування cookie",
+      "acceptAllBtn": "Прийняти все",
+      "acceptNecessaryBtn": "Лише необхідні",
+      "savePreferencesBtn": "Зберегти налаштування",
+      "closeIconLabel": "Закрити",
+      "sections": [
+        {
+          "title": "Необхідні cookie",
+          "description": "Ці cookie потрібні для роботи сайту.",
+          "linkedCategory": "necessary"
+        },
+        {
+          "title": "Аналітичні cookie",
+          "description": "Ці cookie допомагають зрозуміти, як використовується сайт.",
+          "linkedCategory": "analytics"
+        }
+      ]
+    },
     "title": "Ваша приватність важлива",
     "message": "Цей сайт використовує файли cookie.",
     "accept": "Прийняти все",

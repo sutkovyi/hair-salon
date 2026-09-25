@@ -95,7 +95,7 @@
     "viewOnMap": "Открыть в Google Maps",
     "backHome": "Вернуться на главную"
   },
-  "developmentNotice": "Онлайн-запись временно недоступна. Для записи свяжитесь с Наталией через WhatsApp или по телефону.",
+  "developmentNotice": "Сайт в процесе разработки. Онлайн-запись временно недоступна. ",
   "eyebrow": "Парикмахер-стилист · Quatre Carreres, Valencia 🇪🇸",
   "title": "Подчеркните свою естественную красоту",
   "intro": "Профессиональный уход от опытного мастера и атмосфера релакса в центре города.",
@@ -196,6 +196,32 @@
   "whatsappLabel": "WhatsApp для записи",
   "copyright": "Все права защищены.",
   "cookies": {
+    "consentModal": {
+      "title": "Как мы используем cookie",
+      "description": "Мы используем необходимые cookie, чтобы сайт работал. Мы также хотели бы использовать аналитические cookie, которые помогают улучшать сайт, измеряя, как вы им пользуетесь. Они устанавливаются только после вашего согласия. Подробную информацию о cookie смотрите в нашей Политике конфиденциальности.",
+      "acceptAllBtn": "Принять все",
+      "acceptNecessaryBtn": "Только необходимые",
+      "showPreferencesBtn": "Настройки"
+    },
+    "preferencesModal": {
+      "title": "Настройки cookie",
+      "acceptAllBtn": "Принять все",
+      "acceptNecessaryBtn": "Только необходимые",
+      "savePreferencesBtn": "Сохранить настройки",
+      "closeIconLabel": "Закрыть",
+      "sections": [
+        {
+          "title": "Необходимые cookie",
+          "description": "Эти cookie нужны для работы сайта.",
+          "linkedCategory": "necessary"
+        },
+        {
+          "title": "Аналитические cookie",
+          "description": "Эти cookie помогают понять, как используется сайт.",
+          "linkedCategory": "analytics"
+        }
+      ]
+    },
     "title": "Ваша конфиденциальность важна",
     "message": "Этот сайт использует cookie.",
     "accept": "Принять все",
