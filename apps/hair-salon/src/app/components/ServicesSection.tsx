@@ -1,12 +1,26 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import {
+  Baby,
+  Scissors,
+  Sparkles,
+  WandSparkles,
+  type LucideIcon,
+} from 'lucide-react';
 import { SectionHeading } from './SectionHeading';
 
 type ServiceItem = {
-  icon: string;
+  icon: 'baby' | 'wand-sparkles' | 'scissors' | 'sparkles';
   title: string;
   text: string;
+};
+
+const serviceIcons: Record<ServiceItem['icon'], LucideIcon> = {
+  baby: Baby,
+  'wand-sparkles': WandSparkles,
+  scissors: Scissors,
+  sparkles: Sparkles,
 };
 
 export function ServicesSection() {
@@ -20,28 +34,32 @@ export function ServicesSection() {
           title={t('servicesTitle')}
           intro={t('servicesIntro')}
         />
-        <div className="grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((item, index) => (
-            <article
-              key={item.title}
-              className="group border-t border-[#211f1c]/20 py-7 transition-colors hover:border-[#c08d32] sm:py-8"
-            >
-              <div className="mb-7 flex items-center justify-between">
-                <span className="text-xs font-semibold tracking-[0.12em] text-[#9b6c23]">
-                  0{index + 1}
-                </span>
-                <span className="font-serif text-3xl text-[#c08d32]" aria-hidden="true">
-                {item.icon}
-                </span>
-              </div>
-              <h3 className="font-sans text-xl font-semibold leading-snug text-[#211f1c]">
-                {item.title}
-              </h3>
-              <p className="mt-3 text-sm leading-6 text-[#66645e]">
-                {item.text}
-              </p>
-            </article>
-          ))}
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {services.map((item) => {
+            const Icon = serviceIcons[item.icon];
+
+            return (
+              <article
+                key={item.title}
+                className="service-card relative isolate flex min-h-[260px] flex-col overflow-hidden rounded-[20px] bg-white p-6"
+              >
+                <div className="service-card__content relative z-10 flex flex-1 flex-col">
+                  <h3 className="service-card__title font-sans text-xl font-semibold leading-snug text-[#211f1c]">
+                    {item.title}
+                  </h3>
+                  <span
+                    className="service-card__icon mt-5 flex h-20 w-full items-center justify-center text-[#9b6c23]"
+                    aria-hidden="true"
+                  >
+                    <Icon className="h-12 w-12" strokeWidth={1.5} />
+                  </span>
+                  <p className="service-card__description mt-5 text-sm leading-6 text-[#66645e]">
+                    {item.text}
+                  </p>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

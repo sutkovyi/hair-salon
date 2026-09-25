@@ -103,22 +103,22 @@
   "servicesIntro": "Haircuts, styling, and hairstyles for the whole family",
   "services": [
     {
-      "icon": "✂",
+      "icon": "baby",
       "title": "Kids' haircuts",
       "text": "Haircuts for boys and girls, including fringe trims."
     },
     {
-      "icon": "✦",
+      "icon": "wand-sparkles",
       "title": "Kids' Styling",
       "text": "Braiding, curls, kids' hairstyles, and kanekalon braids."
     },
     {
-      "icon": "✧",
+      "icon": "scissors",
       "title": "Haircuts",
       "text": "Women's and men's haircuts, ends trims, creative cuts, and clipper cuts."
     },
     {
-      "icon": "◌",
+      "icon": "sparkles",
       "title": "Styling & hairstyles",
       "text": "Everyday styling, straightening, afro curls, and special-occasion hairstyles."
     }

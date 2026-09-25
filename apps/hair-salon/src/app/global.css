@@ -52,6 +52,36 @@ body {
   margin: 0;
 }
 
+#services .service-card::before {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  border-radius: 20px;
+  background-color: #e7b961;
+  content: '';
+  pointer-events: none;
+  transition: height 400ms ease-in-out;
+}
+
+#services .service-card:hover::before {
+  height: 100%;
+}
+
+#services .service-card__title,
+#services .service-card__description,
+#services .service-card__icon {
+  transition: color 400ms ease-in-out;
+}
+
+#services .service-card:hover .service-card__title,
+#services .service-card:hover .service-card__description,
+#services .service-card:hover .service-card__icon {
+  color: #ffffff;
+}
+
 #cc-main {
   --cc-bg: #ffffff;
   --cc-primary-color: #211f1c;

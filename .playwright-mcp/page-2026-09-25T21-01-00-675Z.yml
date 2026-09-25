@@ -1,0 +1,191 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: The website is under development. Online booking is temporarily unavailable.
+      - generic [ref=e5]:
+        - link "Nataliia Krasovska. Hair stylist · Men's, women's, kids' haircuts" [ref=e6] [cursor=pointer]:
+          - /url: "#top"
+          - generic [ref=e7]: Nataliia Krasovska.
+          - generic [ref=e8]: Hair stylist · Men's, women's, kids' haircuts
+        - navigation [ref=e9]:
+          - link "Services" [ref=e10] [cursor=pointer]:
+            - /url: "#services"
+          - link "Prices" [ref=e11] [cursor=pointer]:
+            - /url: "#prices"
+          - link "About me" [ref=e12] [cursor=pointer]:
+            - /url: "#about"
+          - link "Contact" [ref=e13] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - button "UA" [ref=e17] [cursor=pointer]
+            - button "EN" [ref=e18] [cursor=pointer]
+            - button "RU" [ref=e19] [cursor=pointer]
+          - button "Book online" [ref=e20] [cursor=pointer]
+    - generic [ref=e26]:
+      - paragraph [ref=e27]: Hair stylist · Quatre Carreres, Valencia 🇪🇸
+      - heading "Reveal your natural beauty" [level=1] [ref=e29]
+      - paragraph [ref=e30]: Professional care from an experienced stylist and a relaxing atmosphere in the heart of the city.
+      - button "Book online" [ref=e31] [cursor=pointer]: Book online ↗
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - heading "My services" [level=2] [ref=e35]
+        - paragraph [ref=e36]: Haircuts, styling, and hairstyles for the whole family
+      - generic [ref=e37]:
+        - article [ref=e38]:
+          - generic [ref=e39]:
+            - heading "Kids' haircuts" [level=3] [ref=e40]
+            - paragraph [ref=e45]: Haircuts for boys and girls, including fringe trims.
+        - article [ref=e46]:
+          - generic [ref=e47]:
+            - heading "Kids' Styling" [level=3] [ref=e48]
+            - paragraph [ref=e53]: Braiding, curls, kids' hairstyles, and kanekalon braids.
+        - article [ref=e54]:
+          - generic [ref=e55]:
+            - heading "Haircuts" [level=3] [ref=e56]
+            - paragraph [ref=e64]: Women's and men's haircuts, ends trims, creative cuts, and clipper cuts.
+        - article [ref=e65]:
+          - generic [ref=e66]:
+            - heading "Styling & hairstyles" [level=3] [ref=e67]
+            - paragraph [ref=e72]: Everyday styling, straightening, afro curls, and special-occasion hairstyles.
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - heading "Price list" [level=2] [ref=e76]
+        - paragraph [ref=e77]: Popular treatments and pricing
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - heading "Kids' Haircuts" [level=3] [ref=e80]
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e83]: Boy's haircut
+              - generic [ref=e85]: 25€
+            - generic [ref=e86]:
+              - generic [ref=e87]: Girl's haircut (shoulder length)
+              - generic [ref=e89]: 25€
+            - generic [ref=e90]:
+              - generic [ref=e91]: Girl's haircut (below shoulder length)
+              - generic [ref=e93]: 30€
+            - generic [ref=e94]:
+              - generic [ref=e95]: Bangs cut (kids)
+              - generic [ref=e97]: 15€
+        - generic [ref=e98]:
+          - heading "Kids' Styling" [level=3] [ref=e99]
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - generic [ref=e102]: Curling iron styling (shoulder length)
+              - generic [ref=e104]: 20€
+            - generic [ref=e105]:
+              - generic [ref=e106]: Curling iron styling (below shoulder length)
+              - generic [ref=e108]: 30€
+            - generic [ref=e109]:
+              - generic [ref=e110]: Braiding
+              - generic [ref=e112]: 20-30€
+            - generic [ref=e113]:
+              - generic [ref=e114]: Kids' hairstyle
+              - generic [ref=e116]: 40-50€
+            - generic [ref=e117]:
+              - generic [ref=e118]: Braid without kanekalon (with rings or accessories)
+              - generic [ref=e120]: 5€
+            - generic [ref=e121]:
+              - generic [ref=e122]: Braid with kanekalon
+              - generic [ref=e124]: 5€
+            - generic [ref=e125]:
+              - generic [ref=e126]: Braid with kanekalon (with rings)
+              - generic [ref=e128]: 8€
+            - generic [ref=e129]:
+              - generic [ref=e130]: Braid with kanekalon (with accessories)
+              - generic [ref=e132]: 10€
+        - generic [ref=e133]:
+          - heading "Haircuts" [level=3] [ref=e134]
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - generic [ref=e137]: Women's haircut (ends trim)
+              - generic [ref=e139]: 40€
+            - generic [ref=e140]:
+              - generic [ref=e141]: Women's haircut
+              - generic [ref=e143]: 50€
+            - generic [ref=e144]:
+              - generic [ref=e145]: Bangs cut
+              - generic [ref=e147]: 20€
+            - generic [ref=e148]:
+              - generic [ref=e149]: Men's haircut
+              - generic [ref=e151]: 25€
+            - generic [ref=e152]:
+              - generic [ref=e153]: Men's haircut (creative)
+              - generic [ref=e155]: 30€
+            - generic [ref=e156]:
+              - generic [ref=e157]: Men's clipper cut
+              - generic [ref=e159]: 20€
+        - generic [ref=e160]:
+          - heading "Styling" [level=3] [ref=e161]
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - generic [ref=e164]: Everyday blow-dry styling (shoulder length)
+              - generic [ref=e166]: 20-30€
+            - generic [ref=e167]:
+              - generic [ref=e168]: Everyday blow-dry styling (below shoulder length)
+              - generic [ref=e170]: 30-40€
+            - generic [ref=e171]:
+              - generic [ref=e172]: Hair straightening (flat iron)
+              - generic [ref=e174]: 10-20€
+            - generic [ref=e175]:
+              - generic [ref=e176]: Hair straightening (flat iron with wash)
+              - generic [ref=e178]: 15-25€
+            - generic [ref=e179]:
+              - generic [ref=e180]: Afro curls (shoulder length)
+              - generic [ref=e182]: 50-60€
+            - generic [ref=e183]:
+              - generic [ref=e184]: Afro curls (below shoulder length)
+              - generic [ref=e186]: 60-70€
+            - generic [ref=e187]:
+              - generic [ref=e188]: Hairstyle (shoulder length)
+              - generic [ref=e190]: 65€
+            - generic [ref=e191]:
+              - generic [ref=e192]: Hairstyle (below shoulder length)
+              - generic [ref=e194]: 75-80€
+            - generic [ref=e195]:
+              - generic [ref=e196]: Hair washing
+              - generic [ref=e198]: 10€
+    - generic [ref=e201]:
+      - heading "About me" [level=2] [ref=e202]
+      - paragraph [ref=e203]: My name is Nataliia. I have worked in the beauty industry for 10 years, with more than 3 years dedicated specifically to children's hairdressing. For me, it is important not only to create a beautiful hairstyle, but also to provide every child with a comfortable and safe atmosphere.
+      - generic [ref=e204]:
+        - paragraph [ref=e205]: "In addition to children's haircuts, you can also trust me with your own look:"
+        - list [ref=e206]:
+          - listitem [ref=e207]: Men's haircuts
+          - listitem [ref=e208]: Women's haircuts
+          - listitem [ref=e209]: Everyday styling
+          - listitem [ref=e210]: Special-occasion hairstyles
+      - paragraph [ref=e211]: It is convenient when the whole family's hair care can be entrusted to one trusted stylist in Valencia!
+    - generic [ref=e213]:
+      - generic [ref=e214]:
+        - heading "Contact" [level=2] [ref=e215]
+        - paragraph [ref=e216]: Visits by appointment only
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - heading "Address" [level=3] [ref=e220]
+            - paragraph [ref=e221]:
+              - link "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸" [ref=e222] [cursor=pointer]:
+                - /url: https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic
+          - generic [ref=e225]:
+            - heading "Phone" [level=3] [ref=e226]
+            - paragraph [ref=e227]:
+              - link "+34 665 499 177" [ref=e228] [cursor=pointer]:
+                - /url: tel:+34665499177
+          - generic [ref=e229]:
+            - heading "WhatsApp for appointments" [level=3] [ref=e230]
+            - paragraph [ref=e231]:
+              - link "+380 73 181 92 04" [ref=e232] [cursor=pointer]:
+                - /url: https://wa.me/380731819204
+          - generic [ref=e233]:
+            - heading "Instagram" [level=3] [ref=e234]
+            - paragraph [ref=e235]:
+              - link "@care.of.your.hair8" [ref=e236] [cursor=pointer]:
+                - /url: https://www.instagram.com/care.of.your.hair8
+        - generic [ref=e239]: Loading map...
+    - generic [ref=e241]:
+      - link "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸" [ref=e242] [cursor=pointer]:
+        - /url: https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic
+      - paragraph [ref=e243]: © 2026. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e249] [cursor=pointer]
