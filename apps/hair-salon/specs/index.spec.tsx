@@ -35,7 +35,9 @@ describe('Page', () => {
     expect(baseElement).toBeTruthy();
     expect(structuredData?.textContent).toContain('OfferCatalog');
     expect(structuredData?.textContent).toContain('Перукарські послуги');
-    expect(structuredData?.textContent).toContain('inLanguage');
+    expect(structuredData?.textContent).toContain('uk-UA');
+    expect(structuredData?.textContent).toContain('#nataliia-krasovska');
+    expect(structuredData?.textContent).toContain('WhatsApp для запису');
     expect(structuredData?.textContent).toContain('PostalAddress');
   });
 });

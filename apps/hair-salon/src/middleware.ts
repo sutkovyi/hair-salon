@@ -54,15 +54,23 @@ The requested page does not exist on this website.
 `;
 
 export default function middleware(request: NextRequest) {
-  const acceptsMarkdown = request.headers.get('accept')?.includes('text/markdown');
+  const acceptsMarkdown = request.headers
+    .get('accept')
+    ?.includes('text/markdown');
   const pathname = request.nextUrl.pathname.replace(/\/$/, '') || '/';
 
-  if (acceptsMarkdown && (pathname === '/' || pathname === '/uk' || pathname === '/en')) {
+  if (
+    acceptsMarkdown &&
+    (pathname === '/' || pathname === '/uk' || pathname === '/en')
+  ) {
     return new NextResponse(homepageMarkdown, { headers: markdownHeaders });
   }
 
   if (acceptsMarkdown) {
-    return new NextResponse(notFoundMarkdown, { status: 404, headers: markdownHeaders });
+    return new NextResponse(notFoundMarkdown, {
+      status: 404,
+      headers: markdownHeaders,
+    });
   }
 
   return intlMiddleware(request);

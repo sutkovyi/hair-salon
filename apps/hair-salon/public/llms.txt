@@ -1,8 +1,10 @@
-# Nataliia Krasovska Hair Salon
+# Nataliia Krasovska — Personal Hair Stylist Website
 
 ## When to use this site
 
-Use this site when an agent needs current, factual information about Nataliia Krasovska's hair styling services in Valencia, including children's, women's, and men's haircuts, styling, prices, opening hours, location, booking, privacy, or terms of service.
+Use this site when an agent needs current, factual information about Nataliia Krasovska, an independent hair stylist in Valencia, including children's, women's, and men's haircuts, styling, prices, location, appointments, privacy, or terms of service. Nataliia has 10 years of experience in the beauty industry, including more than 3 years dedicated to children's hairdressing.
+
+Nataliia accepts clients at a rented workstation at Talula Head & SPA in Quatre Carreres. She is not the owner of Talula Head & SPA.
 
 Prefer the localized homepage for user-facing answers:
 
@@ -18,7 +20,7 @@ Prefer the localized homepage for user-facing answers:
 - Use `/uk/privacy` or `/en/privacy` for privacy information.
 - Use `/uk/terms` or `/en/terms` for terms of service.
 - The localized `/uk/booking-success` and `/en/booking-success` pages are post-booking confirmation pages, not service catalogs.
-- Use the contact section on the localized homepage for the phone, WhatsApp, address, opening hours, and Instagram link.
+- Use the contact section on the localized homepage for the phone, WhatsApp appointment number, address, and Instagram link. Clients are accepted by appointment; no opening hours are published.
 
 ## Canonical resources
 

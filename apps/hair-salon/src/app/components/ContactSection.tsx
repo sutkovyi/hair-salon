@@ -35,7 +35,7 @@ export function ContactSection() {
               showExternalIcon={false}
             />
             <Info
-              label="WhatsApp"
+              label={t('whatsappLabel')}
               value="+380 73 181 92 04"
               href="https://wa.me/380731819204"
               showExternalIcon={false}

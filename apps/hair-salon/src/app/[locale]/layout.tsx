@@ -19,13 +19,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const isEnglish = locale === 'en';
-  const stylistName = isEnglish ? 'Nataliia Krasovska' : 'Наталія Красовська';
+  const isSpanish = locale === 'es';
+  const stylistName =
+    isEnglish || isSpanish ? 'Nataliia Krasovska' : 'Наталія Красовська';
   const title = isEnglish
-    ? `${stylistName} | Hair Stylist in Valencia`
-    : `${stylistName} | Стрижка у Валенсії`;
+    ? `${stylistName} — Hair Stylist in Valencia | Children's, Women's & Men's Haircuts`
+    : isSpanish
+      ? `${stylistName} — Peluquera en Valencia | Cortes y peinados`
+      : `${stylistName} — перукар-стиліст у Валенсії | Дитячі, жіночі та чоловічі стрижки`;
   const description = isEnglish
-    ? `${stylistName} — hair stylist. Kids', men's and women's haircuts, hairstyles, and everyday styling.`
-    : `${stylistName} — стиліст по волоссю. Дитячі, чоловічі та жіночі стрижки. Зачіски та повсякденне укладання.`;
+    ? `${stylistName} is an independent hair stylist in Valencia. Children's, women's and men's haircuts, styling and hairstyles in Quatre Carreres.`
+    : isSpanish
+      ? `${stylistName} es peluquera independiente en Valencia. Cortes y peinados para niños, mujeres y hombres en Quatre Carreres.`
+      : `${stylistName} — незалежний перукар-стиліст у Валенсії. Дитячі, жіночі та чоловічі стрижки, укладки та зачіски в районі Quatre Carreres.`;
 
   return {
     metadataBase: new URL(siteUrl),
@@ -44,18 +50,20 @@ export async function generateMetadata({
     },
     title,
     description,
-    keywords: [
-      'стрижка Валенсія',
-      'стрижка у Валенсії',
-      'чоловіча стрижка у Валенсії',
-      'жіноча стрижка у Валенсії',
-      'дитяча стрижка у Валенсії',
-    ],
+    alternates: {
+      canonical: `${siteUrl}/${locale}`,
+      languages: {
+        uk: `${siteUrl}/uk`,
+        en: `${siteUrl}/en`,
+        es: `${siteUrl}/es`,
+        'x-default': `${siteUrl}/uk`,
+      },
+    },
     openGraph: {
       title,
       description,
       type: 'website',
-      locale: isEnglish ? 'en_US' : 'uk_UA',
+      locale: isEnglish ? 'en_US' : isSpanish ? 'es_ES' : 'uk_UA',
       images: [
         {
           url: '/og-image.jpg',

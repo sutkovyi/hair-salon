@@ -1,9 +1,29 @@
 {
   "schema": {
+    "personName": "Наталія Красовська",
     "websiteName": "Наталія Красовська — персональний сайт майстра-перукаря",
     "pageName": "Nataliia Krasovska — перукар у Валенсії",
     "description": "Nataliia Krasovska — перукар у Валенсії, яка виконує дитячі, жіночі та чоловічі стрижки, зачіски, плетіння та щоденне укладання у Talula Head & SPA.",
     "jobTitle": "Перукар",
+    "telephone": "+34 665 499 177",
+    "whatsappTelephone": "+380 73 181 92 04",
+    "whatsappContactType": "WhatsApp для запису",
+    "instagramUrl": "https://www.instagram.com/care.of.your.hair8",
+    "knowsAbout": [
+      "Дитячі стрижки",
+      "Жіночі стрижки",
+      "Чоловічі стрижки",
+      "Укладання волосся",
+      "Зачіски"
+    ],
+    "salonName": "Talula Head & SPA",
+    "streetAddress": "C/ de la Font de la Figuera, 7",
+    "addressLocality": "Валенсія",
+    "addressRegion": "Quatre Carreres, Валенсія",
+    "postalCode": "46004",
+    "addressCountry": "ES",
+    "areaServed": "Валенсія",
+    "priceCurrency": "EUR",
     "servicesName": "Перукарські послуги",
     "services": [
       { "name": "Чоловіча стрижка", "serviceType": "Стрижка", "price": "25" },
@@ -250,6 +270,7 @@
   "close": "Закрити",
   "addressLabel": "Адреса",
   "phoneLabel": "Телефон",
+  "whatsappLabel": "WhatsApp для запису",
   "copyright": "Усі права захищено.",
   "cookies": {
     "title": "Ваша приватність важлива",

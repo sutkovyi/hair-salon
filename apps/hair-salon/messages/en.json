@@ -1,9 +1,29 @@
 {
   "schema": {
+    "personName": "Nataliia Krasovska",
     "websiteName": "Nataliia Krasovska — Personal Hair Stylist Website",
     "pageName": "Nataliia Krasovska — Hair Stylist in Valencia",
     "description": "Nataliia Krasovska is a hair stylist in Valencia offering children's, women's, and men's haircuts, hairstyles, braiding, and everyday styling at Talula Head & SPA.",
     "jobTitle": "Hair Stylist",
+    "telephone": "+34 665 499 177",
+    "whatsappTelephone": "+380 73 181 92 04",
+    "whatsappContactType": "WhatsApp appointments",
+    "instagramUrl": "https://www.instagram.com/care.of.your.hair8",
+    "knowsAbout": [
+      "Children's haircuts",
+      "Women's haircuts",
+      "Men's haircuts",
+      "Hair styling",
+      "Hairstyles"
+    ],
+    "salonName": "Talula Head & SPA",
+    "streetAddress": "C/ de la Font de la Figuera, 7",
+    "addressLocality": "València",
+    "addressRegion": "Quatre Carreres, Valencia",
+    "postalCode": "46004",
+    "addressCountry": "ES",
+    "areaServed": "València",
+    "priceCurrency": "EUR",
     "servicesName": "Hair Services",
     "services": [
       { "name": "Men's haircut", "serviceType": "Haircut", "price": "25" },
@@ -250,6 +270,7 @@
   "close": "Close",
   "addressLabel": "Address",
   "phoneLabel": "Phone",
+  "whatsappLabel": "WhatsApp for appointments",
   "copyright": "All rights reserved.",
   "cookies": {
     "title": "Your privacy matters",

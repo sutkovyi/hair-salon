@@ -20,7 +20,7 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
   const pathname = usePathname();
   const isLegalPage = pathname === '/privacy' || pathname === '/terms';
 
-  const handleLanguageChange = (newLocale: 'uk' | 'en') => {
+  const handleLanguageChange = (newLocale: 'uk' | 'en' | 'es') => {
     trackEvent('change_language', {
       event_category: 'engagement',
       language: newLocale,
@@ -44,7 +44,8 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
           className="flex min-w-0 max-w-[185px] flex-1 flex-col font-serif tracking-[0.08em] sm:max-w-none"
         >
           <span className="text-xl leading-tight sm:text-2xl">
-            {t('stylistName')}<span className="text-[#d4a373]">.</span>
+            {t('stylistName')}
+            <span className="text-[#d4a373]">.</span>
           </span>
           <span className="mt-1 break-words font-sans text-[8px] font-medium uppercase leading-tight tracking-[0.05em] text-[#6c757d] sm:text-[9px] sm:tracking-[0.08em]">
             {t('headerSpecialties')}
@@ -65,15 +66,30 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
           <div className="flex rounded-full border border-[#e0e0e0] p-0.5 text-[10px] sm:p-1 sm:text-xs">
             <button
               onClick={() => handleLanguageChange('uk')}
-              className={languageOption({ size: 'uk', active: locale === 'uk' })}
+              className={languageOption({
+                size: 'uk',
+                active: locale === 'uk',
+              })}
             >
               UA
             </button>
             <button
               onClick={() => handleLanguageChange('en')}
-              className={languageOption({ size: 'en', active: locale === 'en' })}
+              className={languageOption({
+                size: 'en',
+                active: locale === 'en',
+              })}
             >
               EN
+            </button>
+            <button
+              onClick={() => handleLanguageChange('es')}
+              className={languageOption({
+                size: 'en',
+                active: locale === 'es',
+              })}
+            >
+              ES
             </button>
           </div>
           {siteConfig.booking.enabled && (
@@ -95,7 +111,11 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
               <div className="mt-10 flex flex-col gap-6 font-serif text-2xl">
                 {navItems.map((item) => (
                   <SheetClose asChild key={item.section}>
-                    <a href={isLegalPage ? `/${locale}${item.section}` : item.section}>
+                    <a
+                      href={
+                        isLegalPage ? `/${locale}${item.section}` : item.section
+                      }
+                    >
                       {item.label}
                     </a>
                   </SheetClose>
@@ -105,15 +125,30 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
                 <div className="flex rounded-full border border-[#e0e0e0] p-1 text-xs">
                   <button
                     onClick={() => handleLanguageChange('uk')}
-                    className={languageOption({ size: 'uk', active: locale === 'uk' })}
+                    className={languageOption({
+                      size: 'uk',
+                      active: locale === 'uk',
+                    })}
                   >
                     UA
                   </button>
                   <button
                     onClick={() => handleLanguageChange('en')}
-                    className={languageOption({ size: 'en', active: locale === 'en' })}
+                    className={languageOption({
+                      size: 'en',
+                      active: locale === 'en',
+                    })}
                   >
                     EN
+                  </button>
+                  <button
+                    onClick={() => handleLanguageChange('es')}
+                    className={languageOption({
+                      size: 'en',
+                      active: locale === 'es',
+                    })}
+                  >
+                    ES
                   </button>
                 </div>
                 {siteConfig.booking.enabled && (
