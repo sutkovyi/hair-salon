@@ -66,6 +66,13 @@
   },
   "book": "Book online",
   "menu": "Open menu",
+  "languageSwitcher": {
+    "languages": {
+      "uk": "UA",
+      "en": "EN",
+      "ru": "RU"
+    }
+  },
   "bookingCatalog": {
     "eyebrow": "Online booking",
     "title": "Choose a service",

@@ -1,4 +1,4 @@
-export type SupportedLocale = 'en' | 'es' | 'uk';
+export type SupportedLocale = 'en' | 'ru' | 'uk';
 
 export interface LocalizedSchema {
   personName: string;
@@ -39,12 +39,12 @@ const WEBSITE_ID = `${SITE_URL}/#website`;
 
 const LOCALE_PATHS: Record<SupportedLocale, string> = {
   en: '/en',
-  es: '/es',
+  ru: '/ru',
   uk: '/uk',
 };
 const LANGUAGE_CODES: Record<SupportedLocale, string> = {
   en: 'en',
-  es: 'es-ES',
+  ru: 'ru-RU',
   uk: 'uk-UA',
 };
 
@@ -88,7 +88,7 @@ export function createSchema(
           '@type': 'ContactPoint',
           telephone: content.whatsappTelephone,
           contactType: content.whatsappContactType,
-          availableLanguage: ['uk-UA', 'en', 'es-ES'],
+          availableLanguage: ['uk-UA', 'en', 'ru-RU'],
         },
         knowsAbout: content.knowsAbout,
         workLocation: { '@id': SALON_ID },

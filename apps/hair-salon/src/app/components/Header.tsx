@@ -1,11 +1,11 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { usePathname, useRouter } from '@/i18n/routing';
+import { usePathname } from '@/i18n/routing';
 import { siteConfig } from '@/config/site';
-import { trackEvent } from '../../lib/gtag';
 import { DevelopmentNotice } from './DevelopmentNotice';
-import { button, languageOption } from '../ui-variants';
+import { button } from '../ui-variants';
+import { LanguageSwitcher } from './LanguageSwitcher';
 import { Menu } from 'lucide-react';
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from './ui/sheet';
 
@@ -16,17 +16,8 @@ type HeaderProps = {
 export function Header({ onBook = () => undefined }: HeaderProps) {
   const t = useTranslations();
   const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
   const isLegalPage = pathname === '/privacy' || pathname === '/terms';
-
-  const handleLanguageChange = (newLocale: 'uk' | 'en' | 'es') => {
-    trackEvent('change_language', {
-      event_category: 'engagement',
-      language: newLocale,
-    });
-    router.replace(pathname, { locale: newLocale });
-  };
 
   const navItems = [
     { label: t('nav.services'), section: '#services' },
@@ -63,35 +54,7 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
           ))}
         </nav>
         <div className="col-start-3 flex shrink-0 items-center justify-self-end gap-4 sm:gap-3">
-          <div className="flex rounded-full border border-[#e0e0e0] p-0.5 text-[10px] sm:p-1 sm:text-xs">
-            <button
-              onClick={() => handleLanguageChange('uk')}
-              className={languageOption({
-                size: 'uk',
-                active: locale === 'uk',
-              })}
-            >
-              UA
-            </button>
-            <button
-              onClick={() => handleLanguageChange('en')}
-              className={languageOption({
-                size: 'en',
-                active: locale === 'en',
-              })}
-            >
-              EN
-            </button>
-            <button
-              onClick={() => handleLanguageChange('es')}
-              className={languageOption({
-                size: 'en',
-                active: locale === 'es',
-              })}
-            >
-              ES
-            </button>
-          </div>
+          <LanguageSwitcher />
           {siteConfig.booking.enabled && (
             <button
               onClick={() => onBook('header')}
@@ -122,35 +85,7 @@ export function Header({ onBook = () => undefined }: HeaderProps) {
                 ))}
               </div>
               <div className="mt-auto flex items-center gap-3 border-t border-border pt-6">
-                <div className="flex rounded-full border border-[#e0e0e0] p-1 text-xs">
-                  <button
-                    onClick={() => handleLanguageChange('uk')}
-                    className={languageOption({
-                      size: 'uk',
-                      active: locale === 'uk',
-                    })}
-                  >
-                    UA
-                  </button>
-                  <button
-                    onClick={() => handleLanguageChange('en')}
-                    className={languageOption({
-                      size: 'en',
-                      active: locale === 'en',
-                    })}
-                  >
-                    EN
-                  </button>
-                  <button
-                    onClick={() => handleLanguageChange('es')}
-                    className={languageOption({
-                      size: 'en',
-                      active: locale === 'es',
-                    })}
-                  >
-                    ES
-                  </button>
-                </div>
+                <LanguageSwitcher mobile />
                 {siteConfig.booking.enabled && (
                   <SheetClose asChild>
                     <button

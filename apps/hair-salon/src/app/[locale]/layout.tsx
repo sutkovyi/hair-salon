@@ -19,18 +19,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const isEnglish = locale === 'en';
-  const isSpanish = locale === 'es';
-  const stylistName =
-    isEnglish || isSpanish ? 'Nataliia Krasovska' : 'Наталія Красовська';
+  const isRussian = locale === 'ru';
+  const stylistName = isEnglish ? 'Nataliia Krasovska' : 'Наталія Красовська';
   const title = isEnglish
     ? `${stylistName} — Hair Stylist in Valencia | Children's, Women's & Men's Haircuts`
-    : isSpanish
-      ? `${stylistName} — Peluquera en Valencia | Cortes y peinados`
+    : isRussian
+      ? `${stylistName} — парикмахер-стилист в Валенсии | Стрижки и укладки`
       : `${stylistName} — перукар-стиліст у Валенсії | Дитячі, жіночі та чоловічі стрижки`;
   const description = isEnglish
     ? `${stylistName} is an independent hair stylist in Valencia. Children's, women's and men's haircuts, styling and hairstyles in Quatre Carreres.`
-    : isSpanish
-      ? `${stylistName} es peluquera independiente en Valencia. Cortes y peinados para niños, mujeres y hombres en Quatre Carreres.`
+    : isRussian
+      ? `${stylistName} — независимый парикмахер-стилист в Валенсии. Стрижки и укладки для детей, женщин и мужчин в районе Quatre Carreres.`
       : `${stylistName} — незалежний перукар-стиліст у Валенсії. Дитячі, жіночі та чоловічі стрижки, укладки та зачіски в районі Quatre Carreres.`;
 
   return {
@@ -55,7 +54,7 @@ export async function generateMetadata({
       languages: {
         uk: `${siteUrl}/uk`,
         en: `${siteUrl}/en`,
-        es: `${siteUrl}/es`,
+        ru: `${siteUrl}/ru`,
         'x-default': `${siteUrl}/uk`,
       },
     },
@@ -63,7 +62,7 @@ export async function generateMetadata({
       title,
       description,
       type: 'website',
-      locale: isEnglish ? 'en_US' : isSpanish ? 'es_ES' : 'uk_UA',
+      locale: isEnglish ? 'en_US' : isRussian ? 'ru_RU' : 'uk_UA',
       images: [
         {
           url: '/og-image.jpg',

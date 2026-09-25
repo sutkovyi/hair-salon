@@ -3,7 +3,7 @@ type LegalDocument = {
   terms: string;
 };
 
-export const legalContent: Record<'uk' | 'en' | 'es', LegalDocument> = {
+export const legalContent: Record<'uk' | 'en' | 'ru', LegalDocument> = {
   uk: {
     privacy: `<h1>Політика конфіденційності (Privacy Policy)</h1>
 <p><em>Дата останнього оновлення: 22 вересня 2026 року</em><br /><em>Вебсайт: https://care-of-your-hair.n-sutkovoy.workers.dev/</em></p>
@@ -76,22 +76,22 @@ export const legalContent: Record<'uk' | 'en' | 'es', LegalDocument> = {
 <p>For questions or schedule modifications, please contact:</p>
 <ul><li><strong>Phone:</strong> [Your Phone Number]</li><li><strong>Email:</strong> [Your Email]</li></ul>`,
   },
-  es: {
-    privacy: `<h1>Política de privacidad</h1>
-<p><em>Última actualización: 22 de septiembre de 2026</em><br /><em>Sitio web: https://care-of-your-hair.n-sutkovoy.workers.dev/</em></p>
-<h3>1. Disposiciones generales</h3>
-<p>Esta política explica cómo recopilamos, utilizamos y protegemos tus datos personales cuando utilizas este sitio web.</p>
-<h3>2. Datos que recopilamos</h3>
-<p>Podemos recopilar tu nombre, teléfono, correo electrónico, preferencias de servicio y datos técnicos necesarios para gestionar consultas y reservas.</p>
-<h3>3. Tus derechos</h3>
-<p>Puedes solicitar acceso, rectificación o eliminación de tus datos personales contactándonos por correo electrónico. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos.</p>`,
-    terms: `<h1>Condiciones del servicio y reglas de reserva</h1>
-<p><em>Última actualización: 22 de septiembre de 2026</em><br /><em>Sitio web: https://care-of-your-hair.n-sutkovoy.workers.dev/</em></p>
-<h3>1. Reservas</h3>
-<p>La cita no queda confirmada hasta que la disponibilidad haya sido confirmada por la estilista.</p>
-<h3>2. Retrasos y cancelaciones</h3>
-<p>El retraso máximo permitido es de 15 minutos. Las cancelaciones o cambios deben comunicarse con al menos 24 horas de antelación.</p>
-<h3>3. Contacto</h3>
-<p>Para cualquier consulta sobre el servicio o tu cita, ponte en contacto con la estilista.</p>`,
+  ru: {
+    privacy: `<h1>Политика конфиденциальности</h1>
+<p><em>Последнее обновление: 22 сентября 2026 года</em><br /><em>Сайт: https://care-of-your-hair.n-sutkovoy.workers.dev/</em></p>
+<h3>1. Общие положения</h3>
+<p>Эта политика объясняет, как мы собираем, используем и защищаем ваши персональные данные при использовании сайта.</p>
+<h3>2. Какие данные мы собираем</h3>
+<p>Мы можем получать ваше имя, телефон, электронную почту, выбранную услугу и технические данные, необходимые для связи и записи.</p>
+<h3>3. Ваши права</h3>
+<p>Вы можете запросить доступ, исправление или удаление ваших персональных данных, связавшись с нами по электронной почте.</p>`,
+    terms: `<h1>Условия обслуживания и правила записи</h1>
+<p><em>Последнее обновление: 22 сентября 2026 года</em><br /><em>Сайт: https://care-of-your-hair.n-sutkovoy.workers.dev/</em></p>
+<h3>1. Запись</h3>
+<p>Визит считается подтвержденным после согласования даты и времени с мастером.</p>
+<h3>2. Опоздания и отмены</h3>
+<p>Максимально допустимое опоздание составляет 15 минут. Об отмене или переносе визита необходимо сообщить заранее.</p>
+<h3>3. Контакты</h3>
+<p>По вопросам услуг и записи свяжитесь с мастером по телефону или через WhatsApp.</p>`,
   },
 };

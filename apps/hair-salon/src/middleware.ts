@@ -29,6 +29,7 @@ Hair stylist in Valencia, Spain. Kids', men's and women's haircuts, hairstyles, 
 - Booking catalog: ${siteUrl}/booking
 - Ukrainian booking page: ${siteUrl}/uk/booking
 - English booking page: ${siteUrl}/en/booking
+- Russian booking page: ${siteUrl}/ru/booking
 
 ## Contact
 
@@ -61,7 +62,10 @@ export default function middleware(request: NextRequest) {
 
   if (
     acceptsMarkdown &&
-    (pathname === '/' || pathname === '/uk' || pathname === '/en')
+    (pathname === '/' ||
+      pathname === '/uk' ||
+      pathname === '/en' ||
+      pathname === '/ru')
   ) {
     return new NextResponse(homepageMarkdown, { headers: markdownHeaders });
   }
