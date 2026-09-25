@@ -28,7 +28,7 @@ export function ServicesSection() {
   const services = t.raw('services') as ServiceItem[];
 
   return (
-    <section id="services" className="bg-[#f5f3ed] px-5 py-24 lg:px-10 lg:py-28">
+    <section id="services" className="bg-[#faf7f2] px-5 py-24 lg:px-10 lg:py-28">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           title={t('servicesTitle')}

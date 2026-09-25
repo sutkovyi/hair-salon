@@ -6,7 +6,7 @@ const MAP_URL = `https://www.google.com/maps?q=${POSITION.latitude},${POSITION.l
 
 export default function LocationMap() {
   return (
-    <div className="h-[396px] w-full overflow-hidden rounded-xl border border-[#e0e0e0] shadow-sm">
+    <div className="h-[400px] w-full overflow-hidden lg:h-[480px]">
       <iframe
         title="TALULA Head & SPA location on Google Maps"
         src={MAP_URL}

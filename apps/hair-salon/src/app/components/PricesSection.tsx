@@ -19,7 +19,7 @@ export function PricesSection() {
   const priceCategories = t.raw('priceCategories') as PriceCategory[];
 
   return (
-    <section id="prices" className="bg-[#211f1c] px-5 py-24 text-white lg:px-10 lg:py-28">
+    <section id="prices" className="bg-[#211f1c] px-5 pt-24 pb-8 text-white lg:px-10 lg:pt-28 lg:pb-12">
       <div className="mx-auto max-w-4xl">
         <SectionHeading title={t('pricesTitle')} intro={t('pricesIntro')} inverse />
         <div className="mt-12 space-y-12">

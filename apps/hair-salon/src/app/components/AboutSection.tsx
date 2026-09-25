@@ -1,37 +1,56 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Scissors } from 'lucide-react';
+import workImage from '../images/work.jpg';
+
 export function AboutSection() {
   const t = useTranslations();
   const services = t.raw('aboutServices') as string[];
 
   return (
-    <section
-      id="about"
-      className="mx-auto grid max-w-7xl gap-10 px-5 py-24 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-10 lg:py-28"
-    >
-      <div
-        className="aspect-[4/3] bg-cover bg-center grayscale-[0.15] lg:aspect-[5/6]"
-        style={{ backgroundImage: "url('/workspace.avif')" }}
-      />
-      <div>
-        <h2 className="font-sans text-4xl font-semibold leading-tight text-[#211f1c] sm:text-5xl">
-          {t('aboutTitle')}
-        </h2>
-        <p className="mt-5 leading-7 text-[#66645e]">
-          {t('about')}
-        </p>
-        <div className="mt-3 leading-7 text-[#66645e]">
-          <p>{t('aboutServicesIntro')}</p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 marker:text-[#c08d32]">
-            {services.map((service) => (
-              <li key={service}>{service}</li>
-            ))}
-          </ul>
+    <section id="about" className="px-5 pt-8 pb-8 lg:px-10 lg:pt-12 lg:pb-12">
+      <div className="mx-auto grid max-w-7xl gap-8 rounded-[20px] bg-white p-5 shadow-[0_12px_36px_rgba(33,31,28,0.06)] sm:p-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-12 lg:p-8">
+        <figure className="relative m-0 aspect-[4/5] overflow-hidden bg-[#ede9df] lg:aspect-[5/6]">
+          <img
+            src={workImage.src}
+            alt={t('aboutImageAlt')}
+            className="h-full w-full object-cover object-[58%_center]"
+          />
+          <figcaption className="absolute bottom-4 left-4 rounded-full bg-[#faf7f2]/95 px-4 py-2 text-xs font-semibold text-[#211f1c] backdrop-blur-sm">
+            {t('stylistName')}
+          </figcaption>
+        </figure>
+        <div className="min-w-0">
+          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#211f1c]/15 px-4 py-2 text-xs font-semibold uppercase text-[#211f1c]">
+            <span
+              className="h-2 w-2 rounded-full bg-[#e7b961]"
+              aria-hidden="true"
+            />
+            {t('aboutTitle')}
+          </p>
+          <h2 className="font-sans text-4xl font-semibold leading-tight text-[#211f1c] sm:text-5xl">
+            {t('stylistName')}
+          </h2>
+          <p className="mt-5 leading-7 text-[#66645e]">{t('about')}</p>
+          <div className="mt-4 leading-7 text-[#66645e]">
+            <p>{t('aboutServicesIntro')}</p>
+            <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1.5">
+              {services.map((service) => (
+                <li key={service} className="flex items-center gap-2 text-sm">
+                  <Scissors
+                    className="h-4 w-4 shrink-0 text-[#9b6c23]"
+                    aria-hidden="true"
+                  />
+                  {service}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <p className="mt-4 text-sm leading-6 text-[#66645e]">
+            {t('aboutClosing')}
+          </p>
         </div>
-        <p className="mt-3 leading-7 text-[#66645e]">
-          {t('aboutClosing')}
-        </p>
       </div>
     </section>
   );
