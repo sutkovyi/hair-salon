@@ -68,7 +68,8 @@ body {
   --cc-font-family: inherit;
 }
 
-#cc-main .cm__btn {
+#cc-main .cm__btn,
+#cc-main .pm__btn {
   border: 0;
 }
 

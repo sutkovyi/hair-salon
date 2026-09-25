@@ -1,15 +1,22 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useLocale, useMessages } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { run, setLanguage } from 'vanilla-cookieconsent';
+import enMessages from '../../../messages/en.json';
+import ruMessages from '../../../messages/ru.json';
+import ukMessages from '../../../messages/uk.json';
 
 export const COOKIE_CONSENT_CHANGE = 'cookie-consent-change';
 
+const translations = {
+  en: enMessages.cookies,
+  ru: ruMessages.cookies,
+  uk: ukMessages.cookies,
+};
+
 export function CookieBanner() {
   const locale = useLocale() as 'en' | 'ru' | 'uk';
-  const messages = useMessages();
-  const translations = { [locale]: messages.cookies };
 
   useEffect(() => {
     run({
