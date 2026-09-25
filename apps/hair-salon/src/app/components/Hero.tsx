@@ -25,7 +25,7 @@ export function Hero({ onBook }: { onBook: (location?: string) => void }) {
         />
       </picture>
       <div className="absolute inset-0 bg-black/38" />
-      <div className="relative z-10 mx-auto max-w-3xl px-6">
+      <div className="relative z-10 mx-auto max-w-4xl px-6">
         <p className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-[#f2d3ae]">
           {t('eyebrow')}
         </p>
