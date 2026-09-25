@@ -1,7 +1,6 @@
 'use client';
 
 import { FormEvent, useEffect, useState } from 'react';
-import { useMessages } from 'next-intl';
 import { trackEvent } from '../../lib/gtag';
 import { AboutSection } from './AboutSection';
 import { BookingModal } from './BookingModal';
@@ -12,11 +11,7 @@ import { Hero } from './Hero';
 import { PricesSection } from './PricesSection';
 import { ServicesSection } from './ServicesSection';
 import type { BookingService } from '../lib/booking-services';
-import {
-  createSchema,
-  type LocalizedSchema,
-  type SupportedLocale,
-} from '../lib/schema';
+import type { SupportedLocale } from '../lib/schema';
 import { siteConfig } from '@/config/site';
 
 type HomeClientProps = {
@@ -46,7 +41,6 @@ function updateBookingModalParam(isOpen: boolean) {
 }
 
 export function HomeClient({ initialServices, locale }: HomeClientProps) {
-  const messages = useMessages();
   const [bookingOpen, setBookingOpen] = useState(false);
   const [sent, setSent] = useState(false);
 
@@ -78,16 +72,8 @@ export function HomeClient({ initialServices, locale }: HomeClientProps) {
     setSent(true);
   };
 
-  const structuredData = createSchema(
-    locale,
-    messages.schema as unknown as LocalizedSchema,
-  );
-
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#2b2d42]">
-      <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
-      </script>
       <Header onBook={openBooking} />
       <Hero onBook={openBooking} />
       <ServicesSection />
