@@ -1,7 +1,7 @@
 'use client';
 
 import { FormEvent, useEffect, useState } from 'react';
-import { useLocale } from 'next-intl';
+import { useMessages } from 'next-intl';
 import { trackEvent } from '../../lib/gtag';
 import { AboutSection } from './AboutSection';
 import { BookingModal } from './BookingModal';
@@ -12,16 +12,25 @@ import { Hero } from './Hero';
 import { PricesSection } from './PricesSection';
 import { ServicesSection } from './ServicesSection';
 import type { BookingService } from '../lib/booking-services';
+import {
+  createSchema,
+  type LocalizedSchema,
+  type SupportedLocale,
+} from '../lib/schema';
 import { siteConfig } from '@/config/site';
 
 type HomeClientProps = {
   initialServices: BookingService[];
+  locale: SupportedLocale;
 };
 
 const BOOKING_MODAL_PARAM = 'booking-modal';
 
 function hasBookingModalParam() {
-  return new URLSearchParams(window.location.search).get(BOOKING_MODAL_PARAM) === 'true';
+  return (
+    new URLSearchParams(window.location.search).get(BOOKING_MODAL_PARAM) ===
+    'true'
+  );
 }
 
 function updateBookingModalParam(isOpen: boolean) {
@@ -36,8 +45,8 @@ function updateBookingModalParam(isOpen: boolean) {
   window.history.replaceState({}, '', url);
 }
 
-export function HomeClient({ initialServices }: HomeClientProps) {
-  const locale = useLocale();
+export function HomeClient({ initialServices, locale }: HomeClientProps) {
+  const messages = useMessages();
   const [bookingOpen, setBookingOpen] = useState(false);
   const [sent, setSent] = useState(false);
 
@@ -69,38 +78,16 @@ export function HomeClient({ initialServices }: HomeClientProps) {
     setSent(true);
   };
 
-  const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    'https://care-of-your-hair.n-sutkovoy.workers.dev';
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': ['HairSalon', 'Organization'],
-    name: 'Nataliia Krasovska',
-    description:
-      'Hair stylist in Valencia offering children\'s, women\'s, and men\'s haircuts, hairstyles, and everyday styling.',
-    url: `${siteUrl}/${locale}`,
-    telephone: '+34 665 499 177',
-    email: 'care.of.your.hair8@gmail.com',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'C/ de la Font de la Figuera, 7',
-      addressLocality: 'València',
-      postalCode: '46004',
-      addressCountry: 'ES',
-    },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '+34 665 499 177',
-      email: 'care.of.your.hair8@gmail.com',
-      contactType: 'customer service',
-      availableLanguage: ['uk', 'en', 'es'],
-    },
-    sameAs: ['https://www.instagram.com/care.of.your.hair8'],
-  };
+  const structuredData = createSchema(
+    locale,
+    messages.schema as unknown as LocalizedSchema,
+  );
 
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#2b2d42]">
-      <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
       <Header onBook={openBooking} />
       <Hero onBook={openBooking} />
       <ServicesSection />

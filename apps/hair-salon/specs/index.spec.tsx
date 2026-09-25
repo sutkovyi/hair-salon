@@ -20,18 +20,22 @@ vi.mock('@/i18n/routing', () => ({
 }));
 
 describe('Page', () => {
-  it('should render successfully', () => {
+  it('should render localized JSON-LD successfully', async () => {
+    const page = await Page({ params: Promise.resolve({ locale: 'uk' }) });
     const { baseElement } = render(
       <NextIntlClientProvider locale="uk" messages={messages}>
-        <Page />
-      </NextIntlClientProvider>
+        {page}
+      </NextIntlClientProvider>,
     );
 
-    const structuredData = baseElement.querySelector('script[type="application/ld+json"]');
+    const structuredData = baseElement.querySelector(
+      'script[type="application/ld+json"]',
+    );
 
     expect(baseElement).toBeTruthy();
-    expect(structuredData?.textContent).toContain('HairSalon');
-    expect(structuredData?.textContent).toContain('contactPoint');
+    expect(structuredData?.textContent).toContain('OfferCatalog');
+    expect(structuredData?.textContent).toContain('Перукарські послуги');
+    expect(structuredData?.textContent).toContain('inLanguage');
     expect(structuredData?.textContent).toContain('PostalAddress');
   });
 });

@@ -1,4 +1,39 @@
 {
+  "schema": {
+    "websiteName": "Care of Your Hair",
+    "pageName": "Nataliia Krasovska — Hair Stylist in Valencia",
+    "description": "Nataliia Krasovska is a hair stylist in Valencia offering children's, women's, and men's haircuts, hairstyles, braiding, and everyday styling at Talula Head & SPA.",
+    "jobTitle": "Hair Stylist",
+    "servicesName": "Hair Services",
+    "services": [
+      { "name": "Men's haircut", "serviceType": "Haircut", "price": "25" },
+      { "name": "Women's haircut", "serviceType": "Haircut", "price": "50" },
+      {
+        "name": "Children's haircut",
+        "serviceType": "Haircut",
+        "minPrice": "25",
+        "maxPrice": "30"
+      },
+      {
+        "name": "Braiding",
+        "serviceType": "Hair styling",
+        "minPrice": "20",
+        "maxPrice": "30"
+      },
+      {
+        "name": "Hairstyle",
+        "serviceType": "Hair styling",
+        "minPrice": "65",
+        "maxPrice": "80"
+      },
+      {
+        "name": "Afro curls",
+        "serviceType": "Hair styling",
+        "minPrice": "50",
+        "maxPrice": "70"
+      }
+    ]
+  },
   "stylistName": "Nataliia Krasovska",
   "headerSpecialties": "Hair stylist · Men's, women's, kids' haircuts",
   "nav": {

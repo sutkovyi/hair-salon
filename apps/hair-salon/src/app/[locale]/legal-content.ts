@@ -3,7 +3,7 @@ type LegalDocument = {
   terms: string;
 };
 
-export const legalContent: Record<'uk' | 'en', LegalDocument> = {
+export const legalContent: Record<'uk' | 'en' | 'es', LegalDocument> = {
   uk: {
     privacy: `<h1>Політика конфіденційності (Privacy Policy)</h1>
 <p><em>Дата останнього оновлення: 22 вересня 2026 року</em><br /><em>Вебсайт: https://care-of-your-hair.n-sutkovoy.workers.dev/</em></p>
@@ -75,5 +75,23 @@ export const legalContent: Record<'uk' | 'en', LegalDocument> = {
 <h3>6. Contact Information</h3>
 <p>For questions or schedule modifications, please contact:</p>
 <ul><li><strong>Phone:</strong> [Your Phone Number]</li><li><strong>Email:</strong> [Your Email]</li></ul>`,
+  },
+  es: {
+    privacy: `<h1>Política de privacidad</h1>
+<p><em>Última actualización: 22 de septiembre de 2026</em><br /><em>Sitio web: https://care-of-your-hair.n-sutkovoy.workers.dev/</em></p>
+<h3>1. Disposiciones generales</h3>
+<p>Esta política explica cómo recopilamos, utilizamos y protegemos tus datos personales cuando utilizas este sitio web.</p>
+<h3>2. Datos que recopilamos</h3>
+<p>Podemos recopilar tu nombre, teléfono, correo electrónico, preferencias de servicio y datos técnicos necesarios para gestionar consultas y reservas.</p>
+<h3>3. Tus derechos</h3>
+<p>Puedes solicitar acceso, rectificación o eliminación de tus datos personales contactándonos por correo electrónico. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos.</p>`,
+    terms: `<h1>Condiciones del servicio y reglas de reserva</h1>
+<p><em>Última actualización: 22 de septiembre de 2026</em><br /><em>Sitio web: https://care-of-your-hair.n-sutkovoy.workers.dev/</em></p>
+<h3>1. Reservas</h3>
+<p>La cita no queda confirmada hasta que la disponibilidad haya sido confirmada por la estilista.</p>
+<h3>2. Retrasos y cancelaciones</h3>
+<p>El retraso máximo permitido es de 15 minutos. Las cancelaciones o cambios deben comunicarse con al menos 24 horas de antelación.</p>
+<h3>3. Contacto</h3>
+<p>Para cualquier consulta sobre el servicio o tu cita, ponte en contacto con la estilista.</p>`,
   },
 };

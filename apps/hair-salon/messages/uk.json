@@ -1,4 +1,39 @@
 {
+  "schema": {
+    "websiteName": "Care of Your Hair",
+    "pageName": "Nataliia Krasovska — перукар у Валенсії",
+    "description": "Nataliia Krasovska — перукар у Валенсії, яка виконує дитячі, жіночі та чоловічі стрижки, зачіски, плетіння та щоденне укладання у Talula Head & SPA.",
+    "jobTitle": "Перукар",
+    "servicesName": "Перукарські послуги",
+    "services": [
+      { "name": "Чоловіча стрижка", "serviceType": "Стрижка", "price": "25" },
+      { "name": "Жіноча стрижка", "serviceType": "Стрижка", "price": "50" },
+      {
+        "name": "Дитяча стрижка",
+        "serviceType": "Стрижка",
+        "minPrice": "25",
+        "maxPrice": "30"
+      },
+      {
+        "name": "Плетіння",
+        "serviceType": "Зачіска",
+        "minPrice": "20",
+        "maxPrice": "30"
+      },
+      {
+        "name": "Зачіска",
+        "serviceType": "Зачіска",
+        "minPrice": "65",
+        "maxPrice": "80"
+      },
+      {
+        "name": "Афро-локони",
+        "serviceType": "Зачіска",
+        "minPrice": "50",
+        "maxPrice": "70"
+      }
+    ]
+  },
   "stylistName": "Наталія Красовська",
   "headerSpecialties": "Стиліст по волоссю · Чоловічі, жіночі, дитячі стрижки",
   "nav": {
