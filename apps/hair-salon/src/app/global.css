@@ -2,25 +2,25 @@
 @import 'vanilla-cookieconsent/dist/cookieconsent.css';
 
 :root {
-  --background: #faf7f2;
-  --foreground: #2b2d42;
+  --background: #f7f5ef;
+  --foreground: #211f1c;
   --card: #ffffff;
-  --card-foreground: #2b2d42;
+  --card-foreground: #211f1c;
   --popover: #ffffff;
-  --popover-foreground: #2b2d42;
-  --primary: #d4a373;
+  --popover-foreground: #211f1c;
+  --primary: #c08d32;
   --primary-foreground: #ffffff;
-  --secondary: #f2e7dc;
-  --secondary-foreground: #2b2d42;
-  --muted: #f5efe8;
-  --muted-foreground: #6c757d;
-  --accent: #f2e7dc;
-  --accent-foreground: #2b2d42;
+  --secondary: #ede9df;
+  --secondary-foreground: #211f1c;
+  --muted: #efede6;
+  --muted-foreground: #66645e;
+  --accent: #ede9df;
+  --accent-foreground: #211f1c;
   --destructive: #b4534b;
-  --border: #eadfd2;
-  --input: #eadfd2;
-  --ring: #bc8a5f;
-  --radius: 0.75rem;
+  --border: #dedacf;
+  --input: #dedacf;
+  --ring: #c08d32;
+  --radius: 0.5rem;
 }
 
 @theme inline {
@@ -54,17 +54,17 @@ body {
 
 #cc-main {
   --cc-bg: #ffffff;
-  --cc-primary-color: #2b2d42;
+  --cc-primary-color: #211f1c;
   --cc-secondary-color: #6c757d;
-  --cc-btn-primary-bg: #bc8a5f;
+  --cc-btn-primary-bg: #c08d32;
   --cc-btn-primary-color: #ffffff;
-  --cc-btn-primary-hover-bg: #a9744b;
-  --cc-btn-secondary-bg: #f2e7dc;
-  --cc-btn-secondary-color: #2b2d42;
-  --cc-btn-secondary-hover-bg: #eadfd2;
-  --cc-toggle-on-bg: #bc8a5f;
+  --cc-btn-primary-hover-bg: #9b6c23;
+  --cc-btn-secondary-bg: #ede9df;
+  --cc-btn-secondary-color: #211f1c;
+  --cc-btn-secondary-hover-bg: #dedacf;
+  --cc-toggle-on-bg: #c08d32;
   --cc-toggle-off-bg: #d7d7d7;
-  --cc-separator-border-color: #eadfd2;
+  --cc-separator-border-color: #dedacf;
   --cc-font-family: inherit;
 }
 

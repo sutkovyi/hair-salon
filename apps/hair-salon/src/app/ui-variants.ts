@@ -21,7 +21,7 @@ export const languageOption = tv({
   base: 'cursor-pointer rounded-full',
   variants: {
     active: {
-      true: 'bg-[#2b2d42] text-white',
+      true: 'bg-[#edbd58] text-[#211f1c]',
       false: '',
     },
     size: {

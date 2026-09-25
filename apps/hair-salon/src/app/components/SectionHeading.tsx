@@ -1,5 +1,22 @@
-export function SectionHeading({ title, intro }: { title: string; intro: string }) {
-  return <div className="mb-12 text-center"><h2 className="font-serif text-5xl sm:text-6xl">{title}</h2><p className="mt-3 text-[#6c757d]">{intro}</p></div>;
+export function SectionHeading({
+  title,
+  intro,
+  inverse = false,
+}: {
+  title: string;
+  intro: string;
+  inverse?: boolean;
+}) {
+  return (
+    <div className="mb-12 text-center">
+      <h2 className={`font-sans text-4xl font-semibold leading-tight sm:text-5xl ${inverse ? 'text-white' : 'text-[#211f1c]'}`}>
+        {title}
+      </h2>
+      <p className={`mt-3 ${inverse ? 'text-white/65' : 'text-[#6c757d]'}`}>
+        {intro}
+      </p>
+    </div>
+  );
 }
 
 export function Info({
@@ -15,14 +32,14 @@ export function Info({
 }) {
   return (
     <div>
-      <h3 className="font-semibold text-[#bc8a5f]">{label}</h3>
+      <h3 className="font-semibold text-[#9b6c23]">{label}</h3>
       <p className="mt-1">
         {href ? (
           <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline hover:text-[#bc8a5f] transition-colors"
+            className="transition-colors hover:text-[#9b6c23] hover:underline"
           >
             {value}
             {showExternalIcon && (

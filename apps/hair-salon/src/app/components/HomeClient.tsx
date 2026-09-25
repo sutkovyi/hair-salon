@@ -74,7 +74,7 @@ export function HomeClient({ initialServices, locale }: HomeClientProps) {
 
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#2b2d42]">
-      <Header onBook={openBooking} />
+      <Header onBook={openBooking} overlay />
       <Hero onBook={openBooking} />
       <ServicesSection />
       <PricesSection />
