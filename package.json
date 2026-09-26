@@ -7,8 +7,10 @@
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
     "@radix-ui/react-dialog": "^1.1.23",
+    "@vidstack/react": "^1.15.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "fscreen": "^1.2.0",
     "lucide-react": "^1.48.0",
     "next": "~16.1.6",
     "next-intl": "^4.14.5",

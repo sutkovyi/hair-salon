@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Scissors } from 'lucide-react';
-import workImage from '../images/work.jpg';
+import { AboutVideo } from './AboutVideo';
 
 export function AboutSection() {
   const t = useTranslations();
@@ -11,11 +11,11 @@ export function AboutSection() {
   return (
     <section id="about" className="px-5 pt-8 pb-8 lg:px-10 lg:pt-12 lg:pb-12">
       <div className="mx-auto grid max-w-7xl gap-8 rounded-[20px] bg-white p-5 shadow-[0_12px_36px_rgba(33,31,28,0.06)] sm:p-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-12 lg:p-8">
-        <figure className="relative m-0 aspect-[4/5] overflow-hidden bg-[#ede9df] lg:aspect-[5/6]">
-          <img
-            src={workImage.src}
-            alt={t('aboutImageAlt')}
-            className="h-full w-full object-cover object-[58%_center]"
+        <figure className="relative m-0 aspect-[1768/2552] overflow-hidden rounded-[20px] bg-[#ede9df]">
+          <AboutVideo
+            title={t('aboutImageAlt')}
+            playLabel={t('videoPlay')}
+            pauseLabel={t('videoPause')}
           />
           <figcaption className="absolute bottom-4 left-4 rounded-full bg-[#faf7f2]/95 px-4 py-2 text-xs font-semibold text-[#211f1c] backdrop-blur-sm">
             {t('stylistName')}

@@ -4,6 +4,10 @@ import { NextIntlClientProvider } from 'next-intl';
 import Page from '../src/app/[locale]/page';
 import messages from '../messages/uk.json';
 
+vi.mock('../src/app/components/AboutVideo', () => ({
+  AboutVideo: () => null,
+}));
+
 vi.mock('next-intl', async () => {
   const actual = await vi.importActual('next-intl');
   return {

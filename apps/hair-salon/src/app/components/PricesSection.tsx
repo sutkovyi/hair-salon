@@ -20,7 +20,9 @@ export function PricesSection() {
   const t = useTranslations();
   const priceCategories = t.raw('priceCategories') as PriceCategory[];
   const [isMobile, setIsMobile] = useState(false);
-  const [openCategories, setOpenCategories] = useState<Set<number>>(new Set());
+  const [collapsedCategories, setCollapsedCategories] = useState<Set<number>>(
+    new Set(),
+  );
 
   useEffect(() => {
     if (typeof window.matchMedia !== 'function') return;
@@ -34,7 +36,7 @@ export function PricesSection() {
   }, []);
 
   const toggleCategory = (index: number) => {
-    setOpenCategories((current) => {
+    setCollapsedCategories((current) => {
       const next = new Set(current);
       if (next.has(index)) next.delete(index);
       else next.add(index);
@@ -48,7 +50,7 @@ export function PricesSection() {
         <SectionHeading title={t('pricesTitle')} intro={t('pricesIntro')} inverse />
         <div className="mt-12 divide-y divide-white/15">
           {priceCategories.map((group, index) => {
-            const isOpen = !isMobile || openCategories.has(index);
+            const isOpen = !collapsedCategories.has(index);
             const panelId = `price-category-${index}`;
 
             return (

@@ -23,18 +23,22 @@ function renderPrices(matches: boolean) {
 describe('PricesSection', () => {
   afterEach(() => vi.unstubAllGlobals());
 
-  it('starts with categories collapsed on mobile and opens them when selected', async () => {
+  it('shows all categories on mobile and lets users collapse and reopen them', async () => {
     const { container } = renderPrices(true);
     const firstToggle = screen.getByRole('button', { name: /Дитячі стрижки/ });
     const firstPanel = container.querySelector('#price-category-0');
 
-    await waitFor(() => expect(firstToggle.getAttribute('aria-expanded')).toBe('false'));
-    expect(firstPanel?.className).toContain('grid-rows-[0fr]');
+    await waitFor(() => expect(firstToggle.getAttribute('aria-expanded')).toBe('true'));
+    expect(firstPanel?.className).toContain('grid-rows-[1fr]');
+    expect(screen.getByText(messages.priceCategories[0].items[0].title)).toBeTruthy();
 
     fireEvent.click(firstToggle);
 
+    expect(firstToggle.getAttribute('aria-expanded')).toBe('false');
+    expect(firstPanel?.className).toContain('grid-rows-[0fr]');
+
+    fireEvent.click(firstToggle);
     expect(firstToggle.getAttribute('aria-expanded')).toBe('true');
-    expect(firstPanel?.className).toContain('grid-rows-[1fr]');
   });
 
   it('keeps all categories expanded on desktop', async () => {
