@@ -10,6 +10,7 @@ import {
 } from '@vidstack/react';
 import { Pause, Play } from 'lucide-react';
 import type { MouseEvent } from 'react';
+import { trackEvent } from '@/lib/gtag';
 import { siteConfig } from '@/config/site';
 
 type AboutVideoProps = {
@@ -18,12 +19,13 @@ type AboutVideoProps = {
   pauseLabel: string;
 };
 
-type PlaybackButtonProps = Omit<AboutVideoProps, 'title'> & {
+type PlaybackButtonProps = AboutVideoProps & {
   hasRequestedPlay: boolean;
   onRequestPlay: () => void;
 };
 
 function PlaybackButton({
+  title,
   playLabel,
   pauseLabel,
   hasRequestedPlay,
@@ -39,6 +41,15 @@ function PlaybackButton({
   }, [hasRequestedPlay, remote]);
 
   const togglePlayback = (event: MouseEvent<HTMLButtonElement>) => {
+    const action = !hasRequestedPlay || showPlay ? 'play' : 'pause';
+
+    trackEvent('about_video_play_click', {
+      event_category: 'video',
+      event_label: title,
+      video_title: title,
+      action,
+    });
+
     if (!hasRequestedPlay) {
       onRequestPlay();
       return;
@@ -87,6 +98,7 @@ export function AboutVideo({ title, playLabel, pauseLabel }: AboutVideoProps) {
         <Poster src={siteConfig.media.aboutVideo.poster} alt={title} />
       </MediaProvider>
       <PlaybackButton
+        title={title}
         playLabel={playLabel}
         pauseLabel={pauseLabel}
         hasRequestedPlay={hasRequestedPlay}
