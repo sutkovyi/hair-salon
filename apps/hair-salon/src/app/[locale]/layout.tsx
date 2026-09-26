@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
@@ -18,19 +18,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale });
+  const metadataT = await getTranslations({ locale, namespace: 'metadata' });
+  const stylistName = t('stylistName');
+  const title = metadataT('title');
+  const description = metadataT('description');
   const isEnglish = locale === 'en';
   const isRussian = locale === 'ru';
-  const stylistName = isEnglish ? 'Nataliia Krasovska' : 'Наталія Красовська';
-  const title = isEnglish
-    ? `${stylistName} — Hair Stylist in Valencia | Children's, Women's & Men's Haircuts`
-    : isRussian
-      ? `${stylistName} — парикмахер-стилист в Валенсии | Стрижки и укладки`
-      : `${stylistName} — перукар-стиліст у Валенсії | Дитячі, жіночі та чоловічі стрижки`;
-  const description = isEnglish
-    ? `${stylistName} is an independent hair stylist in Valencia. Children's, women's and men's haircuts, styling and hairstyles in Quatre Carreres.`
-    : isRussian
-      ? `${stylistName} — независимый парикмахер-стилист в Валенсии. Стрижки и укладки для детей, женщин и мужчин в районе Quatre Carreres.`
-      : `${stylistName} — незалежний перукар-стиліст у Валенсії. Дитячі, жіночі та чоловічі стрижки, укладки та зачіски в районі Quatre Carreres.`;
 
   return {
     metadataBase: new URL(siteUrl),
@@ -68,9 +62,7 @@ export async function generateMetadata({
           url: '/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: isEnglish
-            ? `${stylistName} — hair stylist in Valencia`
-            : `${stylistName} — стиліст по волоссю у Валенсії`,
+          alt: metadataT('ogAlt', { stylistName }),
         },
       ],
     },
