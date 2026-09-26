@@ -4,9 +4,6 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/hair-salon-e2e"
-    },
-    {
       "path": "./apps/hair-salon"
     }
   ]
