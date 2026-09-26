@@ -3,7 +3,6 @@
 import { useTranslations } from 'next-intl';
 import { siteConfig } from '@/config/site';
 import { button } from '../ui-variants';
-import workImage from '../images/work.jpg';
 
 export function Hero({ onBook }: { onBook: (location?: string) => void }) {
   const t = useTranslations();
@@ -14,8 +13,10 @@ export function Hero({ onBook }: { onBook: (location?: string) => void }) {
       className="relative flex min-h-[720px] items-center overflow-hidden bg-[#211f1c] pt-[104px] text-white sm:min-h-[780px]"
     >
       <picture className="absolute inset-0 block h-full w-full">
+        <source srcSet={siteConfig.media.heroImage.avif} type="image/avif" />
+        <source srcSet={siteConfig.media.heroImage.webp} type="image/webp" />
         <img
-          src={workImage.src}
+          src={siteConfig.media.heroImage.fallback}
           alt=""
           aria-hidden="true"
           className="h-full w-full object-cover object-[50%_34%]"

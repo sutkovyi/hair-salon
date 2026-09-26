@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { preconnect, preload } from 'react-dom';
+import { preload } from 'react-dom';
 import {
   MediaPlayer,
   MediaProvider,
@@ -67,7 +67,6 @@ function PlaybackButton({
 }
 
 export function AboutVideo({ title, playLabel, pauseLabel }: AboutVideoProps) {
-  preconnect(new URL(siteConfig.media.aboutVideo.src).origin);
   preload(siteConfig.media.aboutVideo.poster, {
     as: 'image',
     fetchPriority: 'low',

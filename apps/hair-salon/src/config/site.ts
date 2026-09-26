@@ -10,9 +10,14 @@ export const siteConfig = {
     googleMapsUrl: 'https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic',
   },
   media: {
+    heroImage: {
+      avif: '/images/poster/work.avif',
+      webp: '/images/poster/work.webp',
+      fallback: '/images/poster/work.jpg',
+    },
     aboutVideo: {
-      src: 'https://hair-salon-static.vercel.app/intro.mp4',
-      poster: 'https://hair-salon-static.vercel.app/intro-poster.avif',
+      src: '/video/intro.mp4',
+      poster: '/video/intro-poster.jpg',
     },
   },
   analytics: {
