@@ -10,6 +10,7 @@ import {
   Phone,
 } from 'lucide-react';
 import { siteConfig } from '@/config/site';
+import { trackEvent } from '@/lib/gtag';
 
 const LocationMap = dynamic(() => import('./LocationMap'), {
   ssr: false,
@@ -46,6 +47,14 @@ export function ContactSection() {
               href={siteConfig.location.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent('contact_link_click', {
+                  event_category: 'contact',
+                  event_label: 'Address',
+                  link_type: 'google_maps',
+                  transport_type: 'beacon',
+                })
+              }
               className="group flex min-h-24 items-center gap-5 py-5 first:pt-0"
             >
               <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#e7b961] text-[#211f1c] transition-transform duration-300 group-hover:scale-105">
@@ -61,6 +70,13 @@ export function ContactSection() {
             </a>
             <a
               href="tel:+34665499177"
+              onClick={() =>
+                trackEvent('contact_link_click', {
+                  event_category: 'contact',
+                  event_label: 'Phone',
+                  link_type: 'tel',
+                })
+              }
               className="group flex min-h-24 items-center gap-5 py-5"
             >
               <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#e7b961] text-[#211f1c] transition-transform duration-300 group-hover:scale-105">
@@ -76,6 +92,13 @@ export function ContactSection() {
               href="https://wa.me/380731819204"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent('contact_link_click', {
+                  event_category: 'contact',
+                  event_label: 'WhatsApp',
+                  link_type: 'whatsapp'
+                })
+              }
               className="group flex min-h-24 items-center gap-5 py-5"
             >
               <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#e7b961] text-[#211f1c] transition-transform duration-300 group-hover:scale-105">
@@ -91,6 +114,14 @@ export function ContactSection() {
               href="https://www.instagram.com/care.of.your.hair8"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackEvent('contact_link_click', {
+                  event_category: 'contact',
+                  event_label: 'Instagram',
+                  link_type: 'instagram',
+                  transport_type: 'beacon',
+                })
+              }
               className="group flex min-h-24 items-center gap-5 py-5 last:pb-0"
             >
               <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#e7b961] text-[#211f1c] transition-transform duration-300 group-hover:scale-105">
