@@ -78,7 +78,7 @@ export function Header({ onBook = () => undefined, overlay = false }: HeaderProp
             {siteConfig.booking.enabled && (
               <button
                 onClick={() => onBook('header')}
-                className={button({ size: 'header' })}
+                className={`${button({ size: 'header' })} !bg-[#edbd58] !text-[#211f1c] hover:!bg-[#f4cc78]`}
               >
                 {t('book')}
               </button>
