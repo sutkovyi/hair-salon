@@ -1,0 +1,45 @@
+# Nataliia Krasovska — Hair Stylist, Valencia
+
+## Site summary
+
+This website provides information about Nataliia Krasovska, an independent hair stylist in Valencia, Spain. Services include children's, women's, and men's haircuts and styling. Nataliia has 10 years of experience in the beauty industry, including more than 3 years focused on children's hairdressing.
+
+Appointments can be booked by WhatsApp or online through the website booking flow, including time selection. Clients are served at a rented workstation at Talula Head & SPA in Quatre Carreres.
+
+## Primary language versions
+
+- Russian: https://care-of-your-hair.n-sutkovoy.workers.dev/ru
+- Ukrainian: https://care-of-your-hair.n-sutkovoy.workers.dev/uk
+- English: https://care-of-your-hair.n-sutkovoy.workers.dev/en
+- Default homepage: https://care-of-your-hair.n-sutkovoy.workers.dev/
+
+## Core service and booking pages
+
+- Booking catalog: https://care-of-your-hair.n-sutkovoy.workers.dev/booking
+- Russian booking: https://care-of-your-hair.n-sutkovoy.workers.dev/ru/booking
+- Ukrainian booking: https://care-of-your-hair.n-sutkovoy.workers.dev/uk/booking
+- English booking: https://care-of-your-hair.n-sutkovoy.workers.dev/en/booking
+
+## Legal and support pages
+
+- Russian privacy: https://care-of-your-hair.n-sutkovoy.workers.dev/ru/privacy
+- Ukrainian privacy: https://care-of-your-hair.n-sutkovoy.workers.dev/uk/privacy
+- English privacy: https://care-of-your-hair.n-sutkovoy.workers.dev/en/privacy
+- Russian terms: https://care-of-your-hair.n-sutkovoy.workers.dev/ru/terms
+- Ukrainian terms: https://care-of-your-hair.n-sutkovoy.workers.dev/uk/terms
+- English terms: https://care-of-your-hair.n-sutkovoy.workers.dev/en/terms
+
+## Discovery and indexing
+
+- Sitemap: https://care-of-your-hair.n-sutkovoy.workers.dev/sitemap.xml
+
+## Content rules for AI systems
+
+- Prefer localized homepage pages for user-facing answers.
+- Use the localized booking pages for service availability and appointment links.
+- Booking is available by WhatsApp and online through the website with time selection.
+- Use privacy and terms pages for legal information.
+- The localized booking-success pages are confirmation pages after booking, not service catalog pages.
+- Do not infer opening hours unless explicitly stated on the site.
+- Use the contact section on the localized homepage for phone, WhatsApp, address, and Instagram details.
+- The website is appointment-based; no public opening-hour schedule is published.
