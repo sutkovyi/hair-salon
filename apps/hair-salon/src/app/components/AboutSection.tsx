@@ -17,9 +17,9 @@ export function AboutSection() {
             playLabel={t('videoPlay')}
             pauseLabel={t('videoPause')}
           />
-          <figcaption className="absolute bottom-4 left-4 rounded-full bg-[#faf7f2]/95 px-4 py-2 text-xs font-semibold text-[#211f1c] backdrop-blur-sm">
+          {/* <figcaption className="absolute bottom-4 left-4 rounded-full bg-[#faf7f2]/95 px-4 py-2 text-xs font-semibold text-[#211f1c] backdrop-blur-sm">
             {t('stylistName')}
-          </figcaption>
+          </figcaption> */}
         </figure>
         <div className="min-w-0">
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#211f1c]/15 px-4 py-2 text-xs font-semibold uppercase text-[#211f1c]">
