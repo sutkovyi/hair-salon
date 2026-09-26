@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { preload } from 'react-dom';
 import {
   MediaPlayer,
   MediaProvider,
@@ -67,11 +66,6 @@ function PlaybackButton({
 }
 
 export function AboutVideo({ title, playLabel, pauseLabel }: AboutVideoProps) {
-  preload(siteConfig.media.aboutVideo.poster, {
-    as: 'image',
-    fetchPriority: 'low',
-  });
-
   const [hasRequestedPlay, setHasRequestedPlay] = useState(false);
 
   return (
