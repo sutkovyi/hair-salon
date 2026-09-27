@@ -59,7 +59,7 @@ export async function generateMetadata({
       locale: isEnglish ? 'en_US' : isRussian ? 'ru_RU' : 'uk_UA',
       images: [
         {
-          url: '/og-image.jpg',
+          url: '/og-image-2.jpg',
           width: 1200,
           height: 630,
           alt: metadataT('ogAlt', { stylistName }),
@@ -70,7 +70,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: ['/og-image.jpg'],
+      images: ['/og-image-2.jpg'],
     },
   };
 }
