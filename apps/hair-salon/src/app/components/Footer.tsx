@@ -14,14 +14,6 @@ export function Footer() {
         <Link className="transition hover:text-white" href="/terms">{t('nav.terms')}</Link>
         <Link className="transition hover:text-white" href="/cookies">{t('nav.cookies')}</Link>
       </div>
-      <a
-        href={siteConfig.location.googleMapsUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="mx-auto block max-w-xl text-xs leading-5 text-white/70 transition hover:text-white"
-      >
-        {t('address')}
-      </a>
       <p className="mt-3">© 2026. {t('copyright')}</p>
     </footer>
   );
