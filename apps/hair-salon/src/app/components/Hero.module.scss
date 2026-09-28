@@ -1,0 +1,69 @@
+.sparkleWord {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  vertical-align: baseline;
+  cursor: pointer;
+  isolation: isolate;
+}
+
+.sparkleWord:focus-visible {
+  outline: 2px solid #edbd58;
+  outline-offset: 0.08em;
+}
+
+.sparkle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: var(--sparkle-size);
+  overflow: visible;
+  fill: #fffdef;
+  opacity: 0;
+  pointer-events: none;
+  filter: drop-shadow(0 0 0 #fffdef);
+  animation: sparkle-burst var(--sparkle-duration) cubic-bezier(0.05, 0.83, 0.43, 0.96)
+    var(--sparkle-delay) both;
+}
+
+@keyframes sparkle-burst {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0) rotate(0deg);
+  }
+
+  18% {
+    opacity: 1;
+    filter: drop-shadow(0 0 0.08em #fffdef);
+  }
+
+  60% {
+    opacity: 1;
+    transform:
+      translate(calc(-50% + var(--sparkle-x)), calc(-50% + var(--sparkle-y)))
+      scale(1.1)
+      rotate(var(--sparkle-rotation));
+  }
+
+  100% {
+    opacity: 0;
+    transform:
+      translate(calc(-50% + var(--sparkle-x)), calc(-50% + var(--sparkle-y)))
+      scale(0.6)
+      rotate(var(--sparkle-rotation));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sparkleWord[data-sparkle-mode='hover'] .sparkle {
+    animation: none;
+    opacity: 1;
+  }
+}

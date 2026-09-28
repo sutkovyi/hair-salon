@@ -1,11 +1,41 @@
 'use client';
 
+import { useState, type CSSProperties } from 'react';
 import { useTranslations } from 'next-intl';
 import { siteConfig } from '@/config/site';
 import { button } from '../ui-variants';
+import styles from './Hero.module.scss';
+
+const hasHoverPointer = () =>
+  typeof window !== 'undefined' && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+const createSparkles = (): CSSProperties[] =>
+  Array.from({ length: 5 }, () => {
+    const angle = Math.random() * Math.PI * 2;
+    const distance = Math.random() * 0.9 + 0.55;
+
+    return {
+      '--sparkle-x': `${(Math.cos(angle) * distance).toFixed(2)}em`,
+      '--sparkle-y': `${(Math.sin(angle) * distance).toFixed(2)}em`,
+      '--sparkle-duration': `${Math.round(Math.random() * 700 + 800)}ms`,
+      '--sparkle-delay': `${Math.round(Math.random() * 220)}ms`,
+      '--sparkle-rotation': `${Math.round(Math.random() * 80 - 40)}deg`,
+      '--sparkle-size': `${(Math.random() * 0.12 + 0.08).toFixed(2)}em`,
+    } as CSSProperties;
+  });
 
 export function Hero({ onBook }: { onBook: (location?: string) => void }) {
   const t = useTranslations();
+  const [sparkleTrigger, setSparkleTrigger] = useState(0);
+  const [sparkleMode, setSparkleMode] = useState<'hover' | 'burst' | null>(null);
+  const [sparkleStyles, setSparkleStyles] = useState<CSSProperties[]>([]);
+  const titleParts = t('title').split(/(beauty|красоту|красу)/i);
+
+  const triggerSparkles = (mode: 'hover' | 'burst') => {
+    setSparkleStyles(createSparkles());
+    setSparkleTrigger((trigger) => trigger + 1);
+    setSparkleMode(mode);
+  };
 
   return (
     <section
@@ -30,7 +60,39 @@ export function Hero({ onBook }: { onBook: (location?: string) => void }) {
           {t('eyebrow')}
         </p>
         <h1 className="max-w-5xl font-sans text-5xl font-semibold leading-[1.02] sm:text-7xl lg:text-8xl">
-          {t('title')}
+          {titleParts.map((part, index) =>
+            /^(beauty|красоту|красу)$/i.test(part) ? (
+              <button
+                key={index}
+                type="button"
+                className={styles.sparkleWord}
+                data-sparkle-mode={sparkleMode ?? undefined}
+                onPointerEnter={() => {
+                  if (hasHoverPointer()) triggerSparkles('hover');
+                }}
+                onPointerLeave={() => {
+                  if (hasHoverPointer()) setSparkleMode(null);
+                }}
+                onClick={(event) => {
+                  if (hasHoverPointer() && event.detail !== 0) return;
+                  triggerSparkles('burst');
+                }}
+              >
+                {part}
+                {sparkleStyles.map((sparkleStyle, starIndex) => (
+                    <svg
+                      key={`${sparkleTrigger}-${starIndex}`}
+                      className={styles.sparkle}
+                      viewBox="0 0 24 24"
+                      style={sparkleStyle}
+                      aria-hidden="true"
+                    >
+                      <path d="M12 0 14.9 9.1 24 12 14.9 14.9 12 24 9.1 14.9 0 12 9.1 9.1z" />
+                    </svg>
+                  ))}
+              </button>
+            ) : part,
+          )}
         </h1>
         <p className="mt-7 max-w-2xl text-lg font-light leading-8 text-white/90 sm:text-xl">
           {t('intro')}
