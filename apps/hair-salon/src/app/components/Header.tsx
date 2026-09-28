@@ -23,6 +23,7 @@ export function Header({ onBook = () => undefined, overlay = false }: HeaderProp
 
   const navItems = [
     { label: t('nav.services'), section: '#services' },
+    { label: t('nav.portfolio'), section: '#portfolio' },
     { label: t('nav.prices'), section: '#prices' },
     { label: t('nav.about'), section: '#about' },
     { label: t('nav.contact'), section: '#contact' },

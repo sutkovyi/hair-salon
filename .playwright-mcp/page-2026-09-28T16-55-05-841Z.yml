@@ -1,0 +1,112 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - navigation [ref=e8]:
+        - generic [ref=e9]:
+          - link [ref=e10] [cursor=pointer]:
+            - /url: ./
+            - img "Logo" [ref=e11]
+          - text:  
+          - button [ref=e13] [cursor=pointer]
+      - generic:  
+  - generic [ref=e22]:
+    - heading "Our gallery" [level=1] [ref=e23]:
+      - generic [aria-hidden] [ref=e24]:
+        - generic [aria-hidden] [ref=e25]:
+          - generic [aria-hidden] [ref=e26]: O
+          - generic [aria-hidden] [ref=e27]: u
+          - generic [aria-hidden] [ref=e28]: r
+        - generic [aria-hidden] [ref=e29]:
+          - generic [aria-hidden] [ref=e30]: g
+          - generic [aria-hidden] [ref=e31]: a
+          - generic [aria-hidden] [ref=e32]: l
+          - generic [aria-hidden] [ref=e33]: l
+          - generic [aria-hidden] [ref=e34]: e
+          - generic [aria-hidden] [ref=e35]: r
+          - generic [aria-hidden] [ref=e36]: "y"
+    - navigation [ref=e37]:
+      - list [ref=e38]:
+        - listitem [ref=e39]:
+          - link "home" [ref=e40] [cursor=pointer]:
+            - /url: ./
+        - listitem [ref=e41]: / Gallery
+  - generic [ref=e44]:
+    - link [ref=e47]:
+      - /url: images/gallery-1.jpg
+      - figure [ref=e48]
+    - link [ref=e51]:
+      - /url: images/gallery-2.jpg
+      - figure [ref=e52]
+  - contentinfo [ref=e62]:
+    - generic [ref=e64]:
+      - generic [ref=e66]:
+        - separator [ref=e67]
+        - separator [ref=e68]
+      - list [ref=e71]:
+        - listitem [ref=e72]: 123 Style Street, Downtown, New York, NY 10001
+        - listitem [ref=e73]:
+          - generic [ref=e74]: "Phone:"
+          - link "+91 123 456 789" [ref=e75] [cursor=pointer]:
+            - /url: tel:123456789
+        - listitem [ref=e76]:
+          - generic [ref=e77]: "Email:"
+          - link "info@domin.com" [ref=e78] [cursor=pointer]:
+            - /url: mailto:info@domin.com
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - heading "Quick Links" [level=2] [ref=e82]
+          - list [ref=e83]:
+            - listitem [ref=e84]:
+              - link "Home" [ref=e85] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e86]:
+              - link "About Us" [ref=e87] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e88]:
+              - link "Services" [ref=e89] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e90]:
+              - link "Testimonials" [ref=e91] [cursor=pointer]:
+                - /url: testimonials.html
+            - listitem [ref=e92]:
+              - link "Contact Us" [ref=e93] [cursor=pointer]:
+                - /url: contact.html
+        - generic [ref=e94]:
+          - heading "Our Services" [level=2] [ref=e95]
+          - list [ref=e96]:
+            - listitem [ref=e97]:
+              - link "Hair Wash & Dry" [ref=e98] [cursor=pointer]:
+                - /url: service-single.html
+            - listitem [ref=e99]:
+              - link "Beard & Shaving" [ref=e100] [cursor=pointer]:
+                - /url: service-single.html
+            - listitem [ref=e101]:
+              - link "Global Hair Color" [ref=e102] [cursor=pointer]:
+                - /url: service-single.html
+            - listitem [ref=e103]:
+              - link "Wedding Grooming" [ref=e104] [cursor=pointer]:
+                - /url: service-single.html
+            - listitem [ref=e105]:
+              - link "Hair Texturizing" [ref=e106] [cursor=pointer]:
+                - /url: service-single.html
+        - generic [ref=e107]:
+          - heading "Join Our Newsletter" [level=2] [ref=e108]
+          - generic [ref=e111]:
+            - textbox "Enter Email Address*" [ref=e112]
+            - button "Subscribe" [ref=e113] [cursor=pointer]
+          - generic [ref=e114]:
+            - heading "Follow Us:" [level=3] [ref=e115]
+            - list [ref=e116]:
+              - listitem [ref=e117]:
+                - link [ref=e118] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e120]:
+                - link [ref=e121] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e123]:
+                - link [ref=e124] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e126]:
+                - link [ref=e127] [cursor=pointer]:
+                  - /url: "#"
+    - paragraph [ref=e134]: Copyright © 2026 All Rights Reserved.

@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'vanilla-cookieconsent/dist/cookieconsent.css';
+@import 'photoswipe/dist/photoswipe.css';
 
 :root {
   --background: #f7f5ef;
@@ -88,6 +89,16 @@ body {
 #services .service-card:hover .service-card__description,
 #services .service-card:hover .service-card__icon {
   color: #ffffff;
+}
+
+#portfolio .portfolio-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (min-width: 40rem) {
+  #portfolio .portfolio-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
 
 #cc-main {

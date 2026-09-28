@@ -71,6 +71,7 @@
   "headerSpecialties": "Hair stylist · Men's, women's, kids' haircuts",
   "nav": {
     "services": "Services",
+    "portfolio": "Portfolio",
     "prices": "Prices",
     "about": "About me",
     "contact": "Contact",
@@ -115,6 +116,10 @@
   "intro": "Professional care from an experienced stylist and a relaxing atmosphere in the heart of the city.",
   "servicesTitle": "My services",
   "servicesIntro": "Haircuts, styling, and hairstyles for the whole family",
+  "portfolioTitle": "Portfolio",
+  "portfolioIntro": "A selection of my recent haircuts and styles",
+  "portfolioImageAlt": "Hair styling from the portfolio",
+  "portfolioVideoAlt": "Hair styling video from the portfolio",
   "services": [
     {
       "icon": "baby",

@@ -8,6 +8,7 @@ import { ContactSection } from './ContactSection';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { Hero } from './Hero';
+import { PortfolioSection } from './PortfolioSection';
 import { PricesSection } from './PricesSection';
 import { ServicesSection } from './ServicesSection';
 import type { BookingServices } from '../lib/booking-services';
@@ -77,6 +78,7 @@ export function HomeClient({ initialServices, locale }: HomeClientProps) {
       <Header onBook={openBooking} overlay />
       <Hero onBook={openBooking} />
       <ServicesSection />
+      <PortfolioSection />
       <PricesSection />
       <AboutSection />
       <ContactSection />

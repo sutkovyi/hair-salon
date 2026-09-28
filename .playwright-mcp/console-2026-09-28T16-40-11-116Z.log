@@ -1,0 +1,55 @@
+[    4416ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    4847ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/0d38a67f-5fe0-4db7-ab95-f9891c769e1a.MP4:0
+[    5565ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    5679ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/d82a3333-a677-4ff2-870a-0ca6844a1cea.MP4:0
+[    5681ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/f6232d49-d015-4e9d-a78e-7bbd3b950e7c.MP4:0
+[   11692ms] [WARNING] The resource http://localhost:3000/_next/static/chunks/apps_hair-salon_src_app_global_dd7bd156.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/ru:0
+[   12145ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   14421ms] [LOG] [Fast Refresh] done in 2378ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   15478ms] [WARNING] The resource http://localhost:3000/_next/static/chunks/apps_hair-salon_src_app_global_dd7bd156.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/ru:0
+[   24973ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   25894ms] [LOG] [Fast Refresh] done in 1022ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   28275ms] [WARNING] The resource http://localhost:3000/_next/static/chunks/apps_hair-salon_src_app_global_dd7bd156.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/ru:0
+[   33474ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   33733ms] [LOG] [Fast Refresh] done in 360ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   41379ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   41512ms] [LOG] [Fast Refresh] done in 233ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   44538ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   44753ms] [LOG] [Fast Refresh] done in 316ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   55616ms] [WARNING] The resource http://localhost:3000/_next/static/chunks/apps_hair-salon_src_app_global_dd7bd156.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/ru:0
+[   82269ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   82504ms] [LOG] [Fast Refresh] done in 337ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   83237ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   83289ms] [LOG] [Fast Refresh] done in 152ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   84072ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   84310ms] [LOG] [Fast Refresh] done in 338ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   89041ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   89331ms] [LOG] [Fast Refresh] done in 391ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  111106ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  112834ms] [WARNING] The resource http://localhost:3000/_next/static/chunks/apps_hair-salon_src_app_global_dd7bd156.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/ru#&gid=hair-portfolio&pid=1:0
+[  113662ms] [LOG] [Fast Refresh] done in 2658ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  118426ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/064a6870-ecfc-44ee-af30-0ba86aa32c05.JPG:0
+[  118434ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/0bd41979-62bc-425c-b7f1-951dea1f7a34.JPG:0
+[  118440ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/10f26bc1-753d-46b9-91d6-b841d5892524.JPG:0
+[  118444ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/14e59b20-73fe-4a7a-88fb-2e704e70bf41.JPG:0
+[  118448ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/17fd80aa-b9e9-466d-ba35-0a708dc9d879.JPG:0
+[  119238ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/21cbc78c-e941-463a-8754-284a1670c334.JPG:0
+[  120734ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  121806ms] [LOG] [Fast Refresh] done in 1173ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  124360ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/2820ea89-43e5-4142-8a9b-5474270bfdca.JPG:0
+[  124473ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/4d9686f7-9c3d-442b-ada0-85f7a92f0ad7.JPG:0
+[  124594ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/574f8d4c-79e4-4fb7-b7c5-b06f5bf3bd20.JPG:0
+[  124654ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/57a9f4a2-7762-4260-8022-bd70222a3fe5.JPG:0
+[  124696ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/5e59de78-a0fa-4e2e-9cd4-7e407284d15f.JPG:0
+[  126283ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/78e49e35-5ee3-4d31-a48f-7713d0e5f779.JPG:0
+[  126538ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  126682ms] [LOG] [Fast Refresh] done in 250ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  126693ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/853fd03b-9da7-48c3-ad8d-a8834224c127.JPG:0
+[  126974ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/9073b54a-18ab-440b-a753-a78ba5bbfec8.JPG:0
+[  127182ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/96e0a56a-06a9-48be-b8be-3d63fb25e486.JPG:0
+[  127257ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/976c18c8-77f5-4da1-a066-c7c2510749c5.JPG:0
+[  127281ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/bd24aea2-77c2-440e-8ff6-3df86016d145.JPG:0
+[  132299ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/c0247c9b-92f7-4cc5-b782-b71b5758140e.JPG:0
+[  132333ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/ru/portfolio/fc992a9e-7bfe-494a-8b2c-baeab09925b1.JPG:0
+[  135439ms] [WARNING] The resource http://localhost:3000/_next/static/chunks/apps_hair-salon_src_app_global_dd7bd156.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/ru#&gid=hair-portfolio&pid=1:0
+[  185202ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297

@@ -1,0 +1,245 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Сайт в процесе разработки. Онлайн-запись временно недоступна.
+      - generic [ref=e5]:
+        - link "Наталия Красовская. Парикмахер-стилист · Мужские, женские и детские стрижки" [ref=e6] [cursor=pointer]:
+          - /url: "#top"
+          - generic [ref=e7]: Наталия Красовская.
+          - generic [ref=e8]: Парикмахер-стилист · Мужские, женские и детские стрижки
+        - button "Открыть меню" [ref=e10]
+    - generic [ref=e17]:
+      - paragraph [ref=e18]: Парикмахер-стилист · Кватре Карререс, Валенсия 🇪🇸
+      - heading [level=1] [ref=e20]:
+        - text: Подчеркните свою естественную
+        - button "красоту" [ref=e21] [cursor=pointer]
+      - paragraph [ref=e22]: Профессиональный уход от опытного мастера и атмосфера релакса в центре города.
+      - button "Записаться онлайн" [ref=e23] [cursor=pointer]: Записаться онлайн ↗
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - heading "Мои услуги" [level=2] [ref=e27]
+        - paragraph [ref=e28]: Стрижки, укладки и прически для всей семьи
+      - generic [ref=e29]:
+        - article [ref=e30]:
+          - generic [ref=e31]:
+            - heading "Детские стрижки" [level=3] [ref=e32]
+            - paragraph [ref=e37]: Стрижки для мальчиков и девочек, включая стрижку челки.
+        - article [ref=e38]:
+          - generic [ref=e39]:
+            - heading "Детские укладки" [level=3] [ref=e40]
+            - paragraph [ref=e45]: Плетение, локоны, детские прически и косички с канекалоном.
+        - article [ref=e46]:
+          - generic [ref=e47]:
+            - heading "Стрижки" [level=3] [ref=e48]
+            - paragraph [ref=e56]: Женские и мужские стрижки, подравнивание концов, креативные формы и стрижки машинкой.
+        - article [ref=e57]:
+          - generic [ref=e58]:
+            - heading "Укладки и прически" [level=3] [ref=e59]
+            - paragraph [ref=e64]: Повседневные укладки, выпрямление, афро-кудри и прически для особых случаев.
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - heading "Портфолио" [level=2] [ref=e68]
+        - paragraph [ref=e69]: Примеры моих последних стрижек и укладок
+      - generic [ref=e70]:
+        - button "Работа из портфолио причесок" [ref=e71]:
+          - img "Работа из портфолио причесок" [ref=e72]
+        - button "Работа из портфолио причесок" [ref=e73]:
+          - img "Работа из портфолио причесок" [ref=e74]
+        - button "Работа из портфолио причесок" [ref=e75]:
+          - img "Работа из портфолио причесок" [ref=e76]
+        - button "Работа из портфолио причесок" [ref=e77]:
+          - img "Работа из портфолио причесок" [ref=e78]
+        - button "Работа из портфолио причесок" [ref=e79]:
+          - img "Работа из портфолио причесок" [ref=e80]
+        - button "Работа из портфолио причесок" [ref=e81]:
+          - img "Работа из портфолио причесок" [ref=e82]
+        - button "Работа из портфолио причесок" [ref=e83]:
+          - img "Работа из портфолио причесок" [ref=e84]
+        - button "Работа из портфолио причесок" [ref=e85]:
+          - img "Работа из портфолио причесок" [ref=e86]
+        - button "Работа из портфолио причесок" [ref=e87]:
+          - img "Работа из портфолио причесок" [ref=e88]
+        - button "Работа из портфолио причесок" [ref=e89]:
+          - img "Работа из портфолио причесок" [ref=e90]
+        - button "Работа из портфолио причесок" [ref=e91]:
+          - img "Работа из портфолио причесок" [ref=e92]
+        - button "Работа из портфолио причесок" [ref=e93]:
+          - img "Работа из портфолио причесок" [ref=e94]
+        - button "Работа из портфолио причесок" [ref=e95]:
+          - img "Работа из портфолио причесок" [ref=e96]
+        - button "Работа из портфолио причесок" [ref=e97]:
+          - img "Работа из портфолио причесок" [ref=e98]
+        - button "Работа из портфолио причесок" [ref=e99]:
+          - img "Работа из портфолио причесок" [ref=e100]
+        - button "Работа из портфолио причесок" [ref=e101]:
+          - img "Работа из портфолио причесок" [ref=e102]
+        - button "Работа из портфолио причесок" [ref=e103]:
+          - img "Работа из портфолио причесок" [ref=e104]
+        - button "Работа из портфолио причесок" [ref=e105]:
+          - img "Работа из портфолио причесок" [ref=e106]
+        - button "Работа из портфолио причесок" [ref=e107]:
+          - img "Работа из портфолио причесок" [ref=e108]
+        - button "Работа из портфолио причесок" [ref=e109]:
+          - img "Работа из портфолио причесок" [ref=e110]
+        - button "Работа из портфолио причесок" [ref=e111]:
+          - img "Работа из портфолио причесок" [ref=e112]
+        - button "Работа из портфолио причесок" [ref=e113]:
+          - img "Работа из портфолио причесок" [ref=e114]
+        - button "Работа из портфолио причесок" [ref=e115]:
+          - img "Работа из портфолио причесок" [ref=e116]
+        - button "Работа из портфолио причесок" [ref=e117]:
+          - img "Работа из портфолио причесок" [ref=e118]
+        - button "Работа из портфолио причесок" [ref=e119]:
+          - img "Работа из портфолио причесок" [ref=e120]
+        - generic "Видео работы из портфолио причесок" [ref=e121]
+        - generic "Видео работы из портфолио причесок" [ref=e122]
+        - generic "Видео работы из портфолио причесок" [ref=e123]
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - heading "Прайс-лист" [level=2] [ref=e127]
+        - paragraph [ref=e128]: Популярные услуги и цены
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - heading [level=3] [ref=e131]:
+            - button "Детские стрижки" [expanded] [ref=e132]
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - generic [ref=e140]: Стрижка мальчика
+              - generic [ref=e142]: 25€
+            - generic [ref=e143]:
+              - generic [ref=e144]: Стрижка девочки (до плеч)
+              - generic [ref=e146]: 25€
+            - generic [ref=e147]:
+              - generic [ref=e148]: Стрижка девочки (ниже плеч)
+              - generic [ref=e150]: 30€
+            - generic [ref=e151]:
+              - generic [ref=e152]: Стрижка челки (дети)
+              - generic [ref=e154]: 15€
+        - generic [ref=e155]:
+          - heading [level=3] [ref=e156]:
+            - button "Детские укладки" [expanded] [ref=e157]
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - generic [ref=e165]: Укладка плойкой (до плеч)
+              - generic [ref=e167]: 20€
+            - generic [ref=e168]:
+              - generic [ref=e169]: Укладка плойкой (ниже плеч)
+              - generic [ref=e171]: 30€
+            - generic [ref=e172]:
+              - generic [ref=e173]: Плетение
+              - generic [ref=e175]: 20-30€
+            - generic [ref=e176]:
+              - generic [ref=e177]: Детская прическа
+              - generic [ref=e179]: 40-50€
+            - generic [ref=e180]:
+              - generic [ref=e181]: Косичка без канекалона
+              - generic [ref=e183]: 5€
+            - generic [ref=e184]:
+              - generic [ref=e185]: Косичка с канекалоном
+              - generic [ref=e187]: 5€
+        - generic [ref=e188]:
+          - heading [level=3] [ref=e189]:
+            - button "Стрижки" [expanded] [ref=e190]
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e198]: Женская стрижка (подравнивание концов)
+              - generic [ref=e200]: 40€
+            - generic [ref=e201]:
+              - generic [ref=e202]: Женская стрижка
+              - generic [ref=e204]: 50€
+            - generic [ref=e205]:
+              - generic [ref=e206]: Стрижка челки
+              - generic [ref=e208]: 20€
+            - generic [ref=e209]:
+              - generic [ref=e210]: Мужская стрижка
+              - generic [ref=e212]: 25€
+            - generic [ref=e213]:
+              - generic [ref=e214]: Мужская креативная стрижка
+              - generic [ref=e216]: 30€
+            - generic [ref=e217]:
+              - generic [ref=e218]: Мужская стрижка машинкой
+              - generic [ref=e220]: 20€
+        - generic [ref=e221]:
+          - heading [level=3] [ref=e222]:
+            - button "Укладки" [expanded] [ref=e223]
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - generic [ref=e231]: Повседневная укладка (до плеч)
+              - generic [ref=e233]: 20-30€
+            - generic [ref=e234]:
+              - generic [ref=e235]: Повседневная укладка (ниже плеч)
+              - generic [ref=e237]: 30-40€
+            - generic [ref=e238]:
+              - generic [ref=e239]: Выпрямление волос
+              - generic [ref=e241]: 10-20€
+            - generic [ref=e242]:
+              - generic [ref=e243]: Афро-кудри (до плеч)
+              - generic [ref=e245]: 50-60€
+            - generic [ref=e246]:
+              - generic [ref=e247]: Афро-кудри (ниже плеч)
+              - generic [ref=e249]: 60-70€
+            - generic [ref=e250]:
+              - generic [ref=e251]: Прическа (до плеч)
+              - generic [ref=e253]: 65€
+            - generic [ref=e254]:
+              - generic [ref=e255]: Прическа (ниже плеч)
+              - generic [ref=e257]: 75-80€
+            - generic [ref=e258]:
+              - generic [ref=e259]: Мытье головы
+              - generic [ref=e261]: 10€
+    - generic [ref=e263]:
+      - figure [ref=e264]:
+        - generic [ref=e265]:
+          - img "Наталия делает прическу юной клиентке" [ref=e268]
+          - button "Воспроизвести видео о мастере" [ref=e269]
+      - generic [ref=e272]:
+        - paragraph [ref=e273]: Обо мне
+        - heading "Наталия Красовская" [level=2] [ref=e275]
+        - paragraph [ref=e276]: Меня зовут Наталия. Я работаю в сфере красоты уже 10 лет, и более 3 лет из них посвятила именно детскому парикмахерскому делу. Для меня важно не просто сделать красивую прическу, а создать для ребенка комфортную и безопасную атмосферу.
+        - generic [ref=e277]:
+          - paragraph [ref=e278]: "Помимо детских стрижек, вы можете доверить мне и свой образ:"
+          - list [ref=e279]:
+            - listitem [ref=e280]: Мужские стрижки
+            - listitem [ref=e287]: Женские стрижки
+            - listitem [ref=e294]: Повседневные укладки
+            - listitem [ref=e301]: Праздничные прически для особых случаев
+        - paragraph [ref=e308]: Удобно, когда уход за волосами всей семьи можно доверить одному проверенному мастеру в Валенсии!
+    - generic [ref=e310]:
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - generic [ref=e313]: Контакты
+          - heading "Давайте подберем ваш образ вместе" [level=2] [ref=e315]
+        - paragraph [ref=e316]: "*Прием по предварительной записи"
+      - generic [ref=e317]:
+        - generic [ref=e318]:
+          - link "Адрес Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸" [ref=e319] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic
+            - generic [ref=e324]:
+              - generic [ref=e325]: Адрес
+              - generic [ref=e326]: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain 🇪🇸
+          - link "Телефон +34 665 499 177" [ref=e330] [cursor=pointer]:
+            - /url: tel:+34665499177
+            - generic [ref=e334]:
+              - generic [ref=e335]: Телефон
+              - generic [ref=e336]: +34 665 499 177
+          - link "WhatsApp для записи +380 73 181 92 04" [ref=e340] [cursor=pointer]:
+            - /url: https://wa.me/380731819204
+            - generic [ref=e344]:
+              - generic [ref=e345]: WhatsApp для записи
+              - generic [ref=e346]: +380 73 181 92 04
+          - link "Instagram @care.of.your.hair8" [ref=e350] [cursor=pointer]:
+            - /url: https://www.instagram.com/care.of.your.hair8
+            - generic [ref=e355]:
+              - generic [ref=e356]: Instagram
+              - generic [ref=e357]: "@care.of.your.hair8"
+        - generic [ref=e361]: Loading map...
+    - generic [ref=e363]:
+      - generic [ref=e364]:
+        - link "Конфиденциальность" [ref=e365] [cursor=pointer]:
+          - /url: /ru/privacy
+        - link "Условия" [ref=e366] [cursor=pointer]:
+          - /url: /ru/terms
+        - link "Политика cookies" [ref=e367] [cursor=pointer]:
+          - /url: /ru/cookies
+      - paragraph [ref=e368]: © 2026. Все права защищены.
+  - button "Open Next.js Dev Tools" [ref=e374] [cursor=pointer]
