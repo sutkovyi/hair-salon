@@ -1,0 +1,3220 @@
+{
+  "source": "Cal.com API v2 GET /v2/event-types",
+  "exportedAt": "2026-09-28T08:06:26.869Z",
+  "count": 27,
+  "eventTypes": [
+    {
+      "id": 7209233,
+      "ownerId": 3253699,
+      "lengthInMinutes": 80,
+      "title": "Стрижка дівчинки (до лопаток) - 25€",
+      "slug": "strizhka-divchynky-do-lopatok",
+      "description": "Дитячі стрижки » Стрижка дівчинки до лопаток - 25€. Тривалість: 80 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-divchynky-do-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209382,
+      "ownerId": 3253699,
+      "lengthInMinutes": 90,
+      "title": "Стрижка дівчинки (нижче лопаток) - 30€",
+      "slug": "strizhka-divchynky-nyzhche-lopatok",
+      "description": "Дитячі стрижки » Стрижка дівчинки (нижче лопаток) - 30€. Тривалість: 90 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-divchynky-nyzhche-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209392,
+      "ownerId": 3253699,
+      "lengthInMinutes": 15,
+      "title": "Косичка без конеколона (з кільцями або прикрасами) - 5€",
+      "slug": "kosychka-bez-konekolona",
+      "description": "Дитячі укладки » Косичка без конеколона (з кільцями або прикрасами) - 5€. Тривалість: 15 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/kosychka-bez-konekolona",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7208954,
+      "ownerId": 3253699,
+      "lengthInMinutes": 60,
+      "title": "Стрижка хлопчика - 25€",
+      "slug": "strizhka-hlopchika",
+      "description": "Дитячі стрижки » Стрижка хлопчика - 25€. Тривалість: 60 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-hlopchika",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209383,
+      "ownerId": 3253699,
+      "lengthInMinutes": 20,
+      "title": "Стрижка чубчика - 15€",
+      "slug": "strizhka-chubchyka-dytyacha",
+      "description": "Дитячі стрижки » Стрижка чубчика - 15€. Тривалість: 20 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-chubchyka-dytyacha",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209384,
+      "ownerId": 3253699,
+      "lengthInMinutes": 60,
+      "title": "Накрутка на плойку (до лопаток) - 20€",
+      "slug": "nakrutka-na-ployku-do-lopatok",
+      "description": "Дитячі укладки » Накрутка на плойку (до лопаток) - 20€. Тривалість: 40 - 60 хв., залежить від густоти.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/nakrutka-na-ployku-do-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209386,
+      "ownerId": 3253699,
+      "lengthInMinutes": 90,
+      "title": "Накрутка на плойку (нижче лопаток) - 30€",
+      "slug": "nakrutka-na-ployku-nyzhche-lopatok",
+      "description": "Дитячі укладки » Накрутка на плойку (нижче лопаток) - 30€. Тривалість: 60 - 90 хв., залежить від густоти.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/nakrutka-na-ployku-nyzhche-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209387,
+      "ownerId": 3253699,
+      "lengthInMinutes": 80,
+      "title": "Плетіння - 20-30€",
+      "slug": "pletinnya",
+      "description": "Дитячі укладки » Плетіння - 20-30€. Тривалість: 30 - 80 хв., залежить від плетіння.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/pletinnya",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209391,
+      "ownerId": 3253699,
+      "lengthInMinutes": 90,
+      "title": "Зачіска дитяча - 40-50€",
+      "slug": "zachiska-dytyacha",
+      "description": "Дитячі укладки » Зачіска дитяча - 40-50€. Тривалість: 60 - 90 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/zachiska-dytyacha",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209394,
+      "ownerId": 3253699,
+      "lengthInMinutes": 20,
+      "title": "Косичка з конеколоном - 5€",
+      "slug": "kosychka-z-konekolonom",
+      "description": "Дитячі укладки » Косичка з конеколоном - 5€. Тривалість: 20 хв. - 1 шт.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/kosychka-z-konekolonom",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209395,
+      "ownerId": 3253699,
+      "lengthInMinutes": 20,
+      "title": "Косичка з конеколоном (з кільцями) - 8€",
+      "slug": "kosychka-z-konekolonom-z-kiltsyamy",
+      "description": "Дитячі укладки » Косичка з конеколоном (з кільцями) - 8€. Тривалість: 20 хв - 1 шт.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/kosychka-z-konekolonom-z-kiltsyamy",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209396,
+      "ownerId": 3253699,
+      "lengthInMinutes": 30,
+      "title": "Косичка з конеколоном та прикрасами - 10€",
+      "slug": "kosychka-z-konekolonom-ta-prykrasamy",
+      "description": "Дитячі укладки » Косичка з конеколоном та прикрасами - 10€. Тривалість: 30 хв - 1 шт.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/kosychka-z-konekolonom-ta-prykrasamy",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209398,
+      "ownerId": 3253699,
+      "lengthInMinutes": 90,
+      "title": "Стрижка жіноча (гігієна кінчиків) - 40€",
+      "slug": "strizhka-zhinocha-hihiyena-kinchykiv",
+      "description": "Стрижки » Стрижка жіноча (гігієна кінчиків) - 40€. Тривалість: 90 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-zhinocha-hihiyena-kinchykiv",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209399,
+      "ownerId": 3253699,
+      "lengthInMinutes": 120,
+      "title": "Стрижка жіноча - 50€",
+      "slug": "strizhka-zhinocha",
+      "description": "Стрижки » Стрижка жіноча - 50€. Тривалість: 90 - 120 хв залежить від стрижки.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-zhinocha",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209400,
+      "ownerId": 3253699,
+      "lengthInMinutes": 20,
+      "title": "Стрижка чубчика - 20€",
+      "slug": "strizhka-chubchyka-zhinocha",
+      "description": "Стрижки » Стрижка чубчика - 20€. Тривалість: 15 - 20 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-chubchyka-zhinocha",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209410,
+      "ownerId": 3253699,
+      "lengthInMinutes": 30,
+      "title": "Вирівнювання волосся (випрямляч) - 10-20€",
+      "slug": "vyryvnyuvannya-volossya-vypryamlyach",
+      "description": "Укладання » Вирівнювання волосся (випрямляч) - 10-20€. Тривалість: 20 - 30 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/vyryvnyuvannya-volossya-vypryamlyach",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209401,
+      "ownerId": 3253699,
+      "lengthInMinutes": 40,
+      "title": "Стрижка чоловіча - 25€",
+      "slug": "strizhka-cholovicha",
+      "description": "Стрижки » Стрижка чоловіча - 25€. Тривалість: 40 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-cholovicha",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209417,
+      "ownerId": 3253699,
+      "lengthInMinutes": 40,
+      "title": "Миття голови (без укладання) - 10€",
+      "slug": "myttya-holovy-bez-ukladannya",
+      "description": "Укладання » Миття голови (без укладання) - 10€. Тривалість: 30 - 40 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/myttya-holovy-bez-ukladannya",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209403,
+      "ownerId": 3253699,
+      "lengthInMinutes": 60,
+      "title": "Стрижка чоловіча (креативна) - 30€",
+      "slug": "strizhka-cholovicha-kreatyvna",
+      "description": "Стрижки » Стрижка чоловіча (креативна) - 30€. Тривалість: 40 - 60 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-cholovicha-kreatyvna",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209407,
+      "ownerId": 3253699,
+      "lengthInMinutes": 30,
+      "title": "Стрижка чоловіча (під насадку) - 20€",
+      "slug": "strizhka-cholovicha-pid-nasadku",
+      "description": "Стрижки » Стрижка чоловіча (під насадку) - 20€. Тривалість: 20 - 30 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/strizhka-cholovicha-pid-nasadku",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209408,
+      "ownerId": 3253699,
+      "lengthInMinutes": 80,
+      "title": "Повсякденна укладка на браш (до лопаток) - 20-30€",
+      "slug": "povsyakdenna-ukladka-na-brash-do-lopatok",
+      "description": "Укладання » Повсякденна укладка на браш (до лопаток) - 20-30€. Тривалість: 60 - 80 хв. залежно від густоти волосся.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/povsyakdenna-ukladka-na-brash-do-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209409,
+      "ownerId": 3253699,
+      "lengthInMinutes": 100,
+      "title": "Повсякденна укладка на браш (нижче лопаток) - 30-40€",
+      "slug": "povsyakdenna-ukladka-na-brash-nyzhche-lopatok",
+      "description": "Укладання » Повсякденна укладка на браш (нижче лопаток) - 30-40€. Тривалість: 60 - 100 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/povsyakdenna-ukladka-na-brash-nyzhche-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209412,
+      "ownerId": 3253699,
+      "lengthInMinutes": 60,
+      "title": "Вирівнювання волосся (випрямляч + миття) - 15-25€",
+      "slug": "vyryvnyuvannya-volossya-vypryamlyach-myttya",
+      "description": "Укладання » Вирівнювання волосся (випрямляч + миття) - 15-25€. Тривалість: 40 - 60 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/vyryvnyuvannya-volossya-vypryamlyach-myttya",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209413,
+      "ownerId": 3253699,
+      "lengthInMinutes": 120,
+      "title": "Афро накрутка (до лопаток) - 50-60€",
+      "slug": "afro-nakrutka-do-lopatok",
+      "description": "Укладання » Афро накрутка (до лопаток) - 50-60€. Тривалість: 90 - 120 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/afro-nakrutka-do-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209414,
+      "ownerId": 3253699,
+      "lengthInMinutes": 150,
+      "title": "Афро накрутка (нижче лопаток) - 60-70€",
+      "slug": "afro-nakrutka-nyzhche-lopatok",
+      "description": "Укладання » Афро накрутка (нижче лопаток) - 60-70€. Тривалість: 120 - 150 хв.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/afro-nakrutka-nyzhche-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209415,
+      "ownerId": 3253699,
+      "lengthInMinutes": 90,
+      "title": "Зачіска (до лопаток) - 65€",
+      "slug": "zachiska-do-lopatok",
+      "description": "Укладання » Зачіска (до лопаток) - 65€. Тривалість: 60 - 90 хв., залежить від обраної зачіски",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/zachiska-do-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    },
+    {
+      "id": 7209416,
+      "ownerId": 3253699,
+      "lengthInMinutes": 120,
+      "title": "Зачіска (нижче лопаток) - 75-80€",
+      "slug": "zachiska-nyzhche-lopatok",
+      "description": "Укладання » Зачіска (нижче лопаток) - 75-80€. Тривалість: 90 - 120 хв., залежить від обраної зачіски.",
+      "locations": [
+        {
+          "type": "address",
+          "address": "Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain",
+          "public": true
+        }
+      ],
+      "bookingFields": [
+        {
+          "isDefault": true,
+          "type": "name",
+          "slug": "name",
+          "required": true,
+          "label": "",
+          "placeholder": "",
+          "disableOnPrefill": false
+        },
+        {
+          "isDefault": true,
+          "type": "radioInput",
+          "slug": "location",
+          "required": false,
+          "hidden": false
+        },
+        {
+          "isDefault": true,
+          "type": "phone",
+          "slug": "attendeePhoneNumber",
+          "required": true,
+          "label": "Телефон",
+          "placeholder": "",
+          "disableOnPrefill": false,
+          "hidden": false
+        }
+      ],
+      "recurrence": null,
+      "disableGuests": true,
+      "slotInterval": null,
+      "minimumBookingNotice": 120,
+      "beforeEventBuffer": 0,
+      "afterEventBuffer": 0,
+      "metadata": {},
+      "price": 0,
+      "currency": "usd",
+      "lockTimeZoneToggleOnBookingPage": false,
+      "forwardParamsSuccessRedirect": true,
+      "successRedirectUrl": null,
+      "isInstantEvent": false,
+      "users": [
+        {
+          "id": 3253699,
+          "name": "Nataliia Krasovska",
+          "username": "krasovska",
+          "avatarUrl": "/api/avatar/4388cfda-aa45-4700-b088-8632d3b6c3c1.png",
+          "brandColor": null,
+          "darkBrandColor": null,
+          "weekStart": "Monday",
+          "metadata": {
+            "stripeCustomerId": "cus_VHJanIHyZrSXtj",
+            "defaultBookerLayouts": {
+              "enabledLayouts": [
+                "month_view"
+              ],
+              "defaultLayout": "month_view"
+            }
+          }
+        }
+      ],
+      "scheduleId": null,
+      "onlyShowFirstAvailableSlot": false,
+      "offsetStart": 0,
+      "bookingWindow": {
+        "disabled": true
+      },
+      "confirmationPolicy": {
+        "disabled": true
+      },
+      "bookingProposalCount": null,
+      "requiresBookerEmailVerification": false,
+      "skipAttendeeEmailDeliverabilityCheck": false,
+      "hideCalendarNotes": false,
+      "seats": {
+        "disabled": true
+      },
+      "useDestinationCalendarEmail": false,
+      "hideCalendarEventDetails": false,
+      "hideOrganizerEmail": false,
+      "calVideoSettings": {
+        "sendTranscriptionEmails": true
+      },
+      "hidden": false,
+      "bookingRequiresAuthentication": false,
+      "bookerActiveBookingsLimit": {
+        "disabled": true
+      },
+      "bookingUrl": "https://cal.com/krasovska/zachiska-nyzhche-lopatok",
+      "disableCancelling": {
+        "disabled": false
+      },
+      "disableRescheduling": {
+        "disabled": false
+      },
+      "interfaceLanguage": null,
+      "weekStart": null,
+      "allowReschedulingPastBookings": false,
+      "allowReschedulingCancelledBookings": false,
+      "showOptimizedSlots": false,
+      "useIsolatedAvailability": false,
+      "privateNoteEnabled": false,
+      "privateNoteMode": null,
+      "privateNoteTemplate": null
+    }
+  ]
+}
