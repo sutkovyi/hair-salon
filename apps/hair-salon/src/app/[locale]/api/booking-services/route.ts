@@ -1,3 +1,4 @@
+import { env } from 'cloudflare:workers';
 import { NextResponse } from 'next/server';
 import { routing } from '@/i18n/routing';
 import {
@@ -12,7 +13,7 @@ type CacheBinding = {
 };
 
 function getCache(): CacheBinding | undefined {
-  return (process.env as unknown as { BOOKING_CACHE?: CacheBinding }).BOOKING_CACHE;
+  return (env as unknown as { BOOKING_CACHE?: CacheBinding }).BOOKING_CACHE;
 }
 
 export async function GET(

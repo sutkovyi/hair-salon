@@ -1,0 +1,55 @@
+[    1246ms] [WARNING] [HMR] Invalid message: {"type":"isrManifest","data":{"/ru?booking-modal=true":false,"/ru":false,"/en":false,"/ru?_rsc=18vyp":false,"/en?booking-modal=true&_rsc=1fhsx":false,"/uk":false,"/api/booking-services":false,"/manifest.json":false,"/uk?booking-modal=true":false,"/uk?booking-modal=true&_rsc=lac5k":false}}
+TypeError: Cannot read properties of undefined (reading 'components')
+    at handleStaticIndicator (http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2715:46)
+    at processMessage (http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2729:17)
+    at http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2603:13
+    at WebSocket.handleMessage (http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2248:17) @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_4d344682._.js:1206
+[    1277ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/ru?booking-modal=true:0
+[    2166ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/acd62_react-dom_cjs_react-dom-client_development_e9df1d39.js:16702
+[    2195ms] Error: Module [next]/entry/page-loader.ts { PAGE => "[project]/node_modules/next/app.js [client] (ecmascript)" } [client] (ecmascript) was instantiated because it was required from module [hmr-entry]/hmr-entry.js { ENTRY => "[project]/apps/hair-salon/pages/_app" }, but the module factory is not available. It might have been deleted in an HMR update.
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-apps_hair-salon_pages__app_a58648f5._.js:845:15)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-apps_hair-salon_pages__app_a58648f5._.js:830:12)
+    at DevContext.commonJsRequire [as r] (http://localhost:3000/_next/static/chunks/turbopack-apps_hair-salon_pages__app_a58648f5._.js:259:12)
+    at module evaluation (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__7e0130df._.js:468:23)
+    at http://localhost:3000/_next/static/chunks/turbopack-apps_hair-salon_pages__app_a58648f5._.js:879:13
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-apps_hair-salon_pages__app_a58648f5._.js:904:13)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-apps_hair-salon_pages__app_a58648f5._.js:877:9)
+    at getOrInstantiateRuntimeModule (http://localhost:3000/_next/static/chunks/turbopack-apps_hair-salon_pages__app_a58648f5._.js:808:12)
+    at Object.registerChunk (http://localhost:3000/_next/static/chunks/turbopack-apps_hair-salon_pages__app_a58648f5._.js:1626:21)
+[    2194ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_4d344682._.js:1206
+[    2195ms] [WARNING] [HMR] Invalid message: {"type":"isrManifest","data":{"/ru?booking-modal=true":false,"/ru":false,"/en":false,"/ru?_rsc=18vyp":false,"/en?booking-modal=true&_rsc=1fhsx":false,"/uk":false,"/api/booking-services":false,"/manifest.json":false,"/uk?booking-modal=true":false,"/uk?booking-modal=true&_rsc=lac5k":false}}
+TypeError: Cannot read properties of undefined (reading 'components')
+    at handleStaticIndicator (http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2715:46)
+    at processMessage (http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2729:17)
+    at http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2603:13
+    at WebSocket.handleMessage (http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2248:17) @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_4d344682._.js:1206
+[   31160ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_4d344682._.js:1206
+[   31275ms] [LOG] [Fast Refresh] done in 215ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_4d344682._.js:1206
+[  202120ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2266
+[  203123ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2266
+[  204126ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2266
+[  205129ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2266
+[  206134ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2266
+[  229550ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_4d344682._.js:1206
+[  229555ms] [WARNING] [HMR] Invalid message: {"type":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading 'components')
+    at handleStaticIndicator (http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2715:46)
+    at processMessage (http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2729:17)
+    at http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2603:13
+    at WebSocket.handleMessage (http://localhost:3000/_next/static/chunks/a4cba_next_dist_client_2acdb398._.js:2248:17) @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_4d344682._.js:1206
+[  284789ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  286133ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  295253ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  306910ms] [LOG] [Fast Refresh] done in 11850ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  327825ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  328707ms] [LOG] [Fast Refresh] done in 982ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  355408ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  355485ms] [LOG] [Fast Refresh] done in 178ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  379086ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  384734ms] [LOG] [Fast Refresh] done in 5749ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  413114ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  413685ms] [LOG] [Fast Refresh] done in 672ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  413795ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  414431ms] [LOG] [Fast Refresh] done in 740ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  467156ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  467212ms] [LOG] [Fast Refresh] done in 159ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297

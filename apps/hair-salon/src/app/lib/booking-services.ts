@@ -1,3 +1,5 @@
+import { env } from 'cloudflare:workers';
+
 export type ServiceCategory =
   | 'childrens_haircuts'
   | 'childrens_styling'
@@ -47,7 +49,7 @@ type CacheBinding = {
 };
 
 function getCache(): CacheBinding | undefined {
-  return (process.env as unknown as { BOOKING_CACHE?: CacheBinding }).BOOKING_CACHE;
+  return (env as unknown as { BOOKING_CACHE?: CacheBinding }).BOOKING_CACHE;
 }
 
 function getCategory(

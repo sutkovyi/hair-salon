@@ -4,7 +4,15 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Next.js options go here
+  ...(process.env.NODE_ENV === 'development'
+    ? {
+        turbopack: {
+          resolveAlias: {
+            'cloudflare:workers': './src/cloudflare-workers-dev.ts',
+          },
+        },
+      }
+    : {}),
 };
 
 export default withNextIntl(nextConfig);
