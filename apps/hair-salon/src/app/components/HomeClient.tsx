@@ -10,12 +10,12 @@ import { Header } from './Header';
 import { Hero } from './Hero';
 import { PricesSection } from './PricesSection';
 import { ServicesSection } from './ServicesSection';
-import type { BookingService } from '../lib/booking-services';
+import type { BookingServices } from '../lib/booking-services';
 import type { SupportedLocale } from '../lib/schema';
 import { siteConfig } from '@/config/site';
 
 type HomeClientProps = {
-  initialServices: BookingService[];
+  initialServices: BookingServices;
   locale: SupportedLocale;
 };
 

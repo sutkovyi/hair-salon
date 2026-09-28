@@ -95,8 +95,8 @@
     "error": "Не вдалося завантажити послуги. Спробуйте ще раз.",
     "minutes": "хв",
     "categories": {
-      "childHaircuts": "Дитячі стрижки",
-      "childStyling": "Дитячі укладки",
+      "childrens_haircuts": "Дитячі стрижки",
+      "childrens_styling": "Дитячі укладки",
       "haircuts": "Стрижки",
       "styling": "Укладання"
     }

@@ -1,0 +1,9 @@
+[   27813ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[   28793ms] [LOG] [Fast Refresh] done in 1081ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[   35070ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[   35620ms] [LOG] [Fast Refresh] done in 650ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[   35753ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[   37071ms] [LOG] [Fast Refresh] done in 1420ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[   40246ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en?booking-modal=true:0
+[   44870ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[   45555ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297

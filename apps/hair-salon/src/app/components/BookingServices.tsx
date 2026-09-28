@@ -1,22 +1,25 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { siteConfig } from '@/config/site';
-import type { BookingService } from '@/app/lib/booking-services';
+import type {
+  BookingServices as BookingServicesData,
+  ServiceCategory,
+} from '@/app/lib/booking-services';
 import { trackEvent } from '../../lib/gtag';
 
-const categoryOrder: BookingService['category'][] = [
-  'childHaircuts',
-  'childStyling',
-  'haircuts',
-  'styling',
+const categoryOrder: { key: ServiceCategory; translationKey: string }[] = [
+  { key: 'childrens_haircuts', translationKey: 'childrens_haircuts' },
+  { key: 'childrens_styling', translationKey: 'childrens_styling' },
+  { key: 'haircuts', translationKey: 'haircuts' },
+  { key: 'styling', translationKey: 'styling' },
 ];
 
 type BookingServicesProps = {
   compact?: boolean;
   active?: boolean;
-  initialServices?: BookingService[];
+  initialServices?: BookingServicesData;
 };
 
 export function BookingServices({
@@ -25,7 +28,8 @@ export function BookingServices({
   initialServices,
 }: BookingServicesProps) {
   const t = useTranslations('bookingCatalog');
-  const [services, setServices] = useState<BookingService[]>(initialServices ?? []);
+  const locale = useLocale();
+  const [services, setServices] = useState<BookingServicesData | undefined>(initialServices);
   const [loading, setLoading] = useState(initialServices === undefined);
   const [error, setError] = useState(false);
 
@@ -34,10 +38,10 @@ export function BookingServices({
 
     let cancelled = false;
     setLoading(true);
-    fetch(siteConfig.booking.servicesApiUrl)
+    fetch(`/${locale}${siteConfig.booking.servicesApiUrl}`)
       .then((response) => {
         if (!response.ok) throw new Error('Unable to load services');
-        return response.json() as Promise<BookingService[]>;
+        return response.json() as Promise<BookingServicesData>;
       })
       .then((data) => {
         if (!cancelled) setServices(data);
@@ -78,22 +82,22 @@ export function BookingServices({
       {error && <p className="py-10 text-center text-[#bc8a5f]">{t('error')}</p>}
       {!loading && !error && (
         <div className="space-y-8 pb-4">
-          {categoryOrder.map((category) => {
-            const categoryServices = services.filter((service) => service.category === category);
+          {categoryOrder.map(({ key: category, translationKey }) => {
+            const categoryServices = services?.[category] ?? [];
 
             if (categoryServices.length === 0) return null;
 
             return (
               <section key={category}>
                 <h2 className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#bc8a5f]">
-                  {t(`categories.${category}`)}
+                  {t(`categories.${translationKey}`)}
                 </h2>
                 <div className={compact ? 'grid gap-3' : 'grid gap-4 sm:grid-cols-2'}>
                   {categoryServices.map((service) => (
                     <a
                       key={service.id}
                       href={service.bookingUrl}
-                      onClick={(event) => {
+                      onClick={() => {
                         trackEvent('booking_service_click', {
                           event_category: 'booking',
                           event_label: service.title,

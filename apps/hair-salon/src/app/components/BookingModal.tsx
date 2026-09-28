@@ -8,14 +8,14 @@ import {
   DialogTitle,
 } from './ui/dialog';
 import { useTranslations } from 'next-intl';
-import type { BookingService } from '../lib/booking-services';
+import type { BookingServices as BookingServicesData } from '../lib/booking-services';
 
 type BookingModalProps = {
   isOpen: boolean;
   onClose: () => void;
   sent?: boolean;
   onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
-  initialServices: BookingService[];
+  initialServices: BookingServicesData;
 };
 
 export function BookingModal({ isOpen, onClose, initialServices }: BookingModalProps) {

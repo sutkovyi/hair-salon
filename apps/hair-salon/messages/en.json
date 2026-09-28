@@ -95,8 +95,8 @@
     "error": "We could not load the services. Please try again.",
     "minutes": "min",
     "categories": {
-      "childHaircuts": "Children's haircuts",
-      "childStyling": "Children's styling",
+      "childrens_haircuts": "Children's haircuts",
+      "childrens_styling": "Children's styling",
       "haircuts": "Haircuts",
       "styling": "Styling"
     }

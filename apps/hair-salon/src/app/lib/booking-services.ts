@@ -1,23 +1,45 @@
-export type ServiceCategory = 'childHaircuts' | 'childStyling' | 'haircuts' | 'styling';
+export type ServiceCategory =
+  | 'childrens_haircuts'
+  | 'childrens_styling'
+  | 'haircuts'
+  | 'styling';
 
 export type BookingService = {
   id: number;
   title: string;
   lengthInMinutes: number;
   bookingUrl: string;
-  category: ServiceCategory;
 };
+
+export type BookingServices = Record<ServiceCategory, BookingService[]>;
 
 type CalEventType = {
   id: number;
+  slug: string;
   title: string;
-  lengthInMinutes: number;
-  bookingUrl: string;
+  length?: number;
+  lengthInMinutes?: number;
   description: string;
+  hidden: boolean;
+  users?: { username: string }[];
+  bookingFields?: { name: string; placeholder?: ServiceCategory }[];
 };
 
-export const BOOKING_SERVICES_CACHE_KEY = 'booking-services:v1';
+type CalEventTypeGroup = {
+  profile: { slug: string };
+  eventTypes: CalEventType[];
+};
+
+type CalEventTypesResponse = {
+  data?: CalEventType[] | { eventTypeGroups?: CalEventTypeGroup[] };
+};
+
+export const BOOKING_SERVICES_CACHE_KEY = 'booking-services:v7';
 export const BOOKING_SERVICES_CACHE_TTL_SECONDS = 30 * 24 * 60 * 60;
+
+export function getBookingServicesCacheKey(locale: string) {
+  return `${BOOKING_SERVICES_CACHE_KEY}:${locale}`;
+}
 
 type CacheBinding = {
   get(key: string): Promise<string | null>;
@@ -28,34 +50,75 @@ function getCache(): CacheBinding | undefined {
   return (process.env as unknown as { BOOKING_CACHE?: CacheBinding }).BOOKING_CACHE;
 }
 
-const CATEGORY_ORDER: ServiceCategory[] = [
-  'childHaircuts',
-  'childStyling',
-  'haircuts',
-  'styling',
-];
-
-function getCategory(description: string): ServiceCategory | undefined {
-  const category = description.split('»')[0]?.trim();
-  const categories: Record<string, ServiceCategory> = {
-    'Дитячі стрижки': 'childHaircuts',
-    'Дитячі укладки': 'childStyling',
-    'Стрижки': 'haircuts',
-    'Укладання': 'styling',
-  };
-
-  return categories[category];
+function getCategory(
+  bookingFields: CalEventType['bookingFields'],
+): ServiceCategory | undefined {
+  return bookingFields?.find((field) => field.name === 'category')?.placeholder;
 }
 
-export async function getBookingServices(): Promise<BookingService[]> {
+export function createEmptyBookingServices(): BookingServices {
+  return {
+    childrens_haircuts: [],
+    childrens_styling: [],
+    haircuts: [],
+    styling: [],
+  };
+}
+
+export function mapBookingServices(
+  payload: CalEventTypesResponse,
+  locale: string,
+): BookingServices {
+  const services = createEmptyBookingServices();
+  const slugLocale = locale === 'uk' ? 'ua' : locale;
+  const eventTypes: { eventType: CalEventType; profileSlug?: string }[] = Array.isArray(payload.data)
+    ? payload.data.map((eventType) => ({
+        eventType,
+        profileSlug: eventType.users?.[0]?.username,
+      }))
+    : (payload.data?.eventTypeGroups ?? []).flatMap((group) =>
+        group.eventTypes.map((eventType) => ({
+          eventType,
+          profileSlug: group.profile.slug,
+        })),
+      );
+
+  for (const { eventType, profileSlug } of eventTypes) {
+    const lengthInMinutes = eventType.lengthInMinutes ?? eventType.length;
+
+    if (
+      eventType.hidden !== false ||
+      !eventType.slug.startsWith(`${slugLocale}-`) ||
+      !profileSlug ||
+      lengthInMinutes === undefined
+    ) {
+      continue;
+    }
+
+    const category = getCategory(eventType.bookingFields);
+    if (!category) continue;
+
+    services[category].push({
+      id: eventType.id,
+      title: eventType.title,
+      lengthInMinutes,
+      bookingUrl: `https://cal.com/${profileSlug}/${eventType.slug}`,
+    });
+  }
+
+  return services;
+}
+
+export async function getBookingServices(locale: string): Promise<BookingServices> {
   const apiKey = process.env.CAL_API_KEY;
-  if (!apiKey) return [];
+  if (!apiKey) return createEmptyBookingServices();
 
   const cache = getCache();
+  const cacheKey = getBookingServicesCacheKey(locale);
 
   try {
-    const cached = await cache?.get(BOOKING_SERVICES_CACHE_KEY);
-    if (cached) return JSON.parse(cached) as BookingService[];
+    const cached = await cache?.get(cacheKey);
+    if (cached) return JSON.parse(cached) as BookingServices;
   } catch {
     // KV is an optimization; Cal.com remains the source of truth.
   }
@@ -63,37 +126,18 @@ export async function getBookingServices(): Promise<BookingService[]> {
   try {
     const response = await fetch('https://api.cal.com/v2/event-types', {
       headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'cal-api-version': '2024-06-14',
+        Authorization: `Bearer ${apiKey}`
       },
       cache: 'no-store',
     });
 
-    if (!response.ok) return [];
+    if (!response.ok) return createEmptyBookingServices();
 
-    const payload = (await response.json()) as { data?: CalEventType[] };
-
-    const services = (payload.data ?? [])
-      .map(({ id, title, lengthInMinutes, bookingUrl, description }, index) => ({
-        id,
-        title,
-        lengthInMinutes,
-        bookingUrl,
-        category: getCategory(description),
-        index,
-      }))
-      .filter((service): service is typeof service & { category: ServiceCategory } =>
-        service.category !== undefined
-      )
-      .sort(
-        (first, second) =>
-          CATEGORY_ORDER.indexOf(first.category) - CATEGORY_ORDER.indexOf(second.category) ||
-          first.index - second.index
-      )
-      .map(({ index: _index, ...service }) => service);
+    const payload = (await response.json()) as CalEventTypesResponse;
+    const services = mapBookingServices(payload, locale);
 
     try {
-      await cache?.put(BOOKING_SERVICES_CACHE_KEY, JSON.stringify(services), {
+      await cache?.put(cacheKey, JSON.stringify(services), {
         expirationTtl: BOOKING_SERVICES_CACHE_TTL_SECONDS,
       });
     } catch {
@@ -102,6 +146,6 @@ export async function getBookingServices(): Promise<BookingService[]> {
 
     return services;
   } catch {
-    return [];
+    return createEmptyBookingServices();
   }
 }

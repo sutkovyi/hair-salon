@@ -11,8 +11,8 @@ export default async function Home({
 }: {
   params: Promise<{ locale: SupportedLocale }>;
 }) {
-  const services = await getBookingServices();
   const { locale } = await params;
+  const services = await getBookingServices(locale);
   const messages = (await import(`../../../messages/${locale}.json`)).default;
   const structuredData = createSchema(
     locale,

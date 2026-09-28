@@ -1,0 +1,18 @@
+[    3015ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[    3200ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[    3609ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[    3626ms] [LOG] [Fast Refresh] done in 207ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  272977ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  273093ms] [LOG] [Fast Refresh] done in 158ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  274321ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  275515ms] [LOG] [Fast Refresh] done in 1294ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  275757ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  276870ms] [LOG] [Fast Refresh] done in 1215ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  277268ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  277589ms] [LOG] [Fast Refresh] done in 421ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  291607ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  293673ms] [LOG] [Fast Refresh] done in 2166ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  295368ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  295382ms] [LOG] [Fast Refresh] done in 116ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  300928ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
+[  300947ms] [LOG] [Fast Refresh] done in 119ms @ http://localhost:3000/_next/static/chunks/a4cba_next_dist_84fa8a39._.js:2297
