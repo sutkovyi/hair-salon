@@ -7,7 +7,7 @@ const intlMiddleware = createMiddleware(routing);
 const markdownType = 'text/markdown; charset=utf-8';
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  'https://care-of-your-hair.n-sutkovoy.workers.dev';
+  'https://krasovska.beauty';
 
 const markdownHeaders = {
   'Content-Type': markdownType,
@@ -27,13 +27,10 @@ Hair stylist in Valencia, Spain. Kids', men's and women's haircuts, hairstyles, 
 ## Booking
 
 - Booking catalog: ${siteUrl}/booking
-- Ukrainian booking page: ${siteUrl}/uk/booking
-- English booking page: ${siteUrl}/en/booking
-- Russian booking page: ${siteUrl}/ru/booking
 
 ## Contact
 
-- Website: ${siteUrl}/uk
+- Website: ${siteUrl}/
 - Phone: +34 665 499 177
 - WhatsApp: https://wa.me/380731819204
 - Address: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain
@@ -42,8 +39,8 @@ Hair stylist in Valencia, Spain. Kids', men's and women's haircuts, hairstyles, 
 
 - Sitemap: ${siteUrl}/sitemap.xml
 - Agent guidance: ${siteUrl}/llms.txt
-- Privacy: ${siteUrl}/uk/privacy or ${siteUrl}/en/privacy
-- Terms: ${siteUrl}/uk/terms or ${siteUrl}/en/terms
+- Privacy: ${siteUrl}/privacy
+- Terms: ${siteUrl}/terms
 `;
 
 const notFoundMarkdown = `# Page not found
@@ -55,6 +52,15 @@ The requested page does not exist on this website.
 `;
 
 export default function middleware(request: NextRequest) {
+  if (
+    request.nextUrl.hostname === 'krasovska.beauty' &&
+    request.nextUrl.protocol === 'http:'
+  ) {
+    const secureUrl = request.nextUrl.clone();
+    secureUrl.protocol = 'https:';
+    return NextResponse.redirect(secureUrl, 308);
+  }
+
   const acceptsMarkdown = request.headers
     .get('accept')
     ?.includes('text/markdown');

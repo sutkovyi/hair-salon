@@ -8,7 +8,7 @@ import { GoogleAnalytics } from '../components/GoogleAnalytics';
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  'https://care-of-your-hair.n-sutkovoy.workers.dev';
+  'https://krasovska.beauty';
 
 type Locale = (typeof routing.locales)[number];
 
@@ -43,15 +43,6 @@ export async function generateMetadata({
     },
     title,
     description,
-    alternates: {
-      canonical: `${siteUrl}/${locale}`,
-      languages: {
-        uk: `${siteUrl}/uk`,
-        en: `${siteUrl}/en`,
-        ru: `${siteUrl}/ru`,
-        'x-default': `${siteUrl}/uk`,
-      },
-    },
     openGraph: {
       title,
       description,

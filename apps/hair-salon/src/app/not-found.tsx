@@ -18,7 +18,7 @@ export default function NotFound() {
         </p>
         <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="/uk"
+            href="/"
             className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#2b2d42] px-7 text-sm font-semibold text-white transition-colors hover:bg-[#bc8a5f]"
           >
             Back to home

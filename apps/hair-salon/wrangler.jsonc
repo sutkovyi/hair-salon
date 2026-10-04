@@ -5,6 +5,12 @@
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
+	"routes": [
+		{
+			"pattern": "krasovska.beauty/*",
+			"zone_name": "krasovska.beauty"
+		}
+	],
 	"main": "vinext/server/fetch-handler",
 	"assets": {
 		"directory": "dist/client",

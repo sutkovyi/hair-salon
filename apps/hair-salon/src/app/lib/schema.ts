@@ -31,7 +31,7 @@ export interface LocalizedSchema {
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  'https://care-of-your-hair.n-sutkovoy.workers.dev';
+  'https://krasovska.beauty';
 
 const PERSON_ID = `${SITE_URL}/#nataliia-krasovska`;
 const SALON_ID = `${SITE_URL}/#talula-head-spa`;

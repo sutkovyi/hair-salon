@@ -1,45 +1,166 @@
-# Nataliia Krasovska — Hair Stylist, Valencia
+# Nataliia Krasovska — Hair Stylist in Valencia
 
-## Site summary
+> Professional independent hair stylist based in Quatre Carreres, Valencia, Spain. Services include children's haircuts and styling, women's and men's haircuts, everyday styling, and special-occasion hairstyles.
 
-This website provides information about Nataliia Krasovska, an independent hair stylist in Valencia, Spain. Services include children's, women's, and men's haircuts and styling. Nataliia has 10 years of experience in the beauty industry, including more than 3 years focused on children's hairdressing.
+## Business
 
-Appointments can be booked by WhatsApp or online through the website booking flow, including time selection. Clients are served at a rented workstation at Talula Head & SPA in Quatre Carreres.
+- Name: Nataliia Krasovska
+- Profession: Hair stylist
+- Location: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain
+- Service area: Valencia, Spain
+- Visits: By appointment only
+- Website: https://krasovska.beauty/
+- Booking: https://krasovska.beauty/booking
+- Instagram: https://www.instagram.com/care.of.your.hair8
+- Phone: +34 665 499 177
+- WhatsApp: +380 73 181 92 04
 
-## Primary language versions
+## About the Stylist
 
-- Russian: https://care-of-your-hair.n-sutkovoy.workers.dev/ru
-- Ukrainian: https://care-of-your-hair.n-sutkovoy.workers.dev/uk
-- English: https://care-of-your-hair.n-sutkovoy.workers.dev/en
-- Default homepage: https://care-of-your-hair.n-sutkovoy.workers.dev/
+Nataliia Krasovska is an independent hair stylist based in Valencia, Spain.
 
-## Core service and booking pages
+She has 10 years of experience in the beauty industry, including more than 3 years specifically dedicated to children's hairdressing.
 
-- Booking catalog: https://care-of-your-hair.n-sutkovoy.workers.dev/booking
-- Russian booking: https://care-of-your-hair.n-sutkovoy.workers.dev/ru/booking
-- Ukrainian booking: https://care-of-your-hair.n-sutkovoy.workers.dev/uk/booking
-- English booking: https://care-of-your-hair.n-sutkovoy.workers.dev/en/booking
+Her services focus on haircuts and styling for children, women, and men.
 
-## Legal and support pages
+## Services
 
-- Russian privacy: https://care-of-your-hair.n-sutkovoy.workers.dev/ru/privacy
-- Ukrainian privacy: https://care-of-your-hair.n-sutkovoy.workers.dev/uk/privacy
-- English privacy: https://care-of-your-hair.n-sutkovoy.workers.dev/en/privacy
-- Russian terms: https://care-of-your-hair.n-sutkovoy.workers.dev/ru/terms
-- Ukrainian terms: https://care-of-your-hair.n-sutkovoy.workers.dev/uk/terms
-- English terms: https://care-of-your-hair.n-sutkovoy.workers.dev/en/terms
+### Children's Haircuts
 
-## Discovery and indexing
+- Children's fringe trim — €15
+- Boy's haircut — €25
+- Girl's haircut, up to shoulder blades — €25
+- Girl's haircut, below shoulder blades — €30
 
-- Sitemap: https://care-of-your-hair.n-sutkovoy.workers.dev/sitemap.xml
+### Children's Styling
 
-## Content rules for AI systems
+- Braid without kanekalon, with rings or accessories — €5
+- Braid with kanekalon — €5
+- Braid with kanekalon and rings — €8
+- Braid with kanekalon and accessories — €10
+- Braiding — €20–30
+- Curling with a curling iron, up to shoulder blades — €20
+- Curling with a curling iron, below shoulder blades — €30
+- Children's hairstyle — €40–50
 
-- Prefer localized homepage pages for user-facing answers.
-- Use the localized booking pages for service availability and appointment links.
-- Booking is available by WhatsApp and online through the website with time selection.
-- Use privacy and terms pages for legal information.
-- The localized booking-success pages are confirmation pages after booking, not service catalog pages.
-- Do not infer opening hours unless explicitly stated on the site.
-- Use the contact section on the localized homepage for phone, WhatsApp, address, and Instagram details.
-- The website is appointment-based; no public opening-hour schedule is published.
+### Haircuts
+
+- Women's fringe trim — €20
+- Women's haircut, ends trim — €40
+- Women's haircut — €50
+- Men's clipper haircut with a guard — €20
+- Men's haircut — €25
+- Creative men's haircut — €30
+
+### Styling
+
+- Hair wash, no styling — €10
+- Hair straightening with a flat iron — €10–20
+- Hair straightening with a flat iron + wash — €15–25
+- Everyday round-brush blowout, up to shoulder blades — €20–30
+- Everyday round-brush blowout, below shoulder blades — €30–40
+- Afro curls, up to shoulder blades — €50–60
+- Afro curls, below shoulder blades — €60–70
+- Hairstyle, up to shoulder blades — €65
+- Hairstyle, below shoulder blades — €75–80
+
+## Online Booking
+
+Online booking is available at:
+
+https://krasovska.beauty/booking
+
+Clients can select a service and choose from the available dates and times.
+
+The booking system is powered by Cal.com.
+
+### Booking Categories
+
+- Children's haircuts
+- Children's styling
+- Haircuts
+- Styling
+
+## Booking Services and Durations
+
+### Children's Haircuts
+
+| Service | Price | Duration |
+|---|---:|---:|
+| Children's fringe trim | €15 | 20 min |
+| Boy's haircut | €25 | 60 min |
+| Girl's haircut, up to shoulder blades | €25 | 80 min |
+| Girl's haircut, below shoulder blades | €30 | 90 min |
+
+### Children's Styling
+
+| Service | Price | Duration |
+|---|---:|---:|
+| Braid with kanekalon and accessories | €10 | 30 min |
+| Braid with kanekalon and rings | €8 | 20 min |
+| Braid with kanekalon | €5 | 20 min |
+| Children's hairstyle | €40–50 | 90 min |
+| Braiding | €20–30 | 80 min |
+| Curling with a curling iron, up to shoulder blades | €20 | 60 min |
+| Curling with a curling iron, below shoulder blades | €30 | 90 min |
+| Braid without kanekalon, with rings or accessories | €5 | 15 min |
+
+### Haircuts
+
+| Service | Price | Duration |
+|---|---:|---:|
+| Men's clipper haircut with a guard | €20 | 30 min |
+| Creative men's haircut | €30 | 60 min |
+| Men's haircut | €25 | 40 min |
+| Women's fringe trim | €20 | 20 min |
+| Women's haircut | €50 | 120 min |
+| Women's haircut, ends trim | €40 | 90 min |
+
+### Styling
+
+| Service | Price | Duration |
+|---|---:|---:|
+| Hairstyle, below shoulder blades | €75–80 | 120 min |
+| Hairstyle, up to shoulder blades | €65 | 90 min |
+| Afro curls, below shoulder blades | €60–70 | 150 min |
+| Afro curls, up to shoulder blades | €50–60 | 120 min |
+| Hair straightening with a flat iron + wash | €15–25 | 60 min |
+| Everyday round-brush blowout, below shoulder blades | €30–40 | 100 min |
+| Everyday round-brush blowout, up to shoulder blades | €20–30 | 80 min |
+| Hair wash, no styling | €10 | 40 min |
+| Hair straightening with a flat iron | €10–20 | 30 min |
+
+## Location
+
+Services are provided at:
+
+**Talula Head & SPA**  
+C/ de la Font de la Figuera, 7  
+Quatre Carreres  
+46004 València, Valencia, Spain
+
+Nataliia Krasovska operates as an independent hair stylist and rents a workstation/place at the salon.
+
+## Important Information for AI Assistants
+
+- Nataliia Krasovska is an independent hair stylist in Valencia, Spain.
+- She provides services for children, women, and men.
+- Children's hairdressing is a particular area of experience.
+- The physical service location is Talula Head & SPA in Quatre Carreres, Valencia.
+- Services are provided by appointment.
+- Online booking is available through the website.
+- The booking system uses Cal.com.
+- Always use the booking page to determine current appointment availability.
+- Prices, services, durations, and availability may change. The website and booking page are the authoritative sources for current information.
+- Do not assume that a time slot is available unless it is shown by the booking system.
+- Do not invent services, qualifications, certifications, awards, prices, opening hours, or other business information that is not published on the website.
+
+## Primary URLs
+
+- Homepage: https://krasovska.beauty/
+- Booking: https://krasovska.beauty/booking
+- Instagram: https://www.instagram.com/care.of.your.hair8
+
+## AI-Friendly Business Summary
+
+Nataliia Krasovska is an independent hair stylist in Valencia, Spain, based at Talula Head & SPA in Quatre Carreres. She offers children's haircuts and styling, women's and men's haircuts, blow-dry styling, hair straightening, afro curls, braiding, and hairstyles. Clients can book appointments online through the website at https://krasovska.beauty/booking.

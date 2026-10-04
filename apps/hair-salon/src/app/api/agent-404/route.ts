@@ -1,6 +1,6 @@
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  'https://care-of-your-hair.n-sutkovoy.workers.dev';
+  'https://krasovska.beauty';
 
 export function GET() {
   const body = `# Page not found
