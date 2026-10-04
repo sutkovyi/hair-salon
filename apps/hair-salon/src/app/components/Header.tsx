@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { usePathname } from '@/i18n/routing';
+import { usePathname, useRouter } from '@/i18n/routing';
 import { siteConfig } from '@/config/site';
 import { DevelopmentNotice } from './DevelopmentNotice';
 import { button } from '../ui-variants';
@@ -14,12 +14,22 @@ type HeaderProps = {
   overlay?: boolean;
 };
 
-export function Header({ onBook = () => undefined, overlay = false }: HeaderProps) {
+export function Header({ onBook, overlay = false }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
+  const router = useRouter();
   const isLegalPage = pathname === '/privacy' || pathname === '/terms';
+
+  const handleBook = (location: string) => {
+    if (onBook) {
+      onBook(location);
+      return;
+    }
+
+    router.push('/booking');
+  };
 
   const navItems = [
     { label: t('nav.services'), section: '#services' },
@@ -77,7 +87,7 @@ export function Header({ onBook = () => undefined, overlay = false }: HeaderProp
             <LanguageSwitcher />
             {siteConfig.booking.enabled && (
               <button
-                onClick={() => onBook('header')}
+                onClick={() => handleBook('header')}
                 className={`${button({ size: 'header' })} !bg-[#edbd58] !text-[#211f1c] hover:!bg-[#f4cc78]`}
               >
                 {t('book')}
@@ -119,7 +129,7 @@ export function Header({ onBook = () => undefined, overlay = false }: HeaderProp
               <button
                 onClick={() => {
                   setMenuOpen(false);
-                  onBook('mobile-menu');
+                  handleBook('mobile-menu');
                 }}
                 className={`${button({ size: 'hero' })} bg-[#edbd58] px-5 py-3 !text-[#211f1c] hover:bg-[#f4cc78]`}
               >
