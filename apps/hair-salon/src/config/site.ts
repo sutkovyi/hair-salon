@@ -1,6 +1,6 @@
 export const siteConfig = {
   developmentNotice: {
-    enabled: true,
+    enabled: false,
   },
   booking: {
     enabled: true,
