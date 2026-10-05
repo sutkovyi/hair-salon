@@ -4,6 +4,9 @@ import './global.css';
 
 export const metadata: Metadata = {
   title: 'Nataliia Krasovska | Hair Stylist in Valencia',
+  verification: {
+    google: 'Z7E0bo4eTTRzmbs2bOL8-AobXSgII5Lu1IWgSKoB5TA',
+  },
 };
 
 export const viewport: Viewport = {
