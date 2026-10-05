@@ -12,6 +12,7 @@ import { PricesSection } from './PricesSection';
 import { ServicesSection } from './ServicesSection';
 import type { BookingServices } from '../lib/booking-services';
 import type { SupportedLocale } from '../lib/schema';
+import { BOOKING_MODAL_CHANGE } from '../../lib/cookie-consent';
 import { siteConfig } from '@/config/site';
 
 type HomeClientProps = {
@@ -66,6 +67,7 @@ export function HomeClient({ initialServices, locale }: HomeClientProps) {
   const closeBooking = () => {
     updateBookingModalParam(false);
     setBookingOpen(false);
+    window.dispatchEvent(new Event(BOOKING_MODAL_CHANGE));
   };
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
