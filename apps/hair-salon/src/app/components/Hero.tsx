@@ -40,7 +40,7 @@ export function Hero({ onBook }: { onBook: (location?: string) => void }) {
   return (
     <section
       id="top"
-      className="relative flex min-h-[720px] items-center overflow-hidden bg-[#211f1c] pt-[104px] text-white sm:min-h-[780px]"
+      className={`relative flex items-center overflow-hidden bg-[#211f1c] pt-[104px] text-white ${styles.hero}`}
     >
       <picture className="absolute inset-0 block h-full w-full">
         <source srcSet={siteConfig.media.heroImage.avif} type="image/avif" />

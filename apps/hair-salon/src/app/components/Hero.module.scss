@@ -1,3 +1,20 @@
+.hero {
+  min-height: 720px;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    min-height: 780px;
+  }
+}
+
+@media (min-aspect-ratio: 1 / 1) {
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+}
+
 .sparkleWord {
   position: relative;
   display: inline-block;
