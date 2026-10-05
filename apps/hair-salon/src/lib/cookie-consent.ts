@@ -1,6 +1,5 @@
 export const COOKIE_CONSENT_KEY = 'cookie-consent';
 export const COOKIE_CONSENT_CHANGE = 'cookie-consent-change';
-export const BOOKING_MODAL_CHANGE = 'booking-modal-change';
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 export type CookieConsent = 'accepted' | 'rejected';

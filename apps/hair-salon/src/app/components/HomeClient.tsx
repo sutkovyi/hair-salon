@@ -12,7 +12,7 @@ import { PricesSection } from './PricesSection';
 import { ServicesSection } from './ServicesSection';
 import type { BookingServices } from '../lib/booking-services';
 import type { SupportedLocale } from '../lib/schema';
-import { BOOKING_MODAL_CHANGE } from '../../lib/cookie-consent';
+import { useBookingModalStore } from '../../lib/booking-modal-store';
 import { siteConfig } from '@/config/site';
 
 type HomeClientProps = {
@@ -42,7 +42,8 @@ function updateBookingModalParam(isOpen: boolean) {
 }
 
 export function HomeClient({ initialServices, locale }: HomeClientProps) {
-  const [bookingOpen, setBookingOpen] = useState(false);
+  const bookingOpen = useBookingModalStore((state) => state.isOpen);
+  const setBookingOpen = useBookingModalStore((state) => state.setOpen);
   const [sent, setSent] = useState(false);
 
   useEffect(() => {
@@ -52,7 +53,7 @@ export function HomeClient({ initialServices, locale }: HomeClientProps) {
     window.addEventListener('popstate', syncBookingModal);
 
     return () => window.removeEventListener('popstate', syncBookingModal);
-  }, []);
+  }, [setBookingOpen]);
 
   const openBooking = (location = 'general') => {
     trackEvent('book_online_click', {
@@ -67,7 +68,6 @@ export function HomeClient({ initialServices, locale }: HomeClientProps) {
   const closeBooking = () => {
     updateBookingModalParam(false);
     setBookingOpen(false);
-    window.dispatchEvent(new Event(BOOKING_MODAL_CHANGE));
   };
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
