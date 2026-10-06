@@ -8,23 +8,24 @@ import { DevelopmentNotice } from './DevelopmentNotice';
 import { button } from '../ui-variants';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { Menu, X } from 'lucide-react';
+import { useBookingModalStore } from '../../lib/booking-modal-store';
 
 type HeaderProps = {
-  onBook?: (location?: string) => void;
   overlay?: boolean;
 };
 
-export function Header({ onBook, overlay = false }: HeaderProps) {
+export function Header({ overlay = false }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+  const requestBookingOpen = useBookingModalStore((state) => state.requestOpen);
   const isLegalPage = pathname === '/privacy' || pathname === '/terms';
 
   const handleBook = (location: string) => {
-    if (onBook) {
-      onBook(location);
+    if (pathname === '/') {
+      requestBookingOpen(location);
       return;
     }
 

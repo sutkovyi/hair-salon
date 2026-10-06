@@ -1,23 +1,27 @@
 'use client';
 
 import Script from 'next/script';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { getUserPreferences } from 'vanilla-cookieconsent';
-import { COOKIE_CONSENT_CHANGE } from './CookieBanner';
+import { useCookieConsentStore } from '../../lib/cookie-consent-store';
 import { siteConfig } from '@/config/site';
 
 export function GoogleAnalytics() {
-  const [enabled, setEnabled] = useState(false);
+  const enabled = useCookieConsentStore((state) => state.analyticsEnabled);
+  const setAnalyticsEnabled = useCookieConsentStore(
+    (state) => state.setAnalyticsEnabled,
+  );
 
   useEffect(() => {
-    const sync = () => {
+    const syncAnalyticsConsent = () => {
       const preferences = getUserPreferences();
-      setEnabled(preferences.acceptedCategories.includes('analytics'));
+      setAnalyticsEnabled(
+        preferences.acceptedCategories.includes('analytics'),
+      );
     };
-    sync();
-    window.addEventListener(COOKIE_CONSENT_CHANGE, sync);
-    return () => window.removeEventListener(COOKIE_CONSENT_CHANGE, sync);
-  }, []);
+
+    syncAnalyticsConsent();
+  }, [setAnalyticsEnabled]);
 
   if (!enabled) {
     return null;

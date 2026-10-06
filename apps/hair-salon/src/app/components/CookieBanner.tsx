@@ -7,8 +7,8 @@ import enMessages from '../../../messages/en.json';
 import ruMessages from '../../../messages/ru.json';
 import ukMessages from '../../../messages/uk.json';
 import { useBookingModalStore } from '../../lib/booking-modal-store';
-
-export const COOKIE_CONSENT_CHANGE = 'cookie-consent-change';
+import { useCookieConsentStore } from '../../lib/cookie-consent-store';
+import { getUserPreferences } from 'vanilla-cookieconsent';
 
 const translations = {
   en: enMessages.cookies,
@@ -29,6 +29,14 @@ export function CookieBanner() {
     (state) => state.initialized,
   );
   const setBookingModalOpen = useBookingModalStore((state) => state.setOpen);
+  const setAnalyticsEnabled = useCookieConsentStore(
+    (state) => state.setAnalyticsEnabled,
+  );
+
+  const syncAnalyticsConsent = () => {
+    const preferences = getUserPreferences();
+    setAnalyticsEnabled(preferences.acceptedCategories.includes('analytics'));
+  };
 
   useEffect(() => {
     setBookingModalOpen(isBookingModalRequested());
@@ -65,10 +73,11 @@ export function CookieBanner() {
         default: locale,
         translations,
       },
-      onConsent: () => window.dispatchEvent(new Event(COOKIE_CONSENT_CHANGE)),
-      onChange: () => window.dispatchEvent(new Event(COOKIE_CONSENT_CHANGE)),
+      onConsent: syncAnalyticsConsent,
+      onChange: syncAnalyticsConsent,
     });
-  }, [bookingModalInitialized, bookingModalOpen, locale]);
+    syncAnalyticsConsent();
+  }, [bookingModalInitialized, bookingModalOpen, locale, setAnalyticsEnabled]);
 
   useEffect(() => {
     setLanguage(locale);

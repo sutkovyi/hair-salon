@@ -44,6 +44,13 @@ function updateBookingModalParam(isOpen: boolean) {
 export function HomeClient({ initialServices, locale }: HomeClientProps) {
   const bookingOpen = useBookingModalStore((state) => state.isOpen);
   const setBookingOpen = useBookingModalStore((state) => state.setOpen);
+  const requestedLocation = useBookingModalStore(
+    (state) => state.requestedLocation,
+  );
+  const requestBookingOpen = useBookingModalStore((state) => state.requestOpen);
+  const clearBookingRequest = useBookingModalStore(
+    (state) => state.clearRequest,
+  );
   const [sent, setSent] = useState(false);
 
   useEffect(() => {
@@ -55,15 +62,23 @@ export function HomeClient({ initialServices, locale }: HomeClientProps) {
     return () => window.removeEventListener('popstate', syncBookingModal);
   }, [setBookingOpen]);
 
-  const openBooking = (location = 'general') => {
+  useEffect(() => {
+    if (!requestedLocation) {
+      return;
+    }
+
     trackEvent('book_online_click', {
       event_category: 'engagement',
-      event_label: location,
+      event_label: requestedLocation,
       language: locale,
     });
     setSent(false);
     updateBookingModalParam(true);
-    setBookingOpen(true);
+    clearBookingRequest();
+  }, [clearBookingRequest, locale, requestedLocation]);
+
+  const openBooking = (location = 'general') => {
+    requestBookingOpen(location);
   };
   const closeBooking = () => {
     updateBookingModalParam(false);
@@ -76,7 +91,7 @@ export function HomeClient({ initialServices, locale }: HomeClientProps) {
 
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#2b2d42]">
-      <Header onBook={openBooking} overlay />
+      <Header overlay />
       <Hero onBook={openBooking} />
       <ServicesSection />
       <PricesSection />

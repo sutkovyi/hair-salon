@@ -1,5 +1,6 @@
+import { useCookieConsentStore } from './cookie-consent-store';
+
 export const COOKIE_CONSENT_KEY = 'cookie-consent';
-export const COOKIE_CONSENT_CHANGE = 'cookie-consent-change';
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 export type CookieConsent = 'accepted' | 'rejected';
@@ -29,5 +30,5 @@ export function getCookieConsent(): CookieConsent | null {
 export function setCookieConsent(value: CookieConsent) {
   window.localStorage.setItem(COOKIE_CONSENT_KEY, value);
   document.cookie = `${COOKIE_CONSENT_KEY}=${value}; path=/; max-age=${COOKIE_MAX_AGE}; SameSite=Lax`;
-  window.dispatchEvent(new Event(COOKIE_CONSENT_CHANGE));
+  useCookieConsentStore.getState().setAnalyticsEnabled(value === 'accepted');
 }
