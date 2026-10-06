@@ -52,15 +52,6 @@ The requested page does not exist on this website.
 `;
 
 export default function middleware(request: NextRequest) {
-  if (
-    request.nextUrl.hostname === 'krasovska.beauty' &&
-    request.nextUrl.protocol === 'http:'
-  ) {
-    const secureUrl = request.nextUrl.clone();
-    secureUrl.protocol = 'https:';
-    return NextResponse.redirect(secureUrl, 308);
-  }
-
   const acceptsMarkdown = request.headers
     .get('accept')
     ?.includes('text/markdown');

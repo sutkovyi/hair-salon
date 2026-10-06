@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/routing';
 import { siteConfig } from '@/config/site';
 import { DevelopmentNotice } from './DevelopmentNotice';
@@ -17,11 +17,9 @@ type HeaderProps = {
 export function Header({ overlay = false }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = useTranslations();
-  const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
   const requestBookingOpen = useBookingModalStore((state) => state.requestOpen);
-  const isLegalPage = pathname === '/privacy' || pathname === '/terms';
 
   const handleBook = (location: string) => {
     if (pathname === '/') {
@@ -61,7 +59,7 @@ export function Header({ overlay = false }: HeaderProps) {
       {siteConfig.developmentNotice.enabled && <DevelopmentNotice />}
       <div className="mx-auto grid min-h-[72px] max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-2 px-4 py-2 sm:px-5 lg:px-10">
         <a
-          href={isLegalPage ? `/${locale}#top` : '#top'}
+          href={`/#top`}
           className="flex min-w-0 max-w-[185px] flex-1 flex-col font-sans font-semibold tracking-normal sm:max-w-none"
         >
           <span className="text-xl leading-tight sm:text-2xl">
@@ -77,7 +75,7 @@ export function Header({ overlay = false }: HeaderProps) {
             <a
               key={item.section}
               className="transition-colors hover:text-[#edbd58]"
-              href={isLegalPage ? `/${locale}${item.section}` : item.section}
+              href={`/${item.section}`}
             >
               {item.label}
             </a>
@@ -116,7 +114,7 @@ export function Header({ overlay = false }: HeaderProps) {
             {navItems.map((item) => (
               <a
                 key={item.section}
-                href={isLegalPage ? `/${locale}${item.section}` : item.section}
+                href={`/${item.section}`}
                 onClick={() => setMenuOpen(false)}
                 className="flex min-h-14 items-center border-b border-current/10 text-lg font-medium transition-colors hover:text-[#edbd58]"
               >
