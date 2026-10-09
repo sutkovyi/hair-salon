@@ -21,6 +21,6 @@ export const siteConfig = {
     },
   },
   analytics: {
-    googleMeasurementId: 'G-B1VNF6F0DW',
+    googleMeasurementId: 'G-PM0003K1R9',
   },
 } as const;
