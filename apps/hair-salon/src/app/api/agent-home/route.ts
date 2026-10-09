@@ -16,7 +16,7 @@ Hair stylist in Valencia, Spain. Kids', men's and women's haircuts, hairstyles, 
 ## Contact
 
 - Website: ${siteUrl}/
-- Phone: +34 665 499 177
+- Phone: +38 073 181 92 04
 - WhatsApp: https://wa.me/380731819204
 - Address: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain
 

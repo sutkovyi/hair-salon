@@ -69,7 +69,7 @@ export function ContactSection() {
               <ArrowUpRight className="h-5 w-5 shrink-0 text-[#8d6424] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
             </a>
             <a
-              href="tel:+34665499177"
+              href="tel:+380731819204"
               onClick={() =>
                 trackEvent('contact_link_click', {
                   event_category: 'contact',
@@ -84,7 +84,7 @@ export function ContactSection() {
               </span>
               <span className="min-w-0 flex-1">
                 <span className="block text-lg font-semibold text-[#211f1c]">{t('phoneLabel')}</span>
-                <span className="mt-1 block leading-6 text-[#66645e] transition-colors group-hover:text-[#211f1c]">+34 665 499 177</span>
+                <span className="mt-1 block leading-6 text-[#66645e] transition-colors group-hover:text-[#211f1c]">+38 073 181 92 04</span>
               </span>
               <ArrowUpRight className="h-5 w-5 shrink-0 text-[#8d6424] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
             </a>
