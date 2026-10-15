@@ -1,0 +1,346 @@
+{
+  "source": "Cal.com API v2 PATCH /v2/event-types/{eventTypeId}",
+  "apiVersion": "2026-06-12",
+  "baseline": "../../artifacts/calcom-event-types-backup-v2-2026-06-12-2026-10-15T20-33-25-957Z.json",
+  "referenceEventTypeId": 7248281,
+  "canaryEventTypeId": 7494072,
+  "requestedValues": {
+    "address": "BEUATY.COWORKING, Av. de l'Institut Obrer de València, 21, Bajo 5, Quatre Carreres, València, Spain",
+    "public": true
+  },
+  "outcomes": [
+    {
+      "id": 7209384,
+      "status": "updated"
+    },
+    {
+      "id": 7209408,
+      "status": "updated"
+    },
+    {
+      "id": 7248214,
+      "status": "updated"
+    },
+    {
+      "id": 7248272,
+      "status": "updated"
+    },
+    {
+      "id": 7248275,
+      "status": "updated"
+    },
+    {
+      "id": 7209395,
+      "status": "updated"
+    },
+    {
+      "id": 7248273,
+      "status": "updated"
+    },
+    {
+      "id": 7209387,
+      "status": "updated"
+    },
+    {
+      "id": 7248213,
+      "status": "updated"
+    },
+    {
+      "id": 7248258,
+      "status": "updated"
+    },
+    {
+      "id": 7248220,
+      "status": "updated"
+    },
+    {
+      "id": 7248237,
+      "status": "updated"
+    },
+    {
+      "id": 7248279,
+      "status": "updated"
+    },
+    {
+      "id": 7248256,
+      "status": "updated"
+    },
+    {
+      "id": 7209383,
+      "status": "updated"
+    },
+    {
+      "id": 7248216,
+      "status": "updated"
+    },
+    {
+      "id": 7248259,
+      "status": "updated"
+    },
+    {
+      "id": 7209391,
+      "status": "updated"
+    },
+    {
+      "id": 7248251,
+      "status": "updated"
+    },
+    {
+      "id": 7248249,
+      "status": "updated"
+    },
+    {
+      "id": 7248247,
+      "status": "updated"
+    },
+    {
+      "id": 7248248,
+      "status": "updated"
+    },
+    {
+      "id": 7248219,
+      "status": "updated"
+    },
+    {
+      "id": 7209398,
+      "status": "updated"
+    },
+    {
+      "id": 7209414,
+      "status": "updated"
+    },
+    {
+      "id": 7209399,
+      "status": "updated"
+    },
+    {
+      "id": 7248263,
+      "status": "updated"
+    },
+    {
+      "id": 7209413,
+      "status": "updated"
+    },
+    {
+      "id": 7248267,
+      "status": "updated"
+    },
+    {
+      "id": 7209233,
+      "status": "updated"
+    },
+    {
+      "id": 7248274,
+      "status": "updated"
+    },
+    {
+      "id": 7248231,
+      "status": "updated"
+    },
+    {
+      "id": 7317116,
+      "status": "updated"
+    },
+    {
+      "id": 7248276,
+      "status": "updated"
+    },
+    {
+      "id": 7209396,
+      "status": "updated"
+    },
+    {
+      "id": 7248233,
+      "status": "updated"
+    },
+    {
+      "id": 7248218,
+      "status": "updated"
+    },
+    {
+      "id": 7248217,
+      "status": "updated"
+    },
+    {
+      "id": 7209386,
+      "status": "updated"
+    },
+    {
+      "id": 7209415,
+      "status": "updated"
+    },
+    {
+      "id": 7248243,
+      "status": "updated"
+    },
+    {
+      "id": 7248266,
+      "status": "updated"
+    },
+    {
+      "id": 7248242,
+      "status": "updated"
+    },
+    {
+      "id": 7248280,
+      "status": "updated"
+    },
+    {
+      "id": 7248232,
+      "status": "updated"
+    },
+    {
+      "id": 7248257,
+      "status": "updated"
+    },
+    {
+      "id": 7248281,
+      "status": "already-correct"
+    },
+    {
+      "id": 7248278,
+      "status": "updated"
+    },
+    {
+      "id": 7248271,
+      "status": "updated"
+    },
+    {
+      "id": 7248265,
+      "status": "updated"
+    },
+    {
+      "id": 7248264,
+      "status": "updated"
+    },
+    {
+      "id": 7248262,
+      "status": "updated"
+    },
+    {
+      "id": 7248261,
+      "status": "updated"
+    },
+    {
+      "id": 7248260,
+      "status": "updated"
+    },
+    {
+      "id": 7248252,
+      "status": "updated"
+    },
+    {
+      "id": 7248250,
+      "status": "updated"
+    },
+    {
+      "id": 7248241,
+      "status": "updated"
+    },
+    {
+      "id": 7248240,
+      "status": "updated"
+    },
+    {
+      "id": 7248239,
+      "status": "updated"
+    },
+    {
+      "id": 7248238,
+      "status": "updated"
+    },
+    {
+      "id": 7209392,
+      "status": "updated"
+    },
+    {
+      "id": 7248236,
+      "status": "updated"
+    },
+    {
+      "id": 7248235,
+      "status": "updated"
+    },
+    {
+      "id": 7248230,
+      "status": "updated"
+    },
+    {
+      "id": 7248229,
+      "status": "updated"
+    },
+    {
+      "id": 7248223,
+      "status": "updated"
+    },
+    {
+      "id": 7248222,
+      "status": "updated"
+    },
+    {
+      "id": 7248221,
+      "status": "updated"
+    },
+    {
+      "id": 7248215,
+      "status": "updated"
+    },
+    {
+      "id": 7248212,
+      "status": "updated"
+    },
+    {
+      "id": 7208954,
+      "status": "updated"
+    },
+    {
+      "id": 7209382,
+      "status": "updated"
+    },
+    {
+      "id": 7209394,
+      "status": "updated"
+    },
+    {
+      "id": 7209400,
+      "status": "updated"
+    },
+    {
+      "id": 7209401,
+      "status": "updated"
+    },
+    {
+      "id": 7209403,
+      "status": "updated"
+    },
+    {
+      "id": 7209407,
+      "status": "updated"
+    },
+    {
+      "id": 7209409,
+      "status": "updated"
+    },
+    {
+      "id": 7209412,
+      "status": "updated"
+    },
+    {
+      "id": 7209410,
+      "status": "updated"
+    },
+    {
+      "id": 7209416,
+      "status": "updated"
+    },
+    {
+      "id": 7209417,
+      "status": "updated"
+    }
+  ],
+  "recordCount": 83,
+  "uniqueIds": 83,
+  "countMatchesBaseline": true,
+  "recursiveMismatches": [],
+  "verified": true
+}

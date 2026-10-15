@@ -18,6 +18,7 @@
   "type": "module",
   "scripts": {
     "backup:calcom-event-types": "node --env-file=.env.local scripts/backup-calcom-event-types.mjs",
+    "update:calcom-event-type-locations": "node --env-file=.env.local scripts/update-calcom-event-type-locations.mjs",
     "predev:vinext": "node scripts/generate-llms.mjs",
     "dev:vinext": "vinext dev --port 3001",
     "prebuild:vinext": "node scripts/generate-llms.mjs",
