@@ -18,9 +18,12 @@
   "type": "module",
   "scripts": {
     "backup:calcom-event-types": "node --env-file=.env.local scripts/backup-calcom-event-types.mjs",
+    "predev:vinext": "node scripts/generate-llms.mjs",
     "dev:vinext": "vinext dev --port 3001",
+    "prebuild:vinext": "node scripts/generate-llms.mjs",
     "build:vinext": "vinext build",
     "start:vinext": "wrangler dev --config dist/server/wrangler.json",
+    "predeploy:vinext": "node scripts/generate-llms.mjs",
     "deploy:vinext": "vinext-cloudflare deploy --config dist/server/wrangler.json && node scripts/invalidate-booking-cache.mjs"
   },
   "devDependencies": {

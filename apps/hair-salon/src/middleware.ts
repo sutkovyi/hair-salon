@@ -1,5 +1,6 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
+import { getFormattedSalonAddress } from './config/site';
 import { routing } from './i18n/routing';
 
 const intlMiddleware = createMiddleware(routing);
@@ -33,7 +34,7 @@ Hair stylist in Valencia, Spain. Kids', men's and women's haircuts, hairstyles, 
 - Website: ${siteUrl}/
 - Phone: +38 073 181 92 04
 - WhatsApp: https://wa.me/380731819204
-- Address: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain
+- Address: ${getFormattedSalonAddress()}
 
 ## More machine-readable information
 

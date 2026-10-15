@@ -1,3 +1,5 @@
+import location from './site-location.json';
+
 export const siteConfig = {
   developmentNotice: {
     enabled: false,
@@ -6,9 +8,7 @@ export const siteConfig = {
     enabled: true,
     servicesApiUrl: '/api/booking-services',
   },
-  location: {
-    googleMapsUrl: 'https://maps.app.goo.gl/8qp6N62xSgMRbpT8A?g_st=ic',
-  },
+  location,
   media: {
     heroImage: {
       avif: '/images/poster/work.avif',
@@ -24,3 +24,17 @@ export const siteConfig = {
     googleMeasurementId: 'G-PM0003K1R9',
   },
 } as const;
+
+export function getFormattedSalonAddress() {
+  const {
+    salonName,
+    streetAddress,
+    addressDistrict,
+    addressRegion,
+    postalCode,
+    addressLocality,
+    countryName,
+  } = siteConfig.location;
+
+  return `${salonName}, ${streetAddress}, ${addressDistrict}, ${postalCode} ${addressLocality}, ${addressRegion}, ${countryName}`;
+}

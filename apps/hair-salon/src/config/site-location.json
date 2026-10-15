@@ -1,0 +1,15 @@
+{
+  "salonName": "Beuaty.coworking",
+  "streetAddress": "Av. de l'Institut Obrer de València, 21, Bajo 5",
+  "addressLocality": "València",
+  "addressDistrict": "Quatre Carreres",
+  "addressRegion": "Valencia",
+  "postalCode": "46013",
+  "addressCountry": "ES",
+  "countryName": "Spain",
+  "coordinates": {
+    "latitude": 39.4559218,
+    "longitude": -0.3578184
+  },
+  "googleMapsUrl": "https://maps.app.goo.gl/1MEMCSjDgox1KRvD8"
+}

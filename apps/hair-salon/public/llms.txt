@@ -6,7 +6,7 @@
 
 - Name: Nataliia Krasovska
 - Profession: Hair stylist
-- Location: Talula Head & SPA, C/ de la Font de la Figuera, 7, Quatre Carreres, 46004 València, Valencia, Spain
+- Location: Beuaty.coworking, Av. de l'Institut Obrer de València, 21, Bajo 5, Quatre Carreres, 46013 València, Valencia, Spain
 - Service area: Valencia, Spain
 - Visits: By appointment only
 - Website: https://krasovska.beauty/
@@ -134,10 +134,7 @@ The booking system is powered by Cal.com.
 
 Services are provided at:
 
-**Talula Head & SPA**  
-C/ de la Font de la Figuera, 7  
-Quatre Carreres  
-46004 València, Valencia, Spain
+Beuaty.coworking, Av. de l'Institut Obrer de València, 21, Bajo 5, Quatre Carreres, 46013 València, Valencia, Spain
 
 Nataliia Krasovska operates as an independent hair stylist and rents a workstation/place at the salon.
 
@@ -146,7 +143,7 @@ Nataliia Krasovska operates as an independent hair stylist and rents a workstati
 - Nataliia Krasovska is an independent hair stylist in Valencia, Spain.
 - She provides services for children, women, and men.
 - Children's hairdressing is a particular area of experience.
-- The physical service location is Talula Head & SPA in Quatre Carreres, Valencia.
+- Services are provided in Quatre Carreres, Valencia.
 - Services are provided by appointment.
 - Online booking is available through the website.
 - The booking system uses Cal.com.
@@ -163,4 +160,4 @@ Nataliia Krasovska operates as an independent hair stylist and rents a workstati
 
 ## AI-Friendly Business Summary
 
-Nataliia Krasovska is an independent hair stylist in Valencia, Spain, based at Talula Head & SPA in Quatre Carreres. She offers children's haircuts and styling, women's and men's haircuts, blow-dry styling, hair straightening, afro curls, braiding, and hairstyles. Clients can book appointments online through the website at https://krasovska.beauty/booking.
+Nataliia Krasovska is an independent hair stylist in Valencia, Spain. She offers children's haircuts and styling, women's and men's haircuts, blow-dry styling, hair straightening, afro curls, braiding, and hairstyles. Clients can book appointments online through the website at https://krasovska.beauty/booking.

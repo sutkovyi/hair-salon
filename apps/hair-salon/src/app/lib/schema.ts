@@ -1,3 +1,5 @@
+import { siteConfig } from '@/config/site';
+
 export type SupportedLocale = 'en' | 'ru' | 'uk';
 
 export interface LocalizedSchema {
@@ -11,12 +13,6 @@ export interface LocalizedSchema {
   whatsappContactType: string;
   instagramUrl: string;
   knowsAbout: string[];
-  salonName: string;
-  streetAddress: string;
-  addressLocality: string;
-  addressRegion: string;
-  postalCode: string;
-  addressCountry: string;
   areaServed: string;
   priceCurrency: string;
   servicesName: string;
@@ -34,7 +30,7 @@ const SITE_URL =
   'https://krasovska.beauty';
 
 const PERSON_ID = `${SITE_URL}/#nataliia-krasovska`;
-const SALON_ID = `${SITE_URL}/#talula-head-spa`;
+const SALON_ID = `${SITE_URL}/#salon`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 
 const LOCALE_PATHS: Record<SupportedLocale, string> = {
@@ -53,6 +49,10 @@ export function createSchema(
   content: LocalizedSchema,
 ) {
   const url = `${SITE_URL}${LOCALE_PATHS[locale]}`;
+  const description = content.description.replaceAll(
+    '{salonName}',
+    siteConfig.location.salonName,
+  );
 
   return {
     '@context': 'https://schema.org',
@@ -70,7 +70,7 @@ export function createSchema(
         '@id': `${url}#webpage`,
         url,
         name: content.pageName,
-        description: content.description,
+        description,
         inLanguage: LANGUAGE_CODES[locale],
         isPartOf: { '@id': WEBSITE_ID },
         about: { '@id': PERSON_ID },
@@ -81,7 +81,7 @@ export function createSchema(
         '@id': PERSON_ID,
         name: content.personName,
         jobTitle: content.jobTitle,
-        description: content.description,
+        description,
         url,
         telephone: content.telephone,
         contactPoint: {
@@ -97,14 +97,14 @@ export function createSchema(
       {
         '@type': 'HairSalon',
         '@id': SALON_ID,
-        name: content.salonName,
+        name: siteConfig.location.salonName,
         address: {
           '@type': 'PostalAddress',
-          streetAddress: content.streetAddress,
-          addressLocality: content.addressLocality,
-          addressRegion: content.addressRegion,
-          postalCode: content.postalCode,
-          addressCountry: content.addressCountry,
+          streetAddress: siteConfig.location.streetAddress,
+          addressLocality: siteConfig.location.addressLocality,
+          addressRegion: `${siteConfig.location.addressDistrict}, ${siteConfig.location.addressRegion}`,
+          postalCode: siteConfig.location.postalCode,
+          addressCountry: siteConfig.location.addressCountry,
         },
       },
       {

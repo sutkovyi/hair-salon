@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
-import { siteConfig } from '@/config/site';
+import { getFormattedSalonAddress, siteConfig } from '@/config/site';
 
 export default async function BookingSuccessPage() {
   const t = await getTranslations('bookingSuccess');
@@ -24,7 +24,7 @@ export default async function BookingSuccessPage() {
           rel="noreferrer"
           className="mt-5 block text-sm font-medium text-[#2b2d42] underline decoration-[#d4a373] underline-offset-4 transition hover:text-[#bc8a5f]"
         >
-          {t('location')}
+          {t('location', { fullAddress: getFormattedSalonAddress() })}
           <span className="mt-2 block text-xs font-normal uppercase tracking-[0.12em] text-[#bc8a5f]">
             {t('viewOnMap')}
           </span>
