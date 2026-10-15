@@ -96,7 +96,7 @@ export function BookingServices({
                   {categoryServices.map((service) => (
                     <a
                       key={service.id}
-                      href={service.bookingUrl}
+                      href={`${service.bookingUrl}?${new URLSearchParams(service.bookingUrlParams)}`}
                       onClick={() => {
                         trackEvent('booking_service_click', {
                           event_category: 'booking',

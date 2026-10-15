@@ -11,6 +11,7 @@ export type BookingService = {
   title: string;
   lengthInMinutes: number;
   bookingUrl: string;
+  bookingUrlParams: Record<string, string>;
 };
 
 export type BookingServices = Record<ServiceCategory, BookingService[]>;
@@ -36,7 +37,7 @@ type CalEventTypesResponse = {
   data?: CalEventType[] | { eventTypeGroups?: CalEventTypeGroup[] };
 };
 
-export const BOOKING_SERVICES_CACHE_KEY = 'booking-services:v7';
+export const BOOKING_SERVICES_CACHE_KEY = 'booking-services:v8';
 export const BOOKING_SERVICES_CACHE_TTL_SECONDS = 30 * 24 * 60 * 60;
 
 export function getBookingServicesCacheKey(locale: string) {
@@ -105,6 +106,7 @@ export function mapBookingServices(
       title: eventType.title,
       lengthInMinutes,
       bookingUrl: `https://cal.com/${profileSlug}/${eventType.slug}`,
+      bookingUrlParams: { attendeePhoneNumber: '+34' },
     });
   }
 
