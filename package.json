@@ -2,7 +2,9 @@
   "name": "@hair-salon/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "backup:calcom-event-types": "node --env-file=apps/hair-salon/.env.local apps/hair-salon/scripts/backup-calcom-event-types.mjs"
+  },
   "private": true,
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
