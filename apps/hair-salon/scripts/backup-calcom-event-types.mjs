@@ -11,6 +11,7 @@ if (!apiKey) {
 const response = await fetch('https://api.cal.com/v2/event-types', {
   headers: {
     Authorization: `Bearer ${apiKey}`,
+    'cal-api-version': '2026-06-12',
   },
 });
 
